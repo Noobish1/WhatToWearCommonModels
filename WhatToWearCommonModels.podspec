@@ -10,5 +10,6 @@ Pod::Spec.new do |s|
     s.requires_arc              = true
     s.source_files              = "WhatToWearCommonModels/**/*.swift"
     s.module_name               = "WhatToWearCommonModels"
+    s.swift_version             = "4.1"
     s.dependency "WhatToWearCommonCore"
 end
