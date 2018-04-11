@@ -27,7 +27,6 @@
 		7523B07A207DDB4E003304FC /* HourlyForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyForecast.swift; sourceTree = "<group>"; };
 		7523B07B207DDB4E003304FC /* DataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPoint.swift; sourceTree = "<group>"; };
 		7523B07C207DDB4F003304FC /* PrecipitationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecipitationType.swift; sourceTree = "<group>"; };
-		7523B081207DDC21003304FC /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7523B083207DE8D0003304FC /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		8F7EBD7F68309150D005B5EB /* Pods_WhatToWearCommonModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6463FDCAF9AF03715A8ABCA /* Pods-WhatToWearCommonModels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModels.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonModels/Pods-WhatToWearCommonModels.release.xcconfig"; sourceTree = "<group>"; };
@@ -58,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				7523B083207DE8D0003304FC /* Gemfile */,
-				7523B081207DDC21003304FC /* Podfile */,
 				7523B072207DDACF003304FC /* .gitignore */,
 				7523B073207DDACF003304FC /* Package.swift */,
 				7523B074207DDACF003304FC /* WhatToWearCommonModels.podspec */,

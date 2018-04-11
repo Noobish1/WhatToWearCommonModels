@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                      = "WhatToWearCommonModels"
-    s.version                   = "1.0"
+    s.version                   = "1.0.0"
     s.summary                   = "Common model files for both WhatToWear and WhatToWearBackend"
     s.homepage                  = "https://bitbucket.org/BlairMcArthur/whattowearcommonmodels"
     s.license                   = "MIT"
@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
     s.requires_arc              = true
     s.source_files              = "WhatToWearCommonModels/**/*.swift"
     s.module_name               = "WhatToWearCommonModels"
-    s.dependency                = "WhatToWearCommonCore"
+    s.dependency "WhatToWearCommonCore"
 end
