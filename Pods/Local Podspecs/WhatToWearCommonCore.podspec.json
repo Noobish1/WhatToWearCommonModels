@@ -1,0 +1,20 @@
+{
+  "name": "WhatToWearCommonCore",
+  "version": "1.0",
+  "summary": "Common core files for both WhatToWear and WhatToWearBackend",
+  "homepage": "https://bitbucket.org/BlairMcArthur/whattowearcommoncore",
+  "license": "MIT",
+  "authors": {
+    "Blair McArthur": "blair.mcarthur@icloud.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://bitbucket.org/BlairMcArthur/whattowearcommoncore.git",
+    "tag": "1.0"
+  },
+  "requires_arc": true,
+  "source_files": "WhatToWearCommonCore/**/*.swift",
+  "module_name": "WhatToWearCommonCore"
+}

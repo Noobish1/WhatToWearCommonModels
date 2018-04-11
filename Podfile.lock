@@ -1,0 +1,21 @@
+PODS:
+  - WhatToWearCommonCore (1.0)
+
+DEPENDENCIES:
+  - WhatToWearCommonCore (from `https://BlairMcArthur@bitbucket.org/BlairMcArthur/whattowearcommoncore.git`)
+
+EXTERNAL SOURCES:
+  WhatToWearCommonCore:
+    :git: https://BlairMcArthur@bitbucket.org/BlairMcArthur/whattowearcommoncore.git
+
+CHECKOUT OPTIONS:
+  WhatToWearCommonCore:
+    :commit: 11506e883f9600791a7f2f0e5f438688e8b48df0
+    :git: https://BlairMcArthur@bitbucket.org/BlairMcArthur/whattowearcommoncore.git
+
+SPEC CHECKSUMS:
+  WhatToWearCommonCore: ca0fdc2d3b7ddcd8742c96f7c7fa87e069729f37
+
+PODFILE CHECKSUM: ca95628036c4f698b02ec028541ad35f7228faf1
+
+COCOAPODS: 1.4.0

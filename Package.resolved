@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "WhatToWearCommonCore",
+        "repositoryURL": "https://BlairMcArthur@bitbucket.org/BlairMcArthur/whattowearcommoncore.git",
+        "state": {
+          "branch": null,
+          "revision": "11506e883f9600791a7f2f0e5f438688e8b48df0",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
