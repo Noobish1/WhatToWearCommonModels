@@ -14,9 +14,12 @@
 		7523B07F207DDB4F003304FC /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B07B207DDB4E003304FC /* DataPoint.swift */; };
 		7523B080207DDB4F003304FC /* PrecipitationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B07C207DDB4F003304FC /* PrecipitationType.swift */; };
 		75C07BA720AE87B5008DE137 /* WhatToWearCommonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7523B066207DDA98003304FC /* WhatToWearCommonModels.framework */; };
-		75C07BB120AEBDEA008DE137 /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 75C07BB020AEBDEA008DE137 /* forecast.json */; };
-		75C07BB320AEBF06008DE137 /* forecast-bad-timezone.json in Resources */ = {isa = PBXBuildFile; fileRef = 75C07BB220AEBF06008DE137 /* forecast-bad-timezone.json */; };
 		75C07BB620AEC0C8008DE137 /* ForecastSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C07BB520AEC0C8008DE137 /* ForecastSpec.swift */; };
+		75C07BB820AEC6FE008DE137 /* HourlyForecastSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C07BB720AEC6FE008DE137 /* HourlyForecastSpec.swift */; };
+		75C07BBE20AED289008DE137 /* hourlyforecast-empty-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 75C07BBB20AECA28008DE137 /* hourlyforecast-empty-data.json */; };
+		75C07BBF20AED289008DE137 /* hourlyforecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 75C07BB920AEC741008DE137 /* hourlyforecast.json */; };
+		75C07BC020AED289008DE137 /* forecast-bad-timezone.json in Resources */ = {isa = PBXBuildFile; fileRef = 75C07BB220AEBF06008DE137 /* forecast-bad-timezone.json */; };
+		75C07BC120AED289008DE137 /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 75C07BB020AEBDEA008DE137 /* forecast.json */; };
 		DAFF1574993CA52750D7576E /* Pods_WhatToWearCommonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7EBD7F68309150D005B5EB /* Pods_WhatToWearCommonModels.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,9 @@
 		75C07BB020AEBDEA008DE137 /* forecast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = forecast.json; sourceTree = "<group>"; };
 		75C07BB220AEBF06008DE137 /* forecast-bad-timezone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "forecast-bad-timezone.json"; sourceTree = "<group>"; };
 		75C07BB520AEC0C8008DE137 /* ForecastSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastSpec.swift; sourceTree = "<group>"; };
+		75C07BB720AEC6FE008DE137 /* HourlyForecastSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastSpec.swift; sourceTree = "<group>"; };
+		75C07BB920AEC741008DE137 /* hourlyforecast.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hourlyforecast.json; sourceTree = "<group>"; };
+		75C07BBB20AECA28008DE137 /* hourlyforecast-empty-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "hourlyforecast-empty-data.json"; sourceTree = "<group>"; };
 		76DE85B71C576337E4B3C38A /* Pods-WhatToWearCommonModelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModelsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		88E02607BC779399D2935A6D /* Pods-WhatToWearCommonModelsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModelsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F7EBD7F68309150D005B5EB /* Pods_WhatToWearCommonModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,8 +169,8 @@
 		75C07BAF20AEBDEA008DE137 /* Example data */ = {
 			isa = PBXGroup;
 			children = (
-				75C07BB220AEBF06008DE137 /* forecast-bad-timezone.json */,
-				75C07BB020AEBDEA008DE137 /* forecast.json */,
+				75C07BBC20AECA2F008DE137 /* HourlyForecast */,
+				75C07BBD20AECA40008DE137 /* Forecast */,
 			);
 			name = "Example data";
 			path = "../../WhatToWear/WhatToWear/Supporting Files/Example data";
@@ -174,8 +180,27 @@
 			isa = PBXGroup;
 			children = (
 				75C07BB520AEC0C8008DE137 /* ForecastSpec.swift */,
+				75C07BB720AEC6FE008DE137 /* HourlyForecastSpec.swift */,
 			);
 			path = Specs;
+			sourceTree = "<group>";
+		};
+		75C07BBC20AECA2F008DE137 /* HourlyForecast */ = {
+			isa = PBXGroup;
+			children = (
+				75C07BBB20AECA28008DE137 /* hourlyforecast-empty-data.json */,
+				75C07BB920AEC741008DE137 /* hourlyforecast.json */,
+			);
+			path = HourlyForecast;
+			sourceTree = "<group>";
+		};
+		75C07BBD20AECA40008DE137 /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				75C07BB220AEBF06008DE137 /* forecast-bad-timezone.json */,
+				75C07BB020AEBDEA008DE137 /* forecast.json */,
+			);
+			path = Forecast;
 			sourceTree = "<group>";
 		};
 		B14BFAD318D5B23EE9675E2B /* Frameworks */ = {
@@ -292,8 +317,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75C07BB120AEBDEA008DE137 /* forecast.json in Resources */,
-				75C07BB320AEBF06008DE137 /* forecast-bad-timezone.json in Resources */,
+				75C07BC120AED289008DE137 /* forecast.json in Resources */,
+				75C07BBE20AED289008DE137 /* hourlyforecast-empty-data.json in Resources */,
+				75C07BBF20AED289008DE137 /* hourlyforecast.json in Resources */,
+				75C07BC020AED289008DE137 /* forecast-bad-timezone.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C07BB820AEC6FE008DE137 /* HourlyForecastSpec.swift in Sources */,
 				75C07BB620AEC0C8008DE137 /* ForecastSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

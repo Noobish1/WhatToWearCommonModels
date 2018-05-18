@@ -33,7 +33,7 @@ internal final class ForecastSpec: QuickSpec {
                     }
                 }
                 
-                context("when given valid JSON") {
+                context("when not given an invalid timeZone") {
                     beforeEach {
                         let path = bundle.path(forResource: "forecast", ofType: "json")!
                         
@@ -41,7 +41,7 @@ internal final class ForecastSpec: QuickSpec {
                         decoder = JSONDecoder.wtwDecoder()
                     }
                     
-                    it("should return a Forecast") {
+                    it("should not throw an error") {
                         expect {
                             try decoder.decode(Forecast.self, from: data)
                         }.toNot(
