@@ -23,7 +23,7 @@ public struct DataPoint: Codable, Equatable {
     public let humidity: Double?
     public let windBearing: Double?
     
-    private let internalPrecipitationType: PrecipitationType?
+    internal let internalPrecipitationType: PrecipitationType?
 }
 
 // MARK: computed properties

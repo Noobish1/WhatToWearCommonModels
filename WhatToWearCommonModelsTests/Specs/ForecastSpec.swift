@@ -9,7 +9,7 @@ internal final class ForecastSpec: QuickSpec {
             var bundle: Bundle!
             
             beforeEach {
-                bundle = Bundle(for: ForecastSpec.self)
+                bundle = Bundle(for: type(of: self))
             }
             
             describe("its init from decoder") {

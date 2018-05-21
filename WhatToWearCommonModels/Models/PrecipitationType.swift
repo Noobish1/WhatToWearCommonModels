@@ -1,5 +1,23 @@
 import Foundation
 
+// MARK: KnownPrecipitationType
+internal enum KnownPrecipitationType: String {
+    case rain = "rain"
+    case snow = "snow"
+    case sleet = "sleet"
+    case none = "none"
+    
+    // MARK: computed properties
+    internal var precipitationType: PrecipitationType {
+        switch self {
+            case .rain: return .rain
+            case .snow: return .snow
+            case .sleet: return .sleet
+            case .none: return .none
+        }
+    }
+}
+
 // MARK: PrecipitationType
 public enum PrecipitationType: Equatable {
     case rain
@@ -12,20 +30,21 @@ public enum PrecipitationType: Equatable {
 // MARK: RawRepresentable
 extension PrecipitationType: RawRepresentable {
     public init?(rawValue: String) {
-        switch rawValue.lowercased() {
-            case "rain": self = .rain
-            case "snow": self = .snow
-            case "sleet": self = .sleet
-            default: self = .other(rawValue)
+        guard let knownType = KnownPrecipitationType(rawValue: rawValue.lowercased()) else {
+            self = .other(rawValue)
+            
+            return
         }
+        
+        self = knownType.precipitationType
     }
     
     public var rawValue: String {
         switch self {
-            case .rain: return "rain"
-            case .snow: return "snow"
-            case .sleet: return "sleet"
-            case .none: return "none"
+            case .rain: return KnownPrecipitationType.rain.rawValue
+            case .snow: return KnownPrecipitationType.snow.rawValue
+            case .sleet: return KnownPrecipitationType.sleet.rawValue
+            case .none: return KnownPrecipitationType.none.rawValue
             case .other(let other): return other
         }
     }

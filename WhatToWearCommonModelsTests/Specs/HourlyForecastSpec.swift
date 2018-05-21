@@ -9,7 +9,7 @@ internal final class HourlyForecastSpec: QuickSpec {
             var bundle: Bundle!
             
             beforeEach {
-                bundle = Bundle(for: HourlyForecastSpec.self)
+                bundle = Bundle(for: type(of: self))
             }
             
             describe("its encoder to encoder") {
