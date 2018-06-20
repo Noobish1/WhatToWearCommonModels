@@ -1,7 +1,7 @@
 import Foundation
 import WhatToWearCommonCore
 
-public struct HourlyForecast {
+public struct HourlyForecast: Equatable {
     public let data: NonEmptyArray<DataPoint>
 }
 

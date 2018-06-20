@@ -61,7 +61,7 @@
 		7599363D20B17E130053B5DC /* DataPointSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPointSpec.swift; sourceTree = "<group>"; };
 		75C07BA220AE87B5008DE137 /* WhatToWearCommonModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearCommonModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C07BA620AE87B5008DE137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75C07BAD20AE9093008DE137 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		75C07BAD20AE9093008DE137 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		75C07BB520AEC0C8008DE137 /* ForecastSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastSpec.swift; sourceTree = "<group>"; };
 		75C07BB720AEC6FE008DE137 /* HourlyForecastSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastSpec.swift; sourceTree = "<group>"; };
 		76DE85B71C576337E4B3C38A /* Pods-WhatToWearCommonModelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModelsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests.debug.xcconfig"; sourceTree = "<group>"; };

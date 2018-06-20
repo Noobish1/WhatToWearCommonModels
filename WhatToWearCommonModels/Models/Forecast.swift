@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Forecast {
+public struct Forecast: Equatable {
     public let timeZone: TimeZone
     public let hourly: HourlyForecast
 }
