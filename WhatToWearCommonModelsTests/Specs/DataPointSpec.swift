@@ -66,6 +66,23 @@ internal final class DataPointSpec: QuickSpec {
                     }
                 }
             }
+            
+            describe("its encoded form") {
+                var dataPoint: DataPoint!
+                
+                beforeEach {
+                    let path = bundle.path(forResource: "datapoint-with-precip", ofType: "json")!
+                    let data = try! Data(contentsOf: URL(fileURLWithPath: path))
+                    let originalForecast = try! JSONDecoder.wtwDecoder().decode(DataPoint.self, from: data)
+                    
+                    let newData = try! JSONEncoder.wtwEncoder().encode(originalForecast)
+                    dataPoint = try! JSONDecoder.wtwDecoder().decode(DataPoint.self, from: newData)
+                }
+                
+                it("should be decodable back into a object") {
+                    expect(dataPoint).toNot(beNil())
+                }
+            }
         }
     }
 }

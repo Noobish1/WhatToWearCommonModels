@@ -71,6 +71,23 @@ internal final class HourlyForecastSpec: QuickSpec {
                     }
                 }
             }
+            
+            describe("its encoded form") {
+                var forecast: HourlyForecast!
+                
+                beforeEach {
+                    let path = bundle.path(forResource: "hourlyforecast", ofType: "json")!
+                    let data = try! Data(contentsOf: URL(fileURLWithPath: path))
+                    let originalForecast = try! JSONDecoder.wtwDecoder().decode(HourlyForecast.self, from: data)
+                    
+                    let newData = try! JSONEncoder.wtwEncoder().encode(originalForecast)
+                    forecast = try! JSONDecoder.wtwDecoder().decode(HourlyForecast.self, from: newData)
+                }
+                
+                it("should be decodable back into a object") {
+                    expect(forecast).toNot(beNil())
+                }
+            }
         }
     }
 }

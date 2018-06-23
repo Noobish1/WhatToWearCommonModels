@@ -71,6 +71,23 @@ internal final class ForecastSpec: QuickSpec {
                     )
                 }
             }
+            
+            describe("its encoded form") {
+                var forecast: Forecast!
+                
+                beforeEach {
+                    let path = bundle.path(forResource: "forecast", ofType: "json")!
+                    let data = try! Data(contentsOf: URL(fileURLWithPath: path))
+                    let originalForecast = try! JSONDecoder.wtwDecoder().decode(Forecast.self, from: data)
+                    
+                    let newData = try! JSONEncoder.wtwEncoder().encode(originalForecast)
+                    forecast = try! JSONDecoder.wtwDecoder().decode(Forecast.self, from: newData)
+                }
+                
+                it("should be decodable back into a object") {
+                    expect(forecast).toNot(beNil())
+                }
+            }
         }
     }
 }
