@@ -9,5 +9,5 @@ extension DataPoint: Fixturable {
         case withoutPrecip = "datapoint-without-precip"
     }
     
-    internal static var fixtures = DataPoint.Fixtures.self
+    internal static let fixtures = Fixtures.self
 }

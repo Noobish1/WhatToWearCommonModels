@@ -9,5 +9,5 @@ extension HourlyForecast: Fixturable {
         case emptyData = "hourlyforecast-empty-data"
     }
     
-    internal static var fixtures = HourlyForecast.Fixtures.self
+    internal static let fixtures = Fixtures.self
 }

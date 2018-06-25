@@ -9,5 +9,5 @@ extension Forecast: Fixturable {
         case invalidTimeZone = "forecast-bad-timezone"
     }
     
-    internal static var fixtures = Forecast.Fixtures.self
+    internal static let fixtures = Fixtures.self
 }
