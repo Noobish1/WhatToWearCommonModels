@@ -32,7 +32,7 @@ extension Forecast: Codable {
     // MARK: Encodable
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(timeZone, forKey: .timeZone)
+        try container.encode(timeZone.identifier, forKey: .timeZone)
         try container.encode(hourly, forKey: .hourly)
     }
 }

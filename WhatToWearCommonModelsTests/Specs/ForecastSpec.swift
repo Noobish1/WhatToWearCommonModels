@@ -18,9 +18,7 @@ internal final class ForecastSpec: QuickSpec {
                 
                 context("when given an invalid timeZone") {
                     beforeEach {
-                        let path = bundle.path(forResource: "forecast-bad-timezone", ofType: "json")!
-                        
-                        data = try! Data(contentsOf: URL(fileURLWithPath: path))
+                        data = Forecast.fixtures.invalidTimeZone.fixtureData(for: bundle)
                         decoder = JSONDecoder.wtwDecoder()
                     }
                     
@@ -35,9 +33,7 @@ internal final class ForecastSpec: QuickSpec {
                 
                 context("when not given an invalid timeZone") {
                     beforeEach {
-                        let path = bundle.path(forResource: "forecast", ofType: "json")!
-                        
-                        data = try! Data(contentsOf: URL(fileURLWithPath: path))
+                        data = Forecast.fixtures.valid.fixtureData(for: bundle)
                         decoder = JSONDecoder.wtwDecoder()
                     }
                     
@@ -56,10 +52,7 @@ internal final class ForecastSpec: QuickSpec {
                 var encoder: JSONEncoder!
                 
                 beforeEach {
-                    let path = bundle.path(forResource: "forecast", ofType: "json")!
-                    let data = try! Data(contentsOf: URL(fileURLWithPath: path))
-                    
-                    forecast = try! JSONDecoder.wtwDecoder().decode(Forecast.self, from: data)
+                    forecast = Forecast.fixtures.valid.object(for: bundle)
                     encoder = JSONEncoder.wtwEncoder()
                 }
                 
@@ -69,6 +62,21 @@ internal final class ForecastSpec: QuickSpec {
                     }.toNot(
                         throwError()
                     )
+                }
+            }
+            
+            describe("its encoded form") {
+                var forecast: Forecast!
+                
+                beforeEach {
+                    let originalForecast = Forecast.fixtures.valid.object(for: bundle)
+                    let newData = try! JSONEncoder.wtwEncoder().encode(originalForecast)
+                    
+                    forecast = try! JSONDecoder.wtwDecoder().decode(Forecast.self, from: newData)
+                }
+                
+                it("should be decodable back into a object") {
+                    expect(forecast).toNot(beNil())
                 }
             }
         }
