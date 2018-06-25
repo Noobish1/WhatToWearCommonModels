@@ -15,10 +15,7 @@ internal final class DataPointSpec: QuickSpec {
             
             describe("its optionalTemperature") {
                 beforeEach {
-                    let path = bundle.path(forResource: "datapoint-with-precip", ofType: "json")!
-                    let data = try! Data(contentsOf: URL(fileURLWithPath: path))
-                    
-                    dataPoint = try! JSONDecoder.wtwDecoder().decode(DataPoint.self, from: data)
+                    dataPoint = DataPoint.fixtures.valid.object(for: bundle)
                 }
                 
                 it("should return the same value as its temperature") {
@@ -28,10 +25,7 @@ internal final class DataPointSpec: QuickSpec {
             
             describe("its optionalApparentTemperature") {
                 beforeEach {
-                    let path = bundle.path(forResource: "datapoint-with-precip", ofType: "json")!
-                    let data = try! Data(contentsOf: URL(fileURLWithPath: path))
-                    
-                    dataPoint = try! JSONDecoder.wtwDecoder().decode(DataPoint.self, from: data)
+                    dataPoint = DataPoint.fixtures.valid.object(for: bundle)
                 }
                 
                 it("should return the same value as its apparentTemperature") {
@@ -42,10 +36,7 @@ internal final class DataPointSpec: QuickSpec {
             describe("its precipitationType") {
                 context("when its internalPrecipitationType is nil") {
                     beforeEach {
-                        let path = bundle.path(forResource: "datapoint-without-precip", ofType: "json")!
-                        let data = try! Data(contentsOf: URL(fileURLWithPath: path))
-                        
-                        dataPoint = try! JSONDecoder.wtwDecoder().decode(DataPoint.self, from: data)
+                        dataPoint = DataPoint.fixtures.withoutPrecip.object(for: bundle)
                     }
                     
                     it("should return none") {
@@ -55,10 +46,7 @@ internal final class DataPointSpec: QuickSpec {
                 
                 context("when its internalPrecipitationType is non-nil") {
                     beforeEach {
-                        let path = bundle.path(forResource: "datapoint-with-precip", ofType: "json")!
-                        let data = try! Data(contentsOf: URL(fileURLWithPath: path))
-                        
-                        dataPoint = try! JSONDecoder.wtwDecoder().decode(DataPoint.self, from: data)
+                        dataPoint = DataPoint.fixtures.valid.object(for: bundle)
                     }
                     
                     it("should return the internalPrecipitationType") {
@@ -71,11 +59,9 @@ internal final class DataPointSpec: QuickSpec {
                 var dataPoint: DataPoint!
                 
                 beforeEach {
-                    let path = bundle.path(forResource: "datapoint-with-precip", ofType: "json")!
-                    let data = try! Data(contentsOf: URL(fileURLWithPath: path))
-                    let originalForecast = try! JSONDecoder.wtwDecoder().decode(DataPoint.self, from: data)
+                    let originalDataPoint = DataPoint.fixtures.valid.object(for: bundle)
+                    let newData = try! JSONEncoder.wtwEncoder().encode(originalDataPoint)
                     
-                    let newData = try! JSONEncoder.wtwEncoder().encode(originalForecast)
                     dataPoint = try! JSONDecoder.wtwDecoder().decode(DataPoint.self, from: newData)
                 }
                 

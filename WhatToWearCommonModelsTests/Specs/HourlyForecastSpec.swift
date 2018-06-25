@@ -17,10 +17,7 @@ internal final class HourlyForecastSpec: QuickSpec {
                 var encoder: JSONEncoder!
                 
                 beforeEach {
-                    let path = bundle.path(forResource: "hourlyforecast", ofType: "json")!
-                    let data = try! Data(contentsOf: URL(fileURLWithPath: path))
-                    
-                    forecast = try! JSONDecoder.wtwDecoder().decode(HourlyForecast.self, from: data)
+                    forecast = HourlyForecast.fixtures.valid.object(for: bundle)
                     encoder = JSONEncoder.wtwEncoder()
                 }
                 
@@ -39,9 +36,7 @@ internal final class HourlyForecastSpec: QuickSpec {
                 
                 context("when the given data array is empty") {
                     beforeEach {
-                        let path = bundle.path(forResource: "hourlyforecast-empty-data", ofType: "json")!
-                        
-                        data = try! Data(contentsOf: URL(fileURLWithPath: path))
+                        data = HourlyForecast.fixtures.emptyData.fixtureData(for: bundle)
                         decoder = JSONDecoder.wtwDecoder()
                     }
                     
@@ -56,9 +51,7 @@ internal final class HourlyForecastSpec: QuickSpec {
                 
                 context("when the given data array is not empty") {
                     beforeEach {
-                        let path = bundle.path(forResource: "hourlyforecast", ofType: "json")!
-                        
-                        data = try! Data(contentsOf: URL(fileURLWithPath: path))
+                        data = HourlyForecast.fixtures.valid.fixtureData(for: bundle)
                         decoder = JSONDecoder.wtwDecoder()
                     }
                     
@@ -76,11 +69,9 @@ internal final class HourlyForecastSpec: QuickSpec {
                 var forecast: HourlyForecast!
                 
                 beforeEach {
-                    let path = bundle.path(forResource: "hourlyforecast", ofType: "json")!
-                    let data = try! Data(contentsOf: URL(fileURLWithPath: path))
-                    let originalForecast = try! JSONDecoder.wtwDecoder().decode(HourlyForecast.self, from: data)
-                    
+                    let originalForecast = HourlyForecast.fixtures.valid.object(for: bundle)
                     let newData = try! JSONEncoder.wtwEncoder().encode(originalForecast)
+                    
                     forecast = try! JSONDecoder.wtwDecoder().decode(HourlyForecast.self, from: newData)
                 }
                 
