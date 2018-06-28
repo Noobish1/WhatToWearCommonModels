@@ -2,10 +2,10 @@ import Foundation
 
 // MARK: KnownPrecipitationType
 internal enum KnownPrecipitationType: String {
-    case rain = "rain"
-    case snow = "snow"
-    case sleet = "sleet"
-    case none = "none"
+    case rain
+    case snow
+    case sleet
+    case none
     
     // MARK: computed properties
     internal var precipitationType: PrecipitationType {

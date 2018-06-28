@@ -29,7 +29,6 @@ extension HourlyForecast: Codable {
         let array = try container.decode([DataPoint].self, forKey: .data)
         
         guard let nonEmptyArray = NonEmptyArray(array: array) else {
-            //TODO: handle this
             throw DecodingError.emptyDataArray
         }
         

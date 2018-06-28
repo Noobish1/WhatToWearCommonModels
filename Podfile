@@ -6,9 +6,13 @@ platform :ios, '10.0'
 
 target 'WhatToWearCommonModels' do
     pod 'WhatToWearCommonCore', :git => 'https://BlairMcArthur@bitbucket.org/BlairMcArthur/whattowearcommoncore.git'
+    
+    # Debug pods
+    pod 'SwiftLint', '0.26.0', :configurations => 'Debug'
 end
 
 target 'WhatToWearCommonModelsTests' do
+    inherit! :search_paths
     pod 'Quick', '1.3.0'
     pod 'Nimble', '7.1.1'
     pod 'Fakery', '3.3.0'
