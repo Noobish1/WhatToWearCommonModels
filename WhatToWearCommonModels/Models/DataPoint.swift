@@ -5,34 +5,54 @@ public struct DataPoint: Codable, Equatable {
     private enum CodingKeys: String, CodingKey {
         case time
         case cloudCover
-        case temperature
-        case apparentTemperature
+        case rawTemperature = "temperature"
+        case rawApparentTemperature = "apparentTemperature"
         case chanceOfPrecipitation = "precipProbability"
         case internalPrecipitationType = "precipType"
-        case windGust
+        case rawWindGust = "windGust"
         case humidity
-        case windBearing
+        case rawWindBearing = "windBearing"
     }
 
     public let time: Date
     public let cloudCover: Double?
-    public let temperature: Double
-    public let apparentTemperature: Double
     public let chanceOfPrecipitation: Double?
-    public let windGust: Double?
     public let humidity: Double?
-    public let windBearing: Double?
     
+    internal let rawWindBearing: Double?
+    internal let rawApparentTemperature: Double
+    internal let rawTemperature: Double
+    internal let rawWindGust: Double?
     internal let internalPrecipitationType: PrecipitationType?
 }
 
 // MARK: computed properties
 public extension DataPoint {
-    public var optionalTemperature: Double? {
+    public var windBearing: Measurement<UnitAngle>? {
+        return rawWindBearing.map {
+            Measurement(value: $0, unit: .degrees)
+        }
+    }
+    
+    public var apparentTemperature: Measurement<UnitTemperature> {
+        return Measurement(value: rawApparentTemperature, unit: .celsius)
+    }
+    
+    public var temperature: Measurement<UnitTemperature> {
+        return Measurement(value: rawTemperature, unit: .celsius)
+    }
+    
+    public var windGust: Measurement<UnitSpeed>? {
+        return rawWindGust.map {
+            Measurement(value: $0, unit: .metersPerSecond)
+        }
+    }
+    
+    public var optionalTemperature: Measurement<UnitTemperature>? {
         return temperature
     }
     
-    public var optionalApparentTemperature: Double? {
+    public var optionalApparentTemperature: Measurement<UnitTemperature>? {
         return apparentTemperature
     }
     

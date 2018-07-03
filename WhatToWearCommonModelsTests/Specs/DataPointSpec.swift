@@ -13,6 +13,78 @@ internal final class DataPointSpec: QuickSpec {
                 bundle = Bundle(for: type(of: self))
             }
             
+            describe("its windBearing") {
+                beforeEach {
+                    dataPoint = DataPoint.fixtures.valid.object(for: bundle)
+                }
+                
+                describe("its value") {
+                    it("should be equal to its rawWindBearing") {
+                        expect(dataPoint.windBearing?.value) == dataPoint.rawWindBearing
+                    }
+                }
+                
+                describe("its unit") {
+                    it("should be degrees") {
+                        expect(dataPoint.windBearing?.unit) == .degrees
+                    }
+                }
+            }
+            
+            describe("its apparentTemperature") {
+                beforeEach {
+                    dataPoint = DataPoint.fixtures.valid.object(for: bundle)
+                }
+                
+                describe("its value") {
+                    it("should be equal to its rawApparentTemperature") {
+                        expect(dataPoint.apparentTemperature.value) == dataPoint.rawApparentTemperature
+                    }
+                }
+                
+                describe("its unit") {
+                    it("should be celsius") {
+                        expect(dataPoint.apparentTemperature.unit) == .celsius
+                    }
+                }
+            }
+            
+            describe("its temperature") {
+                beforeEach {
+                    dataPoint = DataPoint.fixtures.valid.object(for: bundle)
+                }
+                
+                describe("its value") {
+                    it("should be equal to its rawTemperature") {
+                        expect(dataPoint.temperature.value) == dataPoint.rawTemperature
+                    }
+                }
+                
+                describe("its unit") {
+                    it("should be celsius") {
+                        expect(dataPoint.temperature.unit) == .celsius
+                    }
+                }
+            }
+            
+            describe("its windGust") {
+                beforeEach {
+                    dataPoint = DataPoint.fixtures.valid.object(for: bundle)
+                }
+                
+                describe("its value") {
+                    it("should be equal to its rawWindGust") {
+                        expect(dataPoint.windGust?.value) == dataPoint.rawWindGust
+                    }
+                }
+                
+                describe("its unit") {
+                    it("should be metersPerSecond") {
+                        expect(dataPoint.windGust?.unit) == .metersPerSecond
+                    }
+                }
+            }
+            
             describe("its optionalTemperature") {
                 beforeEach {
                     dataPoint = DataPoint.fixtures.valid.object(for: bundle)
