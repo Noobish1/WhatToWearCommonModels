@@ -1,7 +1,7 @@
 import Foundation
 import WhatToWearCommonCore
 
-public enum WindDirection {
+public enum WindDirection: String, Codable {
     case north
     case south
     case east
