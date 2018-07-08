@@ -28,6 +28,10 @@ public struct DataPoint: Codable, Equatable {
 
 // MARK: computed properties
 public extension DataPoint {
+    public var windDirection: WindDirection? {
+        return WindDirection(windBearing: windBearing?.value)
+    }
+    
     public var windBearing: Measurement<UnitAngle>? {
         return rawWindBearing.map {
             Measurement(value: $0, unit: .degrees)

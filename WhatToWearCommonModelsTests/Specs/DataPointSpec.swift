@@ -13,6 +13,16 @@ internal final class DataPointSpec: QuickSpec {
                 bundle = Bundle(for: type(of: self))
             }
             
+            describe("its windDirection") {
+                beforeEach {
+                    dataPoint = DataPoint.fixtures.valid.object(for: bundle)
+                }
+                
+                it("should be derived from the dataPoints windBearing") {
+                    expect(dataPoint.windDirection) == WindDirection(windBearing: dataPoint.windBearing?.value)
+                }
+            }
+            
             describe("its windBearing") {
                 beforeEach {
                     dataPoint = DataPoint.fixtures.valid.object(for: bundle)
