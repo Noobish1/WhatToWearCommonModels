@@ -5,7 +5,7 @@ use_frameworks!
 platform :ios, '10.0'
 
 target 'WhatToWearCommonModels' do
-    pod 'WhatToWearCommonCore', :git => 'https://BlairMcArthur@bitbucket.org/BlairMcArthur/whattowearcommoncore.git', :tag => '1.4.0'
+    pod 'WhatToWearCommonCore', :git => 'git@bitbucket.org:BlairMcArthur/whattowearcommoncore.git', :tag => '1.4.0'
     
     # Debug pods
     pod 'SwiftLint', '0.26.0', :configurations => 'Debug'

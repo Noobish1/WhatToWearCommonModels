@@ -10,16 +10,16 @@ DEPENDENCIES:
   - Nimble (= 7.1.1)
   - Quick (= 1.3.0)
   - SwiftLint (= 0.26.0)
-  - WhatToWearCommonCore (from `https://BlairMcArthur@bitbucket.org/BlairMcArthur/whattowearcommoncore.git`, tag `1.4.0`)
+  - WhatToWearCommonCore (from `git@bitbucket.org:BlairMcArthur/whattowearcommoncore.git`, tag `1.4.0`)
 
 EXTERNAL SOURCES:
   WhatToWearCommonCore:
-    :git: https://BlairMcArthur@bitbucket.org/BlairMcArthur/whattowearcommoncore.git
+    :git: git@bitbucket.org:BlairMcArthur/whattowearcommoncore.git
     :tag: 1.4.0
 
 CHECKOUT OPTIONS:
   WhatToWearCommonCore:
-    :git: https://BlairMcArthur@bitbucket.org/BlairMcArthur/whattowearcommoncore.git
+    :git: git@bitbucket.org:BlairMcArthur/whattowearcommoncore.git
     :tag: 1.4.0
 
 SPEC CHECKSUMS:
@@ -29,6 +29,6 @@ SPEC CHECKSUMS:
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
   WhatToWearCommonCore: fcdc8869360b1f6556a06af4f809eea3ef10afb8
 
-PODFILE CHECKSUM: 653519950309cb8f1d4a575c1fb77bc2b9bad9bd
+PODFILE CHECKSUM: be23c1ff387206afb25b3b2f60be22eecf39139a
 
 COCOAPODS: 1.4.0
