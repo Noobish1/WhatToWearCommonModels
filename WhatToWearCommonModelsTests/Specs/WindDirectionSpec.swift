@@ -1,6 +1,7 @@
 import Quick
 import Nimble
 import Fakery
+import WhatToWearCommonCore
 @testable import WhatToWearCommonModels
 
 internal final class WindDirectionSpec: QuickSpec {
@@ -131,6 +132,18 @@ internal final class WindDirectionSpec: QuickSpec {
                             }
                         }
                     }
+                }
+            }
+            
+            describe("its allDirections") {
+                var expectedArray: NonEmptyArray<WindDirection>!
+                
+                beforeEach {
+                    expectedArray = NonEmptyArray(elements: .north, .south, .east, .west, .northEast, .northWest, .southEast, .southWest)
+                }
+                
+                it("should return a nonemptyarray of all the directions") {
+                    expect(WindDirection.allDirections) == expectedArray
                 }
             }
             

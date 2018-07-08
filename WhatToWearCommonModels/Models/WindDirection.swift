@@ -29,7 +29,7 @@ public enum WindDirection: String, Codable {
     }
     
     // MARK: static compued properties
-    private static var allDirections: NonEmptyArray<WindDirection> {
+    public static var allDirections: NonEmptyArray<WindDirection> {
         return NonEmptyArray(
             elements: .north, .south, .east, .west,
             .northEast, .northWest, .southEast, .southWest
