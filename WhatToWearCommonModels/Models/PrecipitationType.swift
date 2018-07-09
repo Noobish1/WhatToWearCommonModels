@@ -1,4 +1,5 @@
 import Foundation
+import WhatToWearCommonCore
 
 // MARK: KnownPrecipitationType
 internal enum KnownPrecipitationType: String {
@@ -52,3 +53,10 @@ extension PrecipitationType: RawRepresentable {
 
 // MARK: Codable
 extension PrecipitationType: Codable {}
+
+// MARK: StringRepresentable
+extension PrecipitationType: StringRepresentable {
+    public var stringRepresentation: String {
+        return rawValue.capitalized
+    }
+}

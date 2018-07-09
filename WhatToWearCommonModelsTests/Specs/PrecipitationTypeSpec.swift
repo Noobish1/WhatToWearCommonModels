@@ -13,18 +13,18 @@ internal final class PrecipitationTypeSpec: QuickSpec {
             }
             
             describe("its init with rawValue") {
-                var precipitationType: PrecipitationType!
+                var precipType: PrecipitationType!
                 
                 context("when the given rawValue matches a known precipitation type") {
                     var knownType: KnownPrecipitationType!
                     
                     beforeEach {
                         knownType = KnownPrecipitationType.rain
-                        precipitationType = PrecipitationType(rawValue: knownType.rawValue)
+                        precipType = PrecipitationType(rawValue: knownType.rawValue)
                     }
                     
                     it("should return the known precipitation type") {
-                        expect(precipitationType) == knownType.precipitationType
+                        expect(precipType) == knownType.precipitationType
                     }
                 }
                 
@@ -33,51 +33,113 @@ internal final class PrecipitationTypeSpec: QuickSpec {
                     
                     beforeEach {
                         rawValue = faker.lorem.characters()
-                        precipitationType = PrecipitationType(rawValue: rawValue)
+                        precipType = PrecipitationType(rawValue: rawValue)
                     }
                     
                     it("should return other with the rawValue as its associated value") {
-                        expect(precipitationType) == .other(rawValue)
+                        expect(precipType) == .other(rawValue)
+                    }
+                }
+            }
+
+            context("when it is rain") {
+                var precipType: PrecipitationType!
+                
+                beforeEach {
+                    precipType = .rain
+                }
+                
+                describe("its rawValue") {
+                    it("should return the same rawValue as KnownPrecipitationType.rain") {
+                        expect(precipType.rawValue) == KnownPrecipitationType.rain.rawValue
+                    }
+                }
+                
+                describe("its stringRepresentation") {
+                    it("should be Rain") {
+                        expect(precipType.stringRepresentation) == NSLocalizedString("Rain", comment: "")
+                    }
+                }
+            }
+
+            context("when it is snow") {
+                var precipType: PrecipitationType!
+                
+                beforeEach {
+                    precipType = .snow
+                }
+                
+                describe("its rawValue") {
+                    it("should return the same rawValue as KnownPrecipitationType.snow") {
+                        expect(precipType.rawValue) == KnownPrecipitationType.snow.rawValue
+                    }
+                }
+                
+                describe("its stringRepresentation") {
+                    it("should be Snow") {
+                        expect(precipType.stringRepresentation) == NSLocalizedString("Snow", comment: "")
                     }
                 }
             }
             
-            describe("its rawValue") {
-                context("when it is rain") {
-                    it("should return the same rawValue as KnownPrecipitationType.rain") {
-                        expect(PrecipitationType.rain.rawValue) == KnownPrecipitationType.rain.rawValue
-                    }
+            context("when it is sleet") {
+                var precipType: PrecipitationType!
+                
+                beforeEach {
+                    precipType = .sleet
                 }
                 
-                context("when it is snow") {
-                    it("should return the same rawValue as KnownPrecipitationType.snow") {
-                        expect(PrecipitationType.snow.rawValue) == KnownPrecipitationType.snow.rawValue
-                    }
-                }
-                
-                context("when it is sleet") {
+                describe("its rawValue") {
                     it("should return the same rawValue as KnownPrecipitationType.sleet") {
-                        expect(PrecipitationType.sleet.rawValue) == KnownPrecipitationType.sleet.rawValue
+                        expect(precipType.rawValue) == KnownPrecipitationType.sleet.rawValue
                     }
                 }
                 
-                context("when it is none") {
+                describe("its stringRepresentation") {
+                    it("should be Sleet") {
+                        expect(precipType.stringRepresentation) == NSLocalizedString("Sleet", comment: "")
+                    }
+                }
+            }
+            
+            context("when it is none") {
+                var precipType: PrecipitationType!
+                
+                beforeEach {
+                    precipType = PrecipitationType.none
+                }
+                
+                describe("its rawValue") {
                     it("should return the same rawValue as KnownPrecipitationType.none") {
-                        expect(PrecipitationType.none.rawValue) == KnownPrecipitationType.none.rawValue
+                        expect(precipType.rawValue) == KnownPrecipitationType.none.rawValue
                     }
                 }
                 
-                context("when it is other") {
-                    var rawValue: String!
-                    var precipitationType: PrecipitationType!
-                    
-                    beforeEach {
-                        rawValue = faker.lorem.characters()
-                        precipitationType = .other(rawValue)
+                describe("its stringRepresentation") {
+                    it("should be None") {
+                        expect(precipType.stringRepresentation) == NSLocalizedString("None", comment: "")
                     }
-                    
+                }
+            }
+            
+            context("when it is other") {
+                var rawValue: String!
+                var precipitationType: PrecipitationType!
+                
+                beforeEach {
+                    rawValue = faker.lorem.characters()
+                    precipitationType = .other(rawValue)
+                }
+                
+                describe("its rawValue") {
                     it("should return other with the rawValue as the associated value") {
                         expect(precipitationType.rawValue) == rawValue
+                    }
+                }
+                
+                describe("its stringRepresentation") {
+                    it("should be the capitalized version of its rawValue") {
+                        expect(precipitationType.stringRepresentation) == rawValue.capitalized
                     }
                 }
             }

@@ -1,6 +1,7 @@
 import Foundation
 import WhatToWearCommonCore
 
+// MARK: WindDirection
 public enum WindDirection: String, Codable {
     case north
     case south
@@ -71,6 +72,22 @@ public enum WindDirection: String, Codable {
             case .northWest: return "↖"
             case .southEast: return "↘"
             case .southWest: return "↙"
+        }
+    }
+}
+
+// MARK: StringRepresentable
+extension WindDirection: StringRepresentable {
+    public var stringRepresentation: String {
+        switch self {
+            case .north: return NSLocalizedString("North", comment: "")
+            case .south: return NSLocalizedString("South", comment: "")
+            case .east: return NSLocalizedString("East", comment: "")
+            case .west: return NSLocalizedString("West", comment: "")
+            case .northEast: return NSLocalizedString("North East", comment: "")
+            case .northWest: return NSLocalizedString("North West", comment: "")
+            case .southEast: return NSLocalizedString("South East", comment: "")
+            case .southWest: return NSLocalizedString("South West", comment: "")
         }
     }
 }

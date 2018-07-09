@@ -146,53 +146,163 @@ internal final class WindDirectionSpec: QuickSpec {
                     expect(WindDirection.allDirections) == expectedArray
                 }
             }
-            
-            describe("its arrowString") {
-                context("when north") {
+
+            context("when it is north") {
+                var direction: WindDirection!
+                
+                beforeEach {
+                    direction = .north
+                }
+                
+                describe("its arrowString") {
                     it("should return a up arrow") {
-                        expect(WindDirection.north.arrowString) == "↑"
+                        expect(direction.arrowString) == "↑"
                     }
                 }
                 
-                context("when south") {
+                describe("its stringRepresentation") {
+                    it("should be North") {
+                        expect(direction.stringRepresentation) == NSLocalizedString("North", comment: "")
+                    }
+                }
+            }
+            
+            context("when south") {
+                var direction: WindDirection!
+                
+                beforeEach {
+                    direction = .south
+                }
+                
+                describe("its arrowString") {
                     it("should return a down arrow") {
-                        expect(WindDirection.south.arrowString) == "↓"
+                        expect(direction.arrowString) == "↓"
                     }
                 }
                 
-                context("when east") {
+                describe("its stringRepresentation") {
+                    it("should be South") {
+                        expect(direction.stringRepresentation) == NSLocalizedString("South", comment: "")
+                    }
+                }
+            }
+            
+            context("when east") {
+                var direction: WindDirection!
+                
+                beforeEach {
+                    direction = .east
+                }
+                
+                describe("its arrowString") {
                     it("should return a right pointing arrow") {
-                        expect(WindDirection.east.arrowString) == "→"
+                        expect(direction.arrowString) == "→"
                     }
                 }
                 
-                context("when west") {
+                describe("its stringRepresentation") {
+                    it("should be East") {
+                        expect(direction.stringRepresentation) == NSLocalizedString("East", comment: "")
+                    }
+                }
+            }
+            
+            context("when west") {
+                var direction: WindDirection!
+                
+                beforeEach {
+                    direction = .west
+                }
+                
+                describe("its arrowString") {
                     it("should return a left pointing arrow") {
-                        expect(WindDirection.west.arrowString) == "←"
+                        expect(direction.arrowString) == "←"
                     }
                 }
                 
-                context("when north east") {
+                describe("its stringRepresentation") {
+                    it("should be West") {
+                        expect(direction.stringRepresentation) == NSLocalizedString("West", comment: "")
+                    }
+                }
+            }
+            
+            context("when north east") {
+                var direction: WindDirection!
+                
+                beforeEach {
+                    direction = .northEast
+                }
+                
+                describe("its arrowString") {
                     it("should return a diagonal top right pointing arrow") {
-                        expect(WindDirection.northEast.arrowString) == "↗"
+                        expect(direction.arrowString) == "↗"
                     }
                 }
                 
-                context("when north west") {
+                describe("its stringRepresentation") {
+                    it("should be North East") {
+                        expect(direction.stringRepresentation) == NSLocalizedString("North East", comment: "")
+                    }
+                }
+            }
+            
+            context("when north west") {
+                var direction: WindDirection!
+                
+                beforeEach {
+                    direction = .northWest
+                }
+                
+                describe("its arrowString") {
                     it("should return a diagonal top left pointing arrow") {
-                        expect(WindDirection.northWest.arrowString) == "↖"
+                        expect(direction.arrowString) == "↖"
                     }
                 }
                 
-                context("when south east") {
+                describe("its stringRepresentation") {
+                    it("should be North West") {
+                        expect(direction.stringRepresentation) == NSLocalizedString("North West", comment: "")
+                    }
+                }
+            }
+            
+            context("when south east") {
+                var direction: WindDirection!
+                
+                beforeEach {
+                    direction = .southEast
+                }
+                
+                describe("its arrowString") {
                     it("should return a diagonal bottom right pointing arrow") {
-                        expect(WindDirection.southEast.arrowString) == "↘"
+                        expect(direction.arrowString) == "↘"
                     }
                 }
                 
-                context("when south west") {
+                describe("its stringRepresentation") {
+                    it("should be South East") {
+                        expect(direction.stringRepresentation) == NSLocalizedString("South East", comment: "")
+                    }
+                }
+            }
+
+            context("when south west") {
+                var direction: WindDirection!
+                
+                beforeEach {
+                    direction = .southWest
+                }
+                
+                describe("its arrowString") {
                     it("should return a diagonal bottom left pointing arrow") {
-                        expect(WindDirection.southWest.arrowString) == "↙"
+                        expect(direction.arrowString) == "↙"
+                    }
+                }
+                
+                describe("its stringRepresentation") {
+                    it("should be South West") {
+                        expect(direction.stringRepresentation) == NSLocalizedString("South West", comment: "")
                     }
                 }
             }
