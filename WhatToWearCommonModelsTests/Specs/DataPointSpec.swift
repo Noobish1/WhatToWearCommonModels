@@ -115,28 +115,6 @@ internal final class DataPointSpec: QuickSpec {
                 }
             }
             
-            describe("its precipitationType") {
-                context("when its internalPrecipitationType is nil") {
-                    beforeEach {
-                        dataPoint = DataPoint.fixtures.withoutPrecip.object(for: bundle)
-                    }
-                    
-                    it("should return none") {
-                        expect(dataPoint.precipitationType) == PrecipitationType.none
-                    }
-                }
-                
-                context("when its internalPrecipitationType is non-nil") {
-                    beforeEach {
-                        dataPoint = DataPoint.fixtures.valid.object(for: bundle)
-                    }
-                    
-                    it("should return the internalPrecipitationType") {
-                        expect(dataPoint.precipitationType) == dataPoint.internalPrecipitationType
-                    }
-                }
-            }
-            
             describe("its encoded form") {
                 var dataPoint: DataPoint!
                 

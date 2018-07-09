@@ -8,7 +8,7 @@ public struct DataPoint: Codable, Equatable {
         case rawTemperature = "temperature"
         case rawApparentTemperature = "apparentTemperature"
         case chanceOfPrecipitation = "precipProbability"
-        case internalPrecipitationType = "precipType"
+        case precipitationType = "precipType"
         case rawWindGust = "windGust"
         case humidity
         case rawWindBearing = "windBearing"
@@ -18,12 +18,12 @@ public struct DataPoint: Codable, Equatable {
     public let cloudCover: Double?
     public let chanceOfPrecipitation: Double?
     public let humidity: Double?
+    public let precipitationType: PrecipitationType?
     
     internal let rawWindBearing: Double?
     internal let rawApparentTemperature: Double
     internal let rawTemperature: Double
     internal let rawWindGust: Double?
-    internal let internalPrecipitationType: PrecipitationType?
 }
 
 // MARK: computed properties
@@ -58,9 +58,5 @@ public extension DataPoint {
     
     public var optionalApparentTemperature: Measurement<UnitTemperature>? {
         return apparentTemperature
-    }
-    
-    public var precipitationType: PrecipitationType {
-        return internalPrecipitationType ?? .none
     }
 }
