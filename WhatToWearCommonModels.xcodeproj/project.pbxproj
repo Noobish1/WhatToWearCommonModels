@@ -19,8 +19,6 @@
 		75371BDD20C4F1D800A62482 /* datapoint-without-precip.json in Resources */ = {isa = PBXBuildFile; fileRef = 75371BD620C4F1D800A62482 /* datapoint-without-precip.json */; };
 		75371BDE20C4F1D800A62482 /* hourlyforecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 75371BD820C4F1D800A62482 /* hourlyforecast.json */; };
 		75371BDF20C4F1D800A62482 /* hourlyforecast-empty-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 75371BD920C4F1D800A62482 /* hourlyforecast-empty-data.json */; };
-		758A1DDB20E09DB400589C3B /* Fixturable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758A1DDA20E09DB400589C3B /* Fixturable.swift */; };
-		758A1DDD20E09DDE00589C3B /* FixtureProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758A1DDC20E09DDE00589C3B /* FixtureProtocol.swift */; };
 		758A1DE020E09E4B00589C3B /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758A1DDF20E09E4B00589C3B /* DataPoint.swift */; };
 		758A1DE220E09F1900589C3B /* HourlyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758A1DE120E09F1900589C3B /* HourlyForecast.swift */; };
 		758A1DE420E09FCC00589C3B /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758A1DE320E09FCC00589C3B /* Forecast.swift */; };
@@ -64,8 +62,6 @@
 		75371BD620C4F1D800A62482 /* datapoint-without-precip.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "datapoint-without-precip.json"; sourceTree = "<group>"; };
 		75371BD820C4F1D800A62482 /* hourlyforecast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hourlyforecast.json; sourceTree = "<group>"; };
 		75371BD920C4F1D800A62482 /* hourlyforecast-empty-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "hourlyforecast-empty-data.json"; sourceTree = "<group>"; };
-		758A1DDA20E09DB400589C3B /* Fixturable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixturable.swift; sourceTree = "<group>"; };
-		758A1DDC20E09DDE00589C3B /* FixtureProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureProtocol.swift; sourceTree = "<group>"; };
 		758A1DDF20E09E4B00589C3B /* DataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPoint.swift; sourceTree = "<group>"; };
 		758A1DE120E09F1900589C3B /* HourlyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecast.swift; sourceTree = "<group>"; };
 		758A1DE320E09FCC00589C3B /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
@@ -73,7 +69,7 @@
 		7599363D20B17E130053B5DC /* DataPointSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPointSpec.swift; sourceTree = "<group>"; };
 		75C07BA220AE87B5008DE137 /* WhatToWearCommonModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearCommonModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C07BA620AE87B5008DE137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75C07BAD20AE9093008DE137 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		75C07BAD20AE9093008DE137 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		75C07BB520AEC0C8008DE137 /* ForecastSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastSpec.swift; sourceTree = "<group>"; };
 		75C07BB720AEC6FE008DE137 /* HourlyForecastSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastSpec.swift; sourceTree = "<group>"; };
 		75E4F2B620F2009600EB5DF0 /* WindDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindDirection.swift; sourceTree = "<group>"; };
@@ -218,15 +214,6 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
-		758A1DD920E09D3800589C3B /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				758A1DDA20E09DB400589C3B /* Fixturable.swift */,
-				758A1DDC20E09DDE00589C3B /* FixtureProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		758A1DDE20E09E3400589C3B /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,7 +227,6 @@
 		75C07BA320AE87B5008DE137 /* WhatToWearCommonModelsTests */ = {
 			isa = PBXGroup;
 			children = (
-				758A1DD920E09D3800589C3B /* Protocols */,
 				75551F5120DE20EE00206B75 /* Objects */,
 				75C07BB420AEC0B4008DE137 /* Specs */,
 				75C07BAE20AEB9E3008DE137 /* Supporting Files */,
@@ -303,7 +289,6 @@
 				7523B064207DDA98003304FC /* Resources */,
 				75FAA03520E4A3860083AC58 /* SwiftLint autocorrect */,
 				75FAA03620E4A3E10083AC58 /* SwiftLint lint */,
-				63EEE24D034A75630DDA6BD5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -323,7 +308,6 @@
 				75C07B9F20AE87B5008DE137 /* Frameworks */,
 				75C07BA020AE87B5008DE137 /* Resources */,
 				5A630BF4AED276FF0D6FC7CB /* [CP] Embed Pods Frameworks */,
-				21DD7604E328A002C2A046D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -415,21 +399,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		21DD7604E328A002C2A046D4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5A630BF4AED276FF0D6FC7CB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,36 +406,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/WhatToWearCommonCore/WhatToWearCommonCore.framework",
 				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-				"${BUILT_PRODUCTS_DIR}/WhatToWearCommonCore/WhatToWearCommonCore.framework",
+				"${BUILT_PRODUCTS_DIR}/WhatToWearCommonTesting/WhatToWearCommonTesting.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WhatToWearCommonCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WhatToWearCommonCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WhatToWearCommonTesting.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		63EEE24D034A75630DDA6BD5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhatToWearCommonModels/Pods-WhatToWearCommonModels-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		75FAA03520E4A3860083AC58 /* SwiftLint autocorrect */ = {
@@ -538,12 +494,10 @@
 				7599363C20B16FDB0053B5DC /* PrecipitationTypeSpec.swift in Sources */,
 				7599363E20B17E130053B5DC /* DataPointSpec.swift in Sources */,
 				75C07BB820AEC6FE008DE137 /* HourlyForecastSpec.swift in Sources */,
-				758A1DDD20E09DDE00589C3B /* FixtureProtocol.swift in Sources */,
 				758A1DE420E09FCC00589C3B /* Forecast.swift in Sources */,
 				75C07BB620AEC0C8008DE137 /* ForecastSpec.swift in Sources */,
 				758A1DE220E09F1900589C3B /* HourlyForecast.swift in Sources */,
 				758A1DE020E09E4B00589C3B /* DataPoint.swift in Sources */,
-				758A1DDB20E09DB400589C3B /* Fixturable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,7 @@ internal final class HourlyForecastSpec: QuickSpec {
                 var encoder: JSONEncoder!
                 
                 beforeEach {
-                    forecast = HourlyForecast.fixtures.valid.object(for: bundle)
+                    forecast = try! HourlyForecast.fixtures.valid.object(for: bundle)
                     encoder = JSONEncoder.wtwEncoder()
                 }
                 
@@ -36,7 +36,7 @@ internal final class HourlyForecastSpec: QuickSpec {
                 
                 context("when the given data array is empty") {
                     beforeEach {
-                        data = HourlyForecast.fixtures.emptyData.fixtureData(for: bundle)
+                        data = try! HourlyForecast.fixtures.emptyData.fixtureData(for: bundle)
                         decoder = JSONDecoder.wtwDecoder()
                     }
                     
@@ -51,7 +51,7 @@ internal final class HourlyForecastSpec: QuickSpec {
                 
                 context("when the given data array is not empty") {
                     beforeEach {
-                        data = HourlyForecast.fixtures.valid.fixtureData(for: bundle)
+                        data = try! HourlyForecast.fixtures.valid.fixtureData(for: bundle)
                         decoder = JSONDecoder.wtwDecoder()
                     }
                     
@@ -69,7 +69,7 @@ internal final class HourlyForecastSpec: QuickSpec {
                 var forecast: HourlyForecast!
                 
                 beforeEach {
-                    let originalForecast = HourlyForecast.fixtures.valid.object(for: bundle)
+                    let originalForecast = try! HourlyForecast.fixtures.valid.object(for: bundle)
                     let newData = try! JSONEncoder.wtwEncoder().encode(originalForecast)
                     
                     forecast = try! JSONDecoder.wtwDecoder().decode(HourlyForecast.self, from: newData)

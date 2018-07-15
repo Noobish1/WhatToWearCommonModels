@@ -15,7 +15,7 @@ internal final class DataPointSpec: QuickSpec {
             
             describe("its windDirection") {
                 beforeEach {
-                    dataPoint = DataPoint.fixtures.valid.object(for: bundle)
+                    dataPoint = try! DataPoint.fixtures.valid.object(for: bundle)
                 }
                 
                 it("should be derived from the dataPoints windBearing") {
@@ -25,7 +25,7 @@ internal final class DataPointSpec: QuickSpec {
             
             describe("its windBearing") {
                 beforeEach {
-                    dataPoint = DataPoint.fixtures.valid.object(for: bundle)
+                    dataPoint = try! DataPoint.fixtures.valid.object(for: bundle)
                 }
                 
                 describe("its value") {
@@ -43,7 +43,7 @@ internal final class DataPointSpec: QuickSpec {
             
             describe("its apparentTemperature") {
                 beforeEach {
-                    dataPoint = DataPoint.fixtures.valid.object(for: bundle)
+                    dataPoint = try! DataPoint.fixtures.valid.object(for: bundle)
                 }
                 
                 describe("its value") {
@@ -61,7 +61,7 @@ internal final class DataPointSpec: QuickSpec {
             
             describe("its temperature") {
                 beforeEach {
-                    dataPoint = DataPoint.fixtures.valid.object(for: bundle)
+                    dataPoint = try! DataPoint.fixtures.valid.object(for: bundle)
                 }
                 
                 describe("its value") {
@@ -79,7 +79,7 @@ internal final class DataPointSpec: QuickSpec {
             
             describe("its windGust") {
                 beforeEach {
-                    dataPoint = DataPoint.fixtures.valid.object(for: bundle)
+                    dataPoint = try! DataPoint.fixtures.valid.object(for: bundle)
                 }
                 
                 describe("its value") {
@@ -97,7 +97,7 @@ internal final class DataPointSpec: QuickSpec {
             
             describe("its optionalTemperature") {
                 beforeEach {
-                    dataPoint = DataPoint.fixtures.valid.object(for: bundle)
+                    dataPoint = try! DataPoint.fixtures.valid.object(for: bundle)
                 }
                 
                 it("should return the same value as its temperature") {
@@ -107,7 +107,7 @@ internal final class DataPointSpec: QuickSpec {
             
             describe("its optionalApparentTemperature") {
                 beforeEach {
-                    dataPoint = DataPoint.fixtures.valid.object(for: bundle)
+                    dataPoint = try! DataPoint.fixtures.valid.object(for: bundle)
                 }
                 
                 it("should return the same value as its apparentTemperature") {
@@ -119,7 +119,7 @@ internal final class DataPointSpec: QuickSpec {
                 var dataPoint: DataPoint!
                 
                 beforeEach {
-                    let originalDataPoint = DataPoint.fixtures.valid.object(for: bundle)
+                    let originalDataPoint = try! DataPoint.fixtures.valid.object(for: bundle)
                     let newData = try! JSONEncoder.wtwEncoder().encode(originalDataPoint)
                     
                     dataPoint = try! JSONDecoder.wtwDecoder().decode(DataPoint.self, from: newData)

@@ -16,4 +16,5 @@ target 'WhatToWearCommonModelsTests' do
     pod 'Quick', '1.3.0'
     pod 'Nimble', '7.1.1'
     pod 'Fakery', '3.3.0'
+    pod 'WhatToWearCommonTesting', :git => 'git@bitbucket.org:BlairMcArthur/whattowearcommontesting.git', :tag => '1.0.0'
 end

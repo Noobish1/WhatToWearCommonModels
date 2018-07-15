@@ -1,13 +1,14 @@
 import Foundation
 import WhatToWearCommonModels
+import WhatToWearCommonTesting
 
 extension DataPoint: Fixturable {
-    internal enum Fixtures: String, FixtureProtocol {
-        typealias EnclosingType = DataPoint
+    public enum Fixtures: String, FixtureProtocol {
+        public typealias EnclosingType = DataPoint
         
         case valid = "datapoint-with-precip"
         case withoutPrecip = "datapoint-without-precip"
     }
     
-    internal static let fixtures = Fixtures.self
+    public static let fixtures = Fixtures.self
 }
