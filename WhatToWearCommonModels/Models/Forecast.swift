@@ -1,24 +1,25 @@
 import Foundation
+import WhatToWearCommonCore
 
 public struct Forecast: Equatable {
     public let timeZone: TimeZone
     public let hourly: HourlyForecast
 }
 
-extension Forecast: Codable {
+extension Forecast: ContainerCodable {
     internal enum DecodingError: Error {
         case invalidTimeZone
     }
     
-    internal enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, ContainerCodingKey {
         case timeZone = "timezone"
         case hourly
+        
+        public static let allValues: [CodingKeys] = [.timeZone, .hourly]
     }
     
-    // MARK: Decodable
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        
+    // MARK: ContainerDecodable
+    public init(from container: KeyedDecodingContainer<CodingKeys>) throws {
         let timeZoneIdentifier = try container.decode(String.self, forKey: .timeZone)
         
         guard let timeZone = TimeZone(identifier: timeZoneIdentifier) else {
@@ -29,10 +30,11 @@ extension Forecast: Codable {
         self.hourly = try container.decode(HourlyForecast.self, forKey: .hourly)
     }
     
-    // MARK: Encodable
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(timeZone.identifier, forKey: .timeZone)
-        try container.encode(hourly, forKey: .hourly)
+    // MARK: ContainerEncodable
+    public func encodeValue(forKey key: CodingKeys, in container: inout KeyedEncodingContainer<CodingKeys>) throws {
+        switch key {
+            case .timeZone: try container.encode(timeZone.identifier, forKey: key)
+            case .hourly: try container.encode(hourly, forKey: .hourly)
+        }
     }
 }
