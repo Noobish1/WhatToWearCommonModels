@@ -3,14 +3,14 @@ import WhatToWearCommonCore
 
 // MARK: WindDirection
 public enum WindDirection: String, Codable {
-    case north
-    case south
-    case east
-    case west
-    case northEast
-    case northWest
-    case southEast
-    case southWest
+    case north = "north"
+    case south = "south"
+    case east = "east"
+    case west = "west"
+    case northEast = "northEast"
+    case northWest = "northWest"
+    case southEast = "southEast"
+    case southWest = "southWest"
     
     // MARK: init
     public init?(windBearing: Double?) {

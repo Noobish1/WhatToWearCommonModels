@@ -3,14 +3,14 @@ import Foundation
 // MARK: DataPoint
 public struct DataPoint: Codable, Equatable {
     private enum CodingKeys: String, CodingKey {
-        case time
-        case cloudCover
+        case time = "time"
+        case cloudCover = "cloudCover"
         case rawTemperature = "temperature"
         case rawApparentTemperature = "apparentTemperature"
         case chanceOfPrecipitation = "precipProbability"
         case precipitationType = "precipType"
         case rawWindGust = "windGust"
-        case humidity
+        case humidity = "humidity"
         case rawWindBearing = "windBearing"
     }
 

@@ -13,7 +13,7 @@ extension Forecast: ContainerCodable {
     
     public enum CodingKeys: String, ContainerCodingKey {
         case timeZone = "timezone"
-        case hourly
+        case hourly = "hourly"
         
         public static let allValues: [CodingKeys] = [.timeZone, .hourly]
     }

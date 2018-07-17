@@ -3,9 +3,9 @@ import WhatToWearCommonCore
 
 // MARK: PrecipitationType
 public enum PrecipitationType: String, Equatable {
-    case rain
-    case snow
-    case sleet
+    case rain = "rain"
+    case snow = "snow"
+    case sleet = "sleet"
 }
 
 // MARK: Codable
