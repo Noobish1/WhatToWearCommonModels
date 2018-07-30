@@ -12,6 +12,11 @@ public struct DataPoint: Codable, Equatable {
         case rawWindGust = "windGust"
         case humidity = "humidity"
         case rawWindBearing = "windBearing"
+        case rawDewPoint = "dewPoint"
+        case rawPrecipAccumulation = "precipAccumulation"
+        case rawPressure = "pressure"
+        case uvIndex = "uvIndex"
+        case rawVisibility = "visibility"
     }
 
     public let time: Date
@@ -19,15 +24,44 @@ public struct DataPoint: Codable, Equatable {
     public let chanceOfPrecipitation: Double?
     public let humidity: Double?
     public let precipitationType: PrecipitationType?
+    public let uvIndex: Double?
     
     internal let rawWindBearing: Double?
     internal let rawApparentTemperature: Double
     internal let rawTemperature: Double
     internal let rawWindGust: Double?
+    internal let rawDewPoint: Double?
+    internal let rawPrecipAccumulation: Double?
+    internal let rawPressure: Double?
+    internal let rawVisibility: Double?
 }
 
 // MARK: computed properties
 public extension DataPoint {
+    public var visibility: Measurement<UnitLength>? {
+        return rawVisibility.map {
+            Measurement(value: $0, unit: .kilometers)
+        }
+    }
+    
+    public var pressure: Measurement<UnitPressure>? {
+        return rawPressure.map {
+            Measurement(value: $0, unit: .hectopascals)
+        }
+    }
+    
+    public var precipAccumulation: Measurement<UnitLength>? {
+        return rawPrecipAccumulation.map {
+            Measurement(value: $0, unit: .centimeters)
+        }
+    }
+    
+    public var dewPoint: Measurement<UnitTemperature>? {
+        return rawDewPoint.map {
+            Measurement(value: $0, unit: .celsius)
+        }
+    }
+    
     public var windDirection: WindDirection? {
         return WindDirection(windBearing: windBearing?.value)
     }

@@ -5,6 +5,7 @@
 "precipType": "rain",
 "precipIntensity": 0,
 "precipProbability": 0.5,
+"precipAccumulation": 2,
 "temperature": 16.37,
 "apparentTemperature": 16.37,
 "dewPoint": 14.03,

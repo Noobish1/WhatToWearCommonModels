@@ -77,6 +77,78 @@ internal final class DataPointSpec: QuickSpec {
                 }
             }
             
+            describe("its dewPoint") {
+                beforeEach {
+                    dataPoint = try! DataPoint.fixtures.valid.object(for: bundle)
+                }
+                
+                describe("its value") {
+                    it("should be equal to its rawDewPoint") {
+                        expect(dataPoint.dewPoint?.value) == dataPoint.rawDewPoint
+                    }
+                }
+                
+                describe("its unit") {
+                    it("should be metersPerSecond") {
+                        expect(dataPoint.dewPoint?.unit) == .celsius
+                    }
+                }
+            }
+            
+            describe("its precipAccumulation") {
+                beforeEach {
+                    dataPoint = try! DataPoint.fixtures.valid.object(for: bundle)
+                }
+                
+                describe("its value") {
+                    it("should be equal to its rawPrecipAccumulation") {
+                        expect(dataPoint.precipAccumulation?.value) == dataPoint.rawPrecipAccumulation
+                    }
+                }
+                
+                describe("its unit") {
+                    it("should be centimeters") {
+                        expect(dataPoint.precipAccumulation?.unit) == .centimeters
+                    }
+                }
+            }
+            
+            describe("its pressure") {
+                beforeEach {
+                    dataPoint = try! DataPoint.fixtures.valid.object(for: bundle)
+                }
+                
+                describe("its value") {
+                    it("should be equal to its rawPressure") {
+                        expect(dataPoint.pressure?.value) == dataPoint.rawPressure
+                    }
+                }
+                
+                describe("its unit") {
+                    it("should be hectopascals") {
+                        expect(dataPoint.pressure?.unit) == .hectopascals
+                    }
+                }
+            }
+            
+            describe("its visibility") {
+                beforeEach {
+                    dataPoint = try! DataPoint.fixtures.valid.object(for: bundle)
+                }
+                
+                describe("its value") {
+                    it("should be equal to its rawVisibility") {
+                        expect(dataPoint.visibility?.value) == dataPoint.rawVisibility
+                    }
+                }
+                
+                describe("its unit") {
+                    it("should be metersPerSecond") {
+                        expect(dataPoint.visibility?.unit) == .kilometers
+                    }
+                }
+            }
+            
             describe("its windGust") {
                 beforeEach {
                     dataPoint = try! DataPoint.fixtures.valid.object(for: bundle)
