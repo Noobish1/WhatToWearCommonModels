@@ -1,6 +1,5 @@
 import Quick
 import Nimble
-import Fakery
 @testable import WhatToWearCommonModels
 
 internal final class PrecipitationTypeSpec: QuickSpec {

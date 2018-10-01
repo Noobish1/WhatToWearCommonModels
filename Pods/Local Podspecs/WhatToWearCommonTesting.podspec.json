@@ -1,6 +1,6 @@
 {
   "name": "WhatToWearCommonTesting",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "summary": "Common testing files for both WhatToWear and WhatToWearBackend",
   "homepage": "https://bitbucket.org/BlairMcArthur/whattowearcommontesting",
   "license": "MIT",
@@ -12,12 +12,12 @@
   },
   "source": {
     "git": "https://bitbucket.org/BlairMcArthur/whattowearcommontesting.git",
-    "tag": "1.0.0"
+    "tag": "1.3.0"
   },
   "requires_arc": true,
   "source_files": "WhatToWearCommonTesting/**/*.swift",
   "module_name": "WhatToWearCommonTesting",
-  "swift_version": "4.1",
+  "swift_version": "4.2",
   "dependencies": {
     "WhatToWearCommonCore": [
 

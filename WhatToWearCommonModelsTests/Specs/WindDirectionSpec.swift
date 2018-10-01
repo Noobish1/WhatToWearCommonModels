@@ -1,18 +1,12 @@
 import Quick
 import Nimble
-import Fakery
+import UIKit
 import WhatToWearCommonCore
 @testable import WhatToWearCommonModels
 
 internal final class WindDirectionSpec: QuickSpec {
     internal override func spec() {
         describe("WindDirection") {
-            var faker: Faker!
-            
-            beforeEach {
-                faker = Faker()
-            }
-            
             describe("its init with windBearing") {
                 context("when the windBearing is nil") {
                     it("should return nil") {
@@ -35,10 +29,10 @@ internal final class WindDirectionSpec: QuickSpec {
                             
                             beforeEach {
                                 direction = WindDirection(
-                                    windBearing: faker.number.randomDouble(min: 337.5, max: 360)
+                                    windBearing: Double.random(in: 337.5...360)
                                 )
                                 otherDirection = WindDirection(
-                                    windBearing: faker.number.randomDouble(min: 0, max: 22.5)
+                                    windBearing: Double.random(in: 0...22.5)
                                 )
                             }
                             
@@ -51,7 +45,7 @@ internal final class WindDirectionSpec: QuickSpec {
                         context("between 22.5 and 67.5") {
                             beforeEach {
                                 direction = WindDirection(
-                                    windBearing: faker.number.randomDouble(min: 22.5, max: 67.5)
+                                    windBearing: Double.random(in: 22.5...67.5)
                                 )
                             }
                             
@@ -63,7 +57,7 @@ internal final class WindDirectionSpec: QuickSpec {
                         context("between 67.5 and 112.5") {
                             beforeEach {
                                 direction = WindDirection(
-                                    windBearing: faker.number.randomDouble(min: 67.5, max: 112.5)
+                                    windBearing: Double.random(in: 67.5...112.5)
                                 )
                             }
                             
@@ -75,7 +69,7 @@ internal final class WindDirectionSpec: QuickSpec {
                         context("between 112.5 and 157.5") {
                             beforeEach {
                                 direction = WindDirection(
-                                    windBearing: faker.number.randomDouble(min: 112.5, max: 157.5)
+                                    windBearing: Double.random(in: 112.5...157.5)
                                 )
                             }
                             
@@ -87,7 +81,7 @@ internal final class WindDirectionSpec: QuickSpec {
                         context("between 157.5 and 202.5") {
                             beforeEach {
                                 direction = WindDirection(
-                                    windBearing: faker.number.randomDouble(min: 157.5, max: 202.5)
+                                    windBearing: Double.random(in: 157.5...202.5)
                                 )
                             }
                             
@@ -99,7 +93,7 @@ internal final class WindDirectionSpec: QuickSpec {
                         context("between 202.5 and 247.5") {
                             beforeEach {
                                 direction = WindDirection(
-                                    windBearing: faker.number.randomDouble(min: 202.5, max: 247.5)
+                                    windBearing: Double.random(in: 202.5...247.5)
                                 )
                             }
                             
@@ -111,7 +105,7 @@ internal final class WindDirectionSpec: QuickSpec {
                         context("between 247.5 and 292.5") {
                             beforeEach {
                                 direction = WindDirection(
-                                    windBearing: faker.number.randomDouble(min: 247.5, max: 292.5)
+                                    windBearing: Double.random(in: 247.5...292.5)
                                 )
                             }
                             
@@ -123,7 +117,7 @@ internal final class WindDirectionSpec: QuickSpec {
                         context("between 292.5 and 337.5") {
                             beforeEach {
                                 direction = WindDirection(
-                                    windBearing: faker.number.randomDouble(min: 292.5, max: 337.5)
+                                    windBearing: Double.random(in: 292.5...337.5)
                                 )
                             }
                             
