@@ -76,6 +76,9 @@ public enum WindDirection: String, Codable {
     }
 }
 
+// MARK: CaseIterable
+extension WindDirection: CaseIterable {}
+
 // MARK: StringRepresentable
 extension WindDirection: StringRepresentable {
     public var stringRepresentation: String {

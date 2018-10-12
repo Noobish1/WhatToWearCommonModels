@@ -8,6 +8,9 @@ public enum PrecipitationType: String, Equatable {
     case sleet = "sleet"
 }
 
+// MARK: CaseIterable
+extension PrecipitationType: CaseIterable {}
+
 // MARK: Codable
 extension PrecipitationType: Codable {}
 
