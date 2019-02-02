@@ -118,12 +118,39 @@ public struct NonEmptyArray<Element> {
     public func randomElement() -> Element {
         return elements[randomIndex()]
     }
+    
+    // MARK: Sorting
+    public func sorted(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> NonEmptyArray<Element> {
+        // swiftlint:disable force_unwrapping
+        return try NonEmptyArray(array: elements.sorted(by: areInIncreasingOrder))!
+        // swiftlint:enable force_unwrapping
+    }
+    
+    // MARK: Indices
+    public var nonEmptyIndices: NonEmptyArray<NonEmptyArray<Element>.Index> {
+        let array = Array(self.indices)
+        
+        // swiftlint:disable force_unwrapping
+        return NonEmptyArray<NonEmptyArray<Element>.Index>(array: array)!
+        // swiftlint:enable force_unwrapping
+    }
 }
 
 // MARK: Element: Strideable, Element.Stride: SignedInteger
 public extension NonEmptyArray where Element: Strideable, Element.Stride: SignedInteger {
     public init(range: CountableClosedRange<Element>) {
         self.elements = Array(range)
+    }
+}
+
+// MARK: Element: Strideable
+public extension NonEmptyArray where Element: Strideable {
+    public init(stride: StrideTo<Element>) {
+        self.elements = Array(stride)
+    }
+    
+    public init(stride: StrideThrough<Element>) {
+        self.elements = Array(stride)
     }
 }
 
@@ -167,6 +194,20 @@ extension NonEmptyArray: MutableCollection {
         set {
             elements[index] = newValue
         }
+    }
+}
+
+// MARK: Equtable elements
+extension NonEmptyArray where Element: Equatable {
+    public mutating func replace(_ element: Element, with otherElement: Element) {
+        elements.replace(element, with: otherElement)
+    }
+    
+    public func byReplacing(_ element: Element, with otherElement: Element) -> NonEmptyArray<Element> {
+        var mutableSelf = self
+        mutableSelf.replace(element, with: otherElement)
+        
+        return mutableSelf
     }
 }
 

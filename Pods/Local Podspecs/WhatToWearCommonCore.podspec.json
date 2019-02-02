@@ -1,8 +1,8 @@
 {
   "name": "WhatToWearCommonCore",
-  "version": "1.9.0",
+  "version": "1.16.0",
   "summary": "Common core files for both WhatToWear and WhatToWearBackend",
-  "homepage": "https://bitbucket.org/BlairMcArthur/whattowearcommoncore",
+  "homepage": "https://github.com/Noobish1/whattowearcommoncore",
   "license": "MIT",
   "authors": {
     "Blair McArthur": "blair.mcarthur@icloud.com"
@@ -11,8 +11,8 @@
     "ios": "10.0"
   },
   "source": {
-    "git": "https://bitbucket.org/BlairMcArthur/whattowearcommoncore.git",
-    "tag": "1.9.0"
+    "git": "git@github.com:Noobish1/WhatToWearCommonCore.git",
+    "tag": "1.16.0"
   },
   "requires_arc": true,
   "source_files": "WhatToWearCommonCore/**/*.swift",

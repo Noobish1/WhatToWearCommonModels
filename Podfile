@@ -1,11 +1,11 @@
-source 'git@bitbucket.org:BlairMcArthur/whattowearspecs.git'
+source 'git@github.com:Noobish1/whattowearspecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 use_frameworks!
 platform :ios, '10.0'
 
 target 'WhatToWearCommonModels' do
-    pod 'WhatToWearCommonCore', :git => 'git@bitbucket.org:BlairMcArthur/whattowearcommoncore.git', :tag => '1.9.0'
+    pod 'WhatToWearCommonCore', :git => 'git@github.com:Noobish1/whattowearcommoncore.git', :tag => '1.16.0'
     
     # Debug pods
     pod 'SwiftLint', '0.26.0', :configurations => 'Debug'
@@ -14,7 +14,7 @@ target 'WhatToWearCommonModels' do
         inherit! :search_paths
         pod 'Quick', '1.3.2'
         pod 'Nimble', '7.3.1'
-        pod 'WhatToWearCommonTesting', :git => 'git@bitbucket.org:BlairMcArthur/whattowearcommontesting.git', :tag => '1.3.0'
+        pod 'WhatToWearCommonTesting', :git => 'git@github.com:Noobish1/whattowearcommontesting.git', :tag => '1.4.0'
     end
 end
 

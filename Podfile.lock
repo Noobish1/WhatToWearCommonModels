@@ -2,16 +2,16 @@ PODS:
   - Nimble (7.3.1)
   - Quick (1.3.2)
   - SwiftLint (0.26.0)
-  - WhatToWearCommonCore (1.9.0)
-  - WhatToWearCommonTesting (1.3.0):
+  - WhatToWearCommonCore (1.16.0)
+  - WhatToWearCommonTesting (1.4.0):
     - WhatToWearCommonCore
 
 DEPENDENCIES:
   - Nimble (= 7.3.1)
   - Quick (= 1.3.2)
   - SwiftLint (= 0.26.0)
-  - "WhatToWearCommonCore (from `git@bitbucket.org:BlairMcArthur/whattowearcommoncore.git`, tag `1.9.0`)"
-  - "WhatToWearCommonTesting (from `git@bitbucket.org:BlairMcArthur/whattowearcommontesting.git`, tag `1.3.0`)"
+  - "WhatToWearCommonCore (from `git@github.com:Noobish1/whattowearcommoncore.git`, tag `1.16.0`)"
+  - "WhatToWearCommonTesting (from `git@github.com:Noobish1/whattowearcommontesting.git`, tag `1.4.0`)"
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -21,27 +21,27 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   WhatToWearCommonCore:
-    :git: "git@bitbucket.org:BlairMcArthur/whattowearcommoncore.git"
-    :tag: 1.9.0
+    :git: "git@github.com:Noobish1/whattowearcommoncore.git"
+    :tag: 1.16.0
   WhatToWearCommonTesting:
-    :git: "git@bitbucket.org:BlairMcArthur/whattowearcommontesting.git"
-    :tag: 1.3.0
+    :git: "git@github.com:Noobish1/whattowearcommontesting.git"
+    :tag: 1.4.0
 
 CHECKOUT OPTIONS:
   WhatToWearCommonCore:
-    :git: "git@bitbucket.org:BlairMcArthur/whattowearcommoncore.git"
-    :tag: 1.9.0
+    :git: "git@github.com:Noobish1/whattowearcommoncore.git"
+    :tag: 1.16.0
   WhatToWearCommonTesting:
-    :git: "git@bitbucket.org:BlairMcArthur/whattowearcommontesting.git"
-    :tag: 1.3.0
+    :git: "git@github.com:Noobish1/whattowearcommontesting.git"
+    :tag: 1.4.0
 
 SPEC CHECKSUMS:
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
-  WhatToWearCommonCore: 5e44c6a648ad575945f2c6bd74585bed01b73b84
-  WhatToWearCommonTesting: 6879b1486be7bf44f99480b9eb142416cca984b0
+  WhatToWearCommonCore: 2732e0397aeedad64760eaaab61df6dcb466fd0c
+  WhatToWearCommonTesting: 6a2646e017fde198b17e169dae9796f3b3101096
 
-PODFILE CHECKSUM: 173f62fabe9449f881ec6521a65af75d8424af3f
+PODFILE CHECKSUM: b5edd3f344a876d585212310f151cbf74b098256
 
 COCOAPODS: 1.6.0.beta.1
