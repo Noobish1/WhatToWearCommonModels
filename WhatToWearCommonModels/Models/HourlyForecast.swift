@@ -15,8 +15,6 @@ extension HourlyForecast: ContainerCodable {
     // MARK: CodingKeys
     public enum CodingKeys: String, ContainerCodingKey {
         case data = "data"
-        
-        public static let allValues: [CodingKeys] = [.data]
     }
     
     // MARK: Encodable

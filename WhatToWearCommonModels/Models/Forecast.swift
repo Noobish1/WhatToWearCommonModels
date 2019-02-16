@@ -9,6 +9,7 @@ public struct Forecast: Equatable {
     internal let longitude: Double
     public let timeZone: TimeZone
     public let hourly: HourlyForecast
+    public let daily: DailyForecast
     
     // MARK: computed properties
     public var coordinate: CLLocationCoordinate2D {
@@ -27,8 +28,7 @@ extension Forecast: ContainerCodable {
         case longitude = "longitude"
         case timeZone = "timezone"
         case hourly = "hourly"
-        
-        public static let allValues: [CodingKeys] = [.timeZone, .hourly]
+        case daily = "daily"
     }
     
     // MARK: ContainerDecodable
@@ -43,6 +43,7 @@ extension Forecast: ContainerCodable {
         self.longitude = try container.decode(Double.self, forKey: .longitude)
         self.timeZone = timeZone
         self.hourly = try container.decode(HourlyForecast.self, forKey: .hourly)
+        self.daily = try container.decode(DailyForecast.self, forKey: .daily)
     }
     
     // MARK: ContainerEncodable
@@ -52,6 +53,7 @@ extension Forecast: ContainerCodable {
             case .longitude: try container.encode(longitude, forKey: key)
             case .timeZone: try container.encode(timeZone.identifier, forKey: key)
             case .hourly: try container.encode(hourly, forKey: key)
+            case .daily: try container.encode(daily, forKey: key)
         }
     }
 }

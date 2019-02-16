@@ -18,8 +18,6 @@ extension DailyForecast: ContainerCodable {
     // MARK: CodingKeys
     public enum CodingKeys: String, ContainerCodingKey {
         case internalData = "data"
-        
-        public static let allValues: [CodingKeys] = [.internalData]
     }
     
     // MARK: Encodable
