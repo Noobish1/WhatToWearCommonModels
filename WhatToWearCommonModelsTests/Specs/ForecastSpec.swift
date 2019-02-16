@@ -12,6 +12,22 @@ internal final class ForecastSpec: QuickSpec {
                 bundle = Bundle(for: type(of: self))
             }
             
+            describe("its coordinate") {
+                var forecast: Forecast!
+                
+                beforeEach {
+                    forecast = try! Forecast.fixtures.valid.object(for: bundle)
+                }
+                
+                it("should have the latitude of the forecast") {
+                    expect(forecast.coordinate.latitude) == forecast.latitude
+                }
+                
+                it("should have the longitude of the forecast") {
+                    expect(forecast.coordinate.longitude) == forecast.longitude
+                }
+            }
+            
             describe("its init from decoder") {
                 var decoder: JSONDecoder!
                 var data: Data!

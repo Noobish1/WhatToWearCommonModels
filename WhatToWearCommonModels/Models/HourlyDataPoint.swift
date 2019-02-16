@@ -1,7 +1,7 @@
 import Foundation
 
 // MARK: DataPoint
-public struct DataPoint: Codable, Equatable {
+public struct HourlyDataPoint: Codable, Equatable {
     private enum CodingKeys: String, CodingKey {
         case time = "time"
         case cloudCover = "cloudCover"
@@ -37,7 +37,7 @@ public struct DataPoint: Codable, Equatable {
 }
 
 // MARK: computed properties
-public extension DataPoint {
+public extension HourlyDataPoint {
     public var visibility: Measurement<UnitLength>? {
         return rawVisibility.map {
             Measurement(value: $0, unit: .kilometers)

@@ -2,12 +2,12 @@ import Foundation
 import WhatToWearCommonModels
 import WhatToWearCommonTesting
 
-extension DataPoint: Fixturable {
+extension DailyForecast: Fixturable {
     public enum Fixtures: String, FixtureProtocol {
-        public typealias EnclosingType = DataPoint
+        public typealias EnclosingType = DailyForecast
         
-        case valid = "datapoint-with-precip"
-        case withoutPrecip = "datapoint-without-precip"
+        case valid = "dailyforecast"
+        case emptyData = "dailyforecast-empty-data"
     }
     
     public static let fixtures = Fixtures.self

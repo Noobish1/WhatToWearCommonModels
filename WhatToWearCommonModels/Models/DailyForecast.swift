@@ -1,12 +1,15 @@
 import Foundation
 import WhatToWearCommonCore
 
-public struct HourlyForecast: Equatable {
-    public let data: NonEmptyArray<HourlyDataPoint>
+// MARK: DailyForecast
+public struct DailyForecast: Equatable {
+    internal let internalData: NonEmptyArray<DailyData>
+    
+    public var data: DailyData { return internalData.first }
 }
 
-// MARK: Codable
-extension HourlyForecast: ContainerCodable {
+// MARK: ContainerCodable
+extension DailyForecast: ContainerCodable {
     // MARK: DecodingError
     internal enum DecodingError: Error {
         case emptyDataArray
@@ -14,26 +17,26 @@ extension HourlyForecast: ContainerCodable {
     
     // MARK: CodingKeys
     public enum CodingKeys: String, ContainerCodingKey {
-        case data = "data"
+        case internalData = "data"
         
-        public static let allValues: [CodingKeys] = [.data]
+        public static let allValues: [CodingKeys] = [.internalData]
     }
     
     // MARK: Encodable
     public func encodeValue(forKey key: CodingKeys, in container: inout KeyedEncodingContainer<CodingKeys>) throws {
         switch key {
-            case .data: try container.encode(data.toArray(), forKey: key)
+            case .internalData: try container.encode(internalData.toArray(), forKey: key)
         }
     }
     
     // MARK: Decodable
     public init(from container: KeyedDecodingContainer<CodingKeys>) throws {
-        let array = try container.decode([HourlyDataPoint].self, forKey: .data)
+        let array = try container.decode([DailyData].self, forKey: .internalData)
         
         guard let nonEmptyArray = NonEmptyArray(array: array) else {
             throw DecodingError.emptyDataArray
         }
         
-        self.data = nonEmptyArray
+        self.internalData = nonEmptyArray
     }
 }
