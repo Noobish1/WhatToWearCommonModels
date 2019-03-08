@@ -1,4 +1,5 @@
 import Foundation
+import TaggedTime
 
 // MARK: DailyData
 public struct DailyData: Codable, Equatable {
@@ -24,16 +25,16 @@ public struct DailyData: Codable, Equatable {
     }
     
     // Times
-    public let apparentTemperatureHighTime: Date?
-    public let apparentTemperatureLowTime: Date?
-    public let apparentTemperatureMaxTime: Date?
-    public let apparentTemperatureMinTime: Date?
-    public let temperatureHighTime: Date?
-    public let temperatureLowTime: Date?
-    public let temperatureMaxTime: Date?
-    public let temperatureMinTime: Date?
-    public let uvIndexTime: Date?
-    public let windGustTime: Date?
+    public let apparentTemperatureHighTime: Seconds<Int>?
+    public let apparentTemperatureLowTime: Seconds<Int>?
+    public let apparentTemperatureMaxTime: Seconds<Int>?
+    public let apparentTemperatureMinTime: Seconds<Int>?
+    public let temperatureHighTime: Seconds<Int>?
+    public let temperatureLowTime: Seconds<Int>?
+    public let temperatureMaxTime: Seconds<Int>?
+    public let temperatureMinTime: Seconds<Int>?
+    public let uvIndexTime: Seconds<Int>?
+    public let windGustTime: Seconds<Int>?
     
     // Properties requiring units
     internal let rawApparentTemperatureHigh: Double?

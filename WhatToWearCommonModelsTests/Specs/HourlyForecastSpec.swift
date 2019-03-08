@@ -7,18 +7,20 @@ internal final class HourlyForecastSpec: QuickSpec {
     internal override func spec() {
         describe("HourlyForecast") {
             var bundle: Bundle!
+            var encoder: JSONEncoder!
+            var decoder: JSONDecoder!
             
             beforeEach {
                 bundle = Bundle(for: type(of: self))
+                encoder = JSONEncoder()
+                decoder = JSONDecoder()
             }
             
             describe("its encoder to encoder") {
                 var forecast: HourlyForecast!
-                var encoder: JSONEncoder!
                 
                 beforeEach {
                     forecast = try! HourlyForecast.fixtures.valid.object(for: bundle)
-                    encoder = JSONEncoder.wtwEncoder()
                 }
                 
                 it("should return a Data when encoded") {
@@ -31,13 +33,11 @@ internal final class HourlyForecastSpec: QuickSpec {
             }
             
             describe("its init from decoder") {
-                var decoder: JSONDecoder!
                 var data: Data!
                 
                 context("when the given data array is empty") {
                     beforeEach {
                         data = try! HourlyForecast.fixtures.emptyData.fixtureData(for: bundle)
-                        decoder = JSONDecoder.wtwDecoder()
                     }
                     
                     it("should throw a emptyDataArray error") {
@@ -52,7 +52,6 @@ internal final class HourlyForecastSpec: QuickSpec {
                 context("when the given data array is not empty") {
                     beforeEach {
                         data = try! HourlyForecast.fixtures.valid.fixtureData(for: bundle)
-                        decoder = JSONDecoder.wtwDecoder()
                     }
                     
                     it("should not throw an error") {
@@ -70,9 +69,9 @@ internal final class HourlyForecastSpec: QuickSpec {
                 
                 beforeEach {
                     let originalForecast = try! HourlyForecast.fixtures.valid.object(for: bundle)
-                    let newData = try! JSONEncoder.wtwEncoder().encode(originalForecast)
+                    let newData = try! encoder.encode(originalForecast)
                     
-                    forecast = try! JSONDecoder.wtwDecoder().decode(HourlyForecast.self, from: newData)
+                    forecast = try! decoder.decode(HourlyForecast.self, from: newData)
                 }
                 
                 it("should be decodable back into a object") {

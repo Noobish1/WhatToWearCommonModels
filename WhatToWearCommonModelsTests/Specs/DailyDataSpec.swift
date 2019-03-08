@@ -160,9 +160,9 @@ internal final class DailyDataSpec: QuickSpec {
             describe("its encoded form") {
                 beforeEach {
                     let originalData = try! DailyData.fixtures.valid.object(for: bundle)
-                    let newData = try! JSONEncoder.wtwEncoder().encode(originalData)
+                    let newData = try! JSONEncoder().encode(originalData)
                     
-                    data = try! JSONDecoder.wtwDecoder().decode(DailyData.self, from: newData)
+                    data = try! JSONDecoder().decode(DailyData.self, from: newData)
                 }
                 
                 it("should be decodable back into a object") {

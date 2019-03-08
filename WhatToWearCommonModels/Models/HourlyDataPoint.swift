@@ -1,4 +1,5 @@
 import Foundation
+import TaggedTime
 
 // MARK: DataPoint
 public struct HourlyDataPoint: Codable, Equatable {
@@ -19,7 +20,7 @@ public struct HourlyDataPoint: Codable, Equatable {
         case rawVisibility = "visibility"
     }
 
-    public let time: Date
+    public let time: Seconds<Int>
     public let cloudCover: Double?
     public let chanceOfPrecipitation: Double?
     public let humidity: Double?

@@ -7,9 +7,13 @@ internal final class ForecastSpec: QuickSpec {
     internal override func spec() {
         describe("Forecast") {
             var bundle: Bundle!
+            var encoder: JSONEncoder!
+            var decoder: JSONDecoder!
             
             beforeEach {
                 bundle = Bundle(for: type(of: self))
+                encoder = JSONEncoder()
+                decoder = JSONDecoder()
             }
             
             describe("its coordinate") {
@@ -29,13 +33,11 @@ internal final class ForecastSpec: QuickSpec {
             }
             
             describe("its init from decoder") {
-                var decoder: JSONDecoder!
                 var data: Data!
                 
                 context("when given an invalid timeZone") {
                     beforeEach {
                         data = try! Forecast.fixtures.invalidTimeZone.fixtureData(for: bundle)
-                        decoder = JSONDecoder.wtwDecoder()
                     }
                     
                     it("should throw a invalidTimeZone error") {
@@ -50,7 +52,6 @@ internal final class ForecastSpec: QuickSpec {
                 context("when not given an invalid timeZone") {
                     beforeEach {
                         data = try! Forecast.fixtures.valid.fixtureData(for: bundle)
-                        decoder = JSONDecoder.wtwDecoder()
                     }
                     
                     it("should not throw an error") {
@@ -65,11 +66,9 @@ internal final class ForecastSpec: QuickSpec {
             
             describe("its encode to encoder") {
                 var forecast: Forecast!
-                var encoder: JSONEncoder!
                 
                 beforeEach {
                     forecast = try! Forecast.fixtures.valid.object(for: bundle)
-                    encoder = JSONEncoder.wtwEncoder()
                 }
                 
                 it("should return a Data when encoded") {
@@ -86,9 +85,9 @@ internal final class ForecastSpec: QuickSpec {
                 
                 beforeEach {
                     let originalForecast = try! Forecast.fixtures.valid.object(for: bundle)
-                    let newData = try! JSONEncoder.wtwEncoder().encode(originalForecast)
+                    let newData = try! encoder.encode(originalForecast)
                     
-                    forecast = try! JSONDecoder.wtwDecoder().decode(Forecast.self, from: newData)
+                    forecast = try! decoder.decode(Forecast.self, from: newData)
                 }
                 
                 it("should be decodable back into a object") {

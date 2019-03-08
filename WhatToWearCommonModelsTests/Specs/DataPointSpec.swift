@@ -192,9 +192,9 @@ internal final class DataPointSpec: QuickSpec {
                 
                 beforeEach {
                     let originalDataPoint = try! HourlyDataPoint.fixtures.valid.object(for: bundle)
-                    let newData = try! JSONEncoder.wtwEncoder().encode(originalDataPoint)
+                    let newData = try! JSONEncoder().encode(originalDataPoint)
                     
-                    dataPoint = try! JSONDecoder.wtwDecoder().decode(HourlyDataPoint.self, from: newData)
+                    dataPoint = try! JSONDecoder().decode(HourlyDataPoint.self, from: newData)
                 }
                 
                 it("should be decodable back into a object") {
