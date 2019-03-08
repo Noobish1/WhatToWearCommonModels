@@ -1,6 +1,6 @@
 {
   "name": "WhatToWearCommonTesting",
-  "version": "1.4.0",
+  "version": "1.6.0",
   "summary": "Common testing files for both WhatToWear and WhatToWearBackend",
   "homepage": "https://github.com/Noobish1/whattowearcommontesting",
   "license": "MIT",
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "git@github.com:Noobish1/whattowearcommontesting.git",
-    "tag": "1.4.0"
+    "tag": "1.6.0"
   },
   "requires_arc": true,
   "source_files": "WhatToWearCommonTesting/**/*.swift",

@@ -5,7 +5,8 @@ use_frameworks!
 platform :ios, '10.0'
 
 target 'WhatToWearCommonModels' do
-    pod 'WhatToWearCommonCore', :git => 'git@github.com:Noobish1/whattowearcommoncore.git', :tag => '1.16.0'
+    pod 'WhatToWearCommonCore', :git => 'git@github.com:Noobish1/whattowearcommoncore.git', :tag => '1.17.0'
+    pod 'TaggedTime', '0.3.0'
     
     # Debug pods
     pod 'SwiftLint', '0.26.0', :configurations => 'Debug'
@@ -14,7 +15,10 @@ target 'WhatToWearCommonModels' do
         inherit! :search_paths
         pod 'Quick', '1.3.2'
         pod 'Nimble', '7.3.1'
-        pod 'WhatToWearCommonTesting', :git => 'git@github.com:Noobish1/whattowearcommontesting.git', :tag => '1.4.0'
+        pod 'WhatToWearCommonTesting', :git => 'git@github.com:Noobish1/whattowearcommontesting.git', :tag => '1.6.0'
+        
+        # Have to do this so the tests run, I don't know why
+        pod 'TaggedTime', '0.3.0'
     end
 end
 
