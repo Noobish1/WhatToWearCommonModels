@@ -12,4 +12,5 @@ Pod::Spec.new do |s|
     s.module_name               = "WhatToWearCommonModels"
     s.swift_version             = "4.2"
     s.dependency "WhatToWearCommonCore"
+    s.dependency "TaggedTime"
 end
