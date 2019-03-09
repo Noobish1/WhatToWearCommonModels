@@ -1,19 +1,18 @@
 import Foundation
-import TaggedTime
 
 // MARK: DailyData
 public struct DailyData: Codable, Equatable {
     private enum CodingKeys: String, CodingKey {
-        case apparentTemperatureHighTime = "apparentTemperatureHighTime"
-        case apparentTemperatureLowTime = "apparentTemperatureLowTime"
-        case apparentTemperatureMaxTime = "apparentTemperatureMaxTime"
-        case apparentTemperatureMinTime = "apparentTemperatureMinTime"
-        case temperatureHighTime = "temperatureHighTime"
-        case temperatureLowTime = "temperatureLowTime"
-        case temperatureMaxTime = "temperatureMaxTime"
-        case temperatureMinTime = "temperatureMinTime"
-        case uvIndexTime = "uvIndexTime"
-        case windGustTime = "windGustTime"
+        case rawApparentTemperatureHighTime = "apparentTemperatureHighTime"
+        case rawApparentTemperatureLowTime = "apparentTemperatureLowTime"
+        case rawApparentTemperatureMaxTime = "apparentTemperatureMaxTime"
+        case rawApparentTemperatureMinTime = "apparentTemperatureMinTime"
+        case rawTemperatureHighTime = "temperatureHighTime"
+        case rawTemperatureLowTime = "temperatureLowTime"
+        case rawTemperatureMaxTime = "temperatureMaxTime"
+        case rawTemperatureMinTime = "temperatureMinTime"
+        case rawUvIndexTime = "uvIndexTime"
+        case rawWindGustTime = "windGustTime"
         case rawApparentTemperatureHigh = "apparentTemperatureHigh"
         case rawApparentTemperatureLow = "apparentTemperatureLow"
         case rawApparentTemperatureMax = "apparentTemperatureMax"
@@ -25,16 +24,16 @@ public struct DailyData: Codable, Equatable {
     }
     
     // Times
-    public let apparentTemperatureHighTime: Seconds<Int>?
-    public let apparentTemperatureLowTime: Seconds<Int>?
-    public let apparentTemperatureMaxTime: Seconds<Int>?
-    public let apparentTemperatureMinTime: Seconds<Int>?
-    public let temperatureHighTime: Seconds<Int>?
-    public let temperatureLowTime: Seconds<Int>?
-    public let temperatureMaxTime: Seconds<Int>?
-    public let temperatureMinTime: Seconds<Int>?
-    public let uvIndexTime: Seconds<Int>?
-    public let windGustTime: Seconds<Int>?
+    internal let rawApparentTemperatureHighTime: Seconds<Double>?
+    internal let rawApparentTemperatureLowTime: Seconds<Double>?
+    internal let rawApparentTemperatureMaxTime: Seconds<Double>?
+    internal let rawApparentTemperatureMinTime: Seconds<Double>?
+    internal let rawTemperatureHighTime: Seconds<Double>?
+    internal let rawTemperatureLowTime: Seconds<Double>?
+    internal let rawTemperatureMaxTime: Seconds<Double>?
+    internal let rawTemperatureMinTime: Seconds<Double>?
+    internal let rawUvIndexTime: Seconds<Double>?
+    internal let rawWindGustTime: Seconds<Double>?
     
     // Properties requiring units
     internal let rawApparentTemperatureHigh: Double?
@@ -49,6 +48,46 @@ public struct DailyData: Codable, Equatable {
 
 // MARK: Extensions
 public extension DailyData {
+    public var apparentTemperatureHighTime: Date? {
+        return rawApparentTemperatureHighTime?.date
+    }
+    
+    public var apparentTemperatureLowTime: Date? {
+        return rawApparentTemperatureLowTime?.date
+    }
+    
+    public var apparentTemperatureMaxTime: Date? {
+        return rawApparentTemperatureMaxTime?.date
+    }
+    
+    public var apparentTemperatureMinTime: Date? {
+        return rawApparentTemperatureMinTime?.date
+    }
+    
+    public var temperatureHighTime: Date? {
+        return rawTemperatureHighTime?.date
+    }
+    
+    public var temperatureLowTime: Date? {
+        return rawTemperatureLowTime?.date
+    }
+    
+    public var temperatureMaxTime: Date? {
+        return rawTemperatureMaxTime?.date
+    }
+    
+    public var temperatureMinTime: Date? {
+        return rawTemperatureMinTime?.date
+    }
+    
+    public var uvIndexTime: Date? {
+        return rawUvIndexTime?.date
+    }
+    
+    public var windGustTime: Date? {
+        return rawWindGustTime?.date
+    }
+    
     public var apparentTemperatureHigh: Measurement<UnitTemperature>? {
         return rawApparentTemperatureHigh.map {
             Measurement(value: $0, unit: .celsius)

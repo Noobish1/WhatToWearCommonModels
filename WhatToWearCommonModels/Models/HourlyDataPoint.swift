@@ -1,10 +1,9 @@
 import Foundation
-import TaggedTime
 
 // MARK: DataPoint
 public struct HourlyDataPoint: Codable, Equatable {
     private enum CodingKeys: String, CodingKey {
-        case time = "time"
+        case rawTime = "time"
         case cloudCover = "cloudCover"
         case rawTemperature = "temperature"
         case rawApparentTemperature = "apparentTemperature"
@@ -19,14 +18,14 @@ public struct HourlyDataPoint: Codable, Equatable {
         case uvIndex = "uvIndex"
         case rawVisibility = "visibility"
     }
-
-    public let time: Seconds<Int>
+    
     public let cloudCover: Double?
     public let chanceOfPrecipitation: Double?
     public let humidity: Double?
     public let precipitationType: PrecipitationType?
     public let uvIndex: Double?
     
+    internal let rawTime: Seconds<Double>
     internal let rawWindBearing: Double?
     internal let rawApparentTemperature: Double
     internal let rawTemperature: Double
@@ -39,6 +38,10 @@ public struct HourlyDataPoint: Codable, Equatable {
 
 // MARK: computed properties
 public extension HourlyDataPoint {
+    public var time: Date {
+        return rawTime.date
+    }
+    
     public var visibility: Measurement<UnitLength>? {
         return rawVisibility.map {
             Measurement(value: $0, unit: .kilometers)

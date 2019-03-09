@@ -26,6 +26,7 @@
 		755CAAA922152A7E00817717 /* dailyforecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 755CAAA822152A7E00817717 /* dailyforecast.json */; };
 		755CAAAB2215427500817717 /* dailyforecast-empty-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 755CAAAA2215427500817717 /* dailyforecast-empty-data.json */; };
 		755CAAAD221543B400817717 /* DailyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755CAAAC221543B400817717 /* DailyForecast.swift */; };
+		7586C93F223369BD00FBC3BF /* Seconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586C93E223369BD00FBC3BF /* Seconds.swift */; };
 		758A1DE020E09E4B00589C3B /* HourlyDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758A1DDF20E09E4B00589C3B /* HourlyDataPoint.swift */; };
 		758A1DE220E09F1900589C3B /* HourlyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758A1DE120E09F1900589C3B /* HourlyForecast.swift */; };
 		758A1DE420E09FCC00589C3B /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758A1DE320E09FCC00589C3B /* Forecast.swift */; };
@@ -80,6 +81,7 @@
 		755CAAA822152A7E00817717 /* dailyforecast.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dailyforecast.json; sourceTree = "<group>"; };
 		755CAAAA2215427500817717 /* dailyforecast-empty-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "dailyforecast-empty-data.json"; sourceTree = "<group>"; };
 		755CAAAC221543B400817717 /* DailyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecast.swift; sourceTree = "<group>"; };
+		7586C93E223369BD00FBC3BF /* Seconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seconds.swift; sourceTree = "<group>"; };
 		758A1DDF20E09E4B00589C3B /* HourlyDataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyDataPoint.swift; sourceTree = "<group>"; };
 		758A1DE120E09F1900589C3B /* HourlyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecast.swift; sourceTree = "<group>"; };
 		758A1DE320E09FCC00589C3B /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				7523B07C207DDB4F003304FC /* PrecipitationType.swift */,
 				75A2E0A82212B8ED007150B0 /* DailyForecast.swift */,
 				75A2E0AA2212BA08007150B0 /* DailyData.swift */,
+				7586C93E223369BD00FBC3BF /* Seconds.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -526,10 +529,10 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Tagged/Tagged.framework",
-				"${BUILT_PRODUCTS_DIR}/TaggedTime/TaggedTime.framework",
 				"${BUILT_PRODUCTS_DIR}/WhatToWearCommonCore/WhatToWearCommonCore.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/TaggedTime/TaggedTime.framework",
 				"${BUILT_PRODUCTS_DIR}/WhatToWearCommonTesting/WhatToWearCommonTesting.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -537,10 +540,10 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tagged.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TaggedTime.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WhatToWearCommonCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TaggedTime.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WhatToWearCommonTesting.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,6 +565,7 @@
 				7523B07E207DDB4F003304FC /* HourlyForecast.swift in Sources */,
 				75A2E0AB2212BA08007150B0 /* DailyData.swift in Sources */,
 				7523B080207DDB4F003304FC /* PrecipitationType.swift in Sources */,
+				7586C93F223369BD00FBC3BF /* Seconds.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

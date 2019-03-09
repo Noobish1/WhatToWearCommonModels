@@ -154,18 +154,18 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Tagged/Tagged.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/TaggedTime/TaggedTime.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WhatToWearCommonCore/WhatToWearCommonCore.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Quick/Quick.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TaggedTime/TaggedTime.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WhatToWearCommonTesting/WhatToWearCommonTesting.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Tagged/Tagged.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/TaggedTime/TaggedTime.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WhatToWearCommonCore/WhatToWearCommonCore.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Quick/Quick.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TaggedTime/TaggedTime.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WhatToWearCommonTesting/WhatToWearCommonTesting.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
