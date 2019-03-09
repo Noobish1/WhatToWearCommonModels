@@ -19,21 +19,21 @@ public struct HourlyDataPoint: Codable, Equatable {
         case rawVisibility = "visibility"
     }
     
-    public let cloudCover: Double?
-    public let chanceOfPrecipitation: Double?
-    public let humidity: Double?
+    public let cloudCover: Percentage<Double>?
+    public let chanceOfPrecipitation: Percentage<Double>?
+    public let humidity: Percentage<Double>?
     public let precipitationType: PrecipitationType?
     public let uvIndex: Double?
     
     internal let rawTime: Seconds<Double>
-    internal let rawWindBearing: Double?
-    internal let rawApparentTemperature: Double
-    internal let rawTemperature: Double
-    internal let rawWindGust: Double?
-    internal let rawDewPoint: Double?
-    internal let rawPrecipAccumulation: Double?
-    internal let rawPressure: Double?
-    internal let rawVisibility: Double?
+    internal let rawWindBearing: Degrees<Double>?
+    internal let rawApparentTemperature: Celsius<Double>
+    internal let rawTemperature: Celsius<Double>
+    internal let rawWindGust: MetersPerSecond<Double>?
+    internal let rawDewPoint: Celsius<Double>?
+    internal let rawPrecipAccumulation: Centimeters<Double>?
+    internal let rawPressure: Hectopascals<Double>?
+    internal let rawVisibility: Kilometers<Double>?
 }
 
 // MARK: computed properties
@@ -43,27 +43,19 @@ public extension HourlyDataPoint {
     }
     
     public var visibility: Measurement<UnitLength>? {
-        return rawVisibility.map {
-            Measurement(value: $0, unit: .kilometers)
-        }
+        return rawVisibility?.measurement
     }
     
     public var pressure: Measurement<UnitPressure>? {
-        return rawPressure.map {
-            Measurement(value: $0, unit: .hectopascals)
-        }
+        return rawPressure?.measurement
     }
     
     public var precipAccumulation: Measurement<UnitLength>? {
-        return rawPrecipAccumulation.map {
-            Measurement(value: $0, unit: .centimeters)
-        }
+        return rawPrecipAccumulation?.measurement
     }
     
     public var dewPoint: Measurement<UnitTemperature>? {
-        return rawDewPoint.map {
-            Measurement(value: $0, unit: .celsius)
-        }
+        return rawDewPoint?.measurement
     }
     
     public var windDirection: WindDirection? {
@@ -71,23 +63,19 @@ public extension HourlyDataPoint {
     }
     
     public var windBearing: Measurement<UnitAngle>? {
-        return rawWindBearing.map {
-            Measurement(value: $0, unit: .degrees)
-        }
+        return rawWindBearing?.measurement
     }
     
     public var apparentTemperature: Measurement<UnitTemperature> {
-        return Measurement(value: rawApparentTemperature, unit: .celsius)
+        return rawApparentTemperature.measurement
     }
     
     public var temperature: Measurement<UnitTemperature> {
-        return Measurement(value: rawTemperature, unit: .celsius)
+        return rawTemperature.measurement
     }
     
     public var windGust: Measurement<UnitSpeed>? {
-        return rawWindGust.map {
-            Measurement(value: $0, unit: .metersPerSecond)
-        }
+        return rawWindGust?.measurement
     }
     
     public var optionalTemperature: Measurement<UnitTemperature>? {

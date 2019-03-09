@@ -36,96 +36,67 @@ public struct DailyData: Codable, Equatable {
     internal let rawWindGustTime: Seconds<Double>?
     
     // Properties requiring units
-    internal let rawApparentTemperatureHigh: Double?
-    internal let rawApparentTemperatureLow: Double?
-    internal let rawApparentTemperatureMax: Double?
-    internal let rawApparentTemperatureMin: Double?
-    internal let rawTemperatureHigh: Double?
-    internal let rawTemperatureLow: Double?
-    internal let rawTemperatureMax: Double?
-    internal let rawTemperatureMin: Double?
+    internal let rawApparentTemperatureHigh: Celsius<Double>?
+    internal let rawApparentTemperatureLow: Celsius<Double>?
+    internal let rawApparentTemperatureMax: Celsius<Double>?
+    internal let rawApparentTemperatureMin: Celsius<Double>?
+    internal let rawTemperatureHigh: Celsius<Double>?
+    internal let rawTemperatureLow: Celsius<Double>?
+    internal let rawTemperatureMax: Celsius<Double>?
+    internal let rawTemperatureMin: Celsius<Double>?
 }
 
 // MARK: Extensions
 public extension DailyData {
-    public var apparentTemperatureHighTime: Date? {
-        return rawApparentTemperatureHighTime?.date
-    }
+    public var apparentTemperatureHighTime: Date? { return rawApparentTemperatureHighTime?.date }
     
-    public var apparentTemperatureLowTime: Date? {
-        return rawApparentTemperatureLowTime?.date
-    }
+    public var apparentTemperatureLowTime: Date? { return rawApparentTemperatureLowTime?.date }
     
-    public var apparentTemperatureMaxTime: Date? {
-        return rawApparentTemperatureMaxTime?.date
-    }
+    public var apparentTemperatureMaxTime: Date? { return rawApparentTemperatureMaxTime?.date }
     
-    public var apparentTemperatureMinTime: Date? {
-        return rawApparentTemperatureMinTime?.date
-    }
+    public var apparentTemperatureMinTime: Date? { return rawApparentTemperatureMinTime?.date }
     
-    public var temperatureHighTime: Date? {
-        return rawTemperatureHighTime?.date
-    }
+    public var temperatureHighTime: Date? { return rawTemperatureHighTime?.date }
     
-    public var temperatureLowTime: Date? {
-        return rawTemperatureLowTime?.date
-    }
+    public var temperatureLowTime: Date? { return rawTemperatureLowTime?.date }
     
-    public var temperatureMaxTime: Date? {
-        return rawTemperatureMaxTime?.date
-    }
+    public var temperatureMaxTime: Date? { return rawTemperatureMaxTime?.date }
     
-    public var temperatureMinTime: Date? {
-        return rawTemperatureMinTime?.date
-    }
+    public var temperatureMinTime: Date? { return rawTemperatureMinTime?.date }
     
-    public var uvIndexTime: Date? {
-        return rawUvIndexTime?.date
-    }
+    public var uvIndexTime: Date? { return rawUvIndexTime?.date }
     
-    public var windGustTime: Date? {
-        return rawWindGustTime?.date
-    }
+    public var windGustTime: Date? { return rawWindGustTime?.date }
     
     public var apparentTemperatureHigh: Measurement<UnitTemperature>? {
-        return rawApparentTemperatureHigh.map {
-            Measurement(value: $0, unit: .celsius)
-        }
+        return rawApparentTemperatureHigh?.measurement
     }
+    
     public var apparentTemperatureLow: Measurement<UnitTemperature>? {
-        return rawApparentTemperatureLow.map {
-            Measurement(value: $0, unit: .celsius)
-        }
+        return rawApparentTemperatureLow?.measurement
     }
+    
     public var apparentTemperatureMax: Measurement<UnitTemperature>? {
-        return rawApparentTemperatureMax.map {
-            Measurement(value: $0, unit: .celsius)
-        }
+        return rawApparentTemperatureMax?.measurement
     }
+    
     public var apparentTemperatureMin: Measurement<UnitTemperature>? {
-        return rawApparentTemperatureMin.map {
-            Measurement(value: $0, unit: .celsius)
-        }
+        return rawApparentTemperatureMin?.measurement
     }
+    
     public var temperatureHigh: Measurement<UnitTemperature>? {
-        return rawTemperatureHigh.map {
-            Measurement(value: $0, unit: .celsius)
-        }
+        return rawTemperatureHigh?.measurement
     }
+    
     public var temperatureLow: Measurement<UnitTemperature>? {
-        return rawTemperatureLow.map {
-            Measurement(value: $0, unit: .celsius)
-        }
+        return rawTemperatureLow?.measurement
     }
+    
     public var temperatureMax: Measurement<UnitTemperature>? {
-        return rawTemperatureMax.map {
-            Measurement(value: $0, unit: .celsius)
-        }
+        return rawTemperatureMax?.measurement
     }
+    
     public var temperatureMin: Measurement<UnitTemperature>? {
-        return rawTemperatureMin.map {
-            Measurement(value: $0, unit: .celsius)
-        }
+        return rawTemperatureMin?.measurement
     }
 }

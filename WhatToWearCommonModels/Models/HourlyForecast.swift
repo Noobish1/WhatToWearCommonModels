@@ -18,7 +18,10 @@ extension HourlyForecast: ContainerCodable {
     }
     
     // MARK: Encodable
-    public func encodeValue(forKey key: CodingKeys, in container: inout KeyedEncodingContainer<CodingKeys>) throws {
+    public func encodeValue(
+        forKey key: CodingKeys,
+        in container: inout KeyedEncodingContainer<CodingKeys>
+    ) throws {
         switch key {
             case .data: try container.encode(data.toArray(), forKey: key)
         }
