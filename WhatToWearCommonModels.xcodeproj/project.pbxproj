@@ -34,11 +34,12 @@
 		7586C9562233A67C00FBC3BF /* MetersPerSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586C94A2233A54700FBC3BF /* MetersPerSecond.swift */; };
 		7586C9572233A67C00FBC3BF /* Hectopascals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586C94C2233A56A00FBC3BF /* Hectopascals.swift */; };
 		7586C9582233A67C00FBC3BF /* Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586C94E2233A59A00FBC3BF /* Percentage.swift */; };
+		7586C95A2233AF3700FBC3BF /* PercentageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586C9592233AF3700FBC3BF /* PercentageSpec.swift */; };
 		758A1DE020E09E4B00589C3B /* HourlyDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758A1DDF20E09E4B00589C3B /* HourlyDataPoint.swift */; };
 		758A1DE220E09F1900589C3B /* HourlyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758A1DE120E09F1900589C3B /* HourlyForecast.swift */; };
 		758A1DE420E09FCC00589C3B /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758A1DE320E09FCC00589C3B /* Forecast.swift */; };
 		7599363C20B16FDB0053B5DC /* PrecipitationTypeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7599363B20B16FDB0053B5DC /* PrecipitationTypeSpec.swift */; };
-		7599363E20B17E130053B5DC /* DataPointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7599363D20B17E130053B5DC /* DataPointSpec.swift */; };
+		7599363E20B17E130053B5DC /* HourlyDataPointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7599363D20B17E130053B5DC /* HourlyDataPointSpec.swift */; };
 		75A2E0A92212B8ED007150B0 /* DailyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2E0A82212B8ED007150B0 /* DailyForecast.swift */; };
 		75A2E0AB2212BA08007150B0 /* DailyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2E0AA2212BA08007150B0 /* DailyData.swift */; };
 		75C07BA720AE87B5008DE137 /* WhatToWearCommonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7523B066207DDA98003304FC /* WhatToWearCommonModels.framework */; };
@@ -96,12 +97,13 @@
 		7586C94A2233A54700FBC3BF /* MetersPerSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetersPerSecond.swift; sourceTree = "<group>"; };
 		7586C94C2233A56A00FBC3BF /* Hectopascals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hectopascals.swift; sourceTree = "<group>"; };
 		7586C94E2233A59A00FBC3BF /* Percentage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Percentage.swift; sourceTree = "<group>"; };
+		7586C9592233AF3700FBC3BF /* PercentageSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageSpec.swift; sourceTree = "<group>"; };
 		758A1DDF20E09E4B00589C3B /* HourlyDataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyDataPoint.swift; sourceTree = "<group>"; };
 		758A1DE120E09F1900589C3B /* HourlyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecast.swift; sourceTree = "<group>"; };
 		758A1DE320E09FCC00589C3B /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		759392D22162215E00307AC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7599363B20B16FDB0053B5DC /* PrecipitationTypeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecipitationTypeSpec.swift; sourceTree = "<group>"; };
-		7599363D20B17E130053B5DC /* DataPointSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPointSpec.swift; sourceTree = "<group>"; };
+		7599363D20B17E130053B5DC /* HourlyDataPointSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyDataPointSpec.swift; sourceTree = "<group>"; };
 		75A2E0A82212B8ED007150B0 /* DailyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecast.swift; sourceTree = "<group>"; };
 		75A2E0AA2212BA08007150B0 /* DailyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyData.swift; sourceTree = "<group>"; };
 		75C07BA220AE87B5008DE137 /* WhatToWearCommonModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearCommonModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -312,10 +314,11 @@
 				75C07BB520AEC0C8008DE137 /* ForecastSpec.swift */,
 				75C07BB720AEC6FE008DE137 /* HourlyForecastSpec.swift */,
 				7599363B20B16FDB0053B5DC /* PrecipitationTypeSpec.swift */,
-				7599363D20B17E130053B5DC /* DataPointSpec.swift */,
+				7599363D20B17E130053B5DC /* HourlyDataPointSpec.swift */,
 				75E4F2BC20F2258E00EB5DF0 /* WindDirectionSpec.swift */,
 				755CAAA52215044900817717 /* DailyForecastSpec.swift */,
 				7547D91B2217A6DC009900D1 /* DailyDataSpec.swift */,
+				7586C9592233AF3700FBC3BF /* PercentageSpec.swift */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -611,7 +614,7 @@
 			files = (
 				75E4F2BD20F2258E00EB5DF0 /* WindDirectionSpec.swift in Sources */,
 				7599363C20B16FDB0053B5DC /* PrecipitationTypeSpec.swift in Sources */,
-				7599363E20B17E130053B5DC /* DataPointSpec.swift in Sources */,
+				7599363E20B17E130053B5DC /* HourlyDataPointSpec.swift in Sources */,
 				755CAAA62215044900817717 /* DailyForecastSpec.swift in Sources */,
 				755CAAAD221543B400817717 /* DailyForecast.swift in Sources */,
 				75C07BB820AEC6FE008DE137 /* HourlyForecastSpec.swift in Sources */,
@@ -619,6 +622,7 @@
 				75C07BB620AEC0C8008DE137 /* ForecastSpec.swift in Sources */,
 				7547D91C2217A6DC009900D1 /* DailyDataSpec.swift in Sources */,
 				758A1DE220E09F1900589C3B /* HourlyForecast.swift in Sources */,
+				7586C95A2233AF3700FBC3BF /* PercentageSpec.swift in Sources */,
 				758A1DE020E09E4B00589C3B /* HourlyDataPoint.swift in Sources */,
 				7547D9212217A80A009900D1 /* DailyData.swift in Sources */,
 			);
@@ -691,7 +695,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_SWIFT_FLAGS = "-Xfrontend -warn-long-function-bodies=150 -Xfrontend -warn-long-expression-type-checking=150";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -780,6 +783,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -Xfrontend -warn-long-function-bodies=150 -Xfrontend -warn-long-expression-type-checking=150";
 				PRODUCT_BUNDLE_IDENTIFIER = com.noobish1.WhatToWearCommonModels;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

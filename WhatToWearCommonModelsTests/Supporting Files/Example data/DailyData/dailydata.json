@@ -17,6 +17,7 @@
     "dewPoint": 6,
     "humidity": 0.79,
     "windSpeed": 11.51,
+    "windGustTime": 1535068800,
     "windBearing": 198,
     "cloudCover": 0.86,
     "uvIndex": 3,

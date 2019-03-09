@@ -13,6 +13,126 @@ internal final class DailyDataSpec: QuickSpec {
                 bundle = Bundle(for: type(of: self))
             }
             
+            describe("its apparentTemperatureHighTime") {
+                beforeEach {
+                    data = try! DailyData.fixtures.valid.object(for: bundle)
+                }
+                
+                it("should be a date created from the raw property") {
+                    expect(data.apparentTemperatureHighTime) == data.rawApparentTemperatureHighTime.map {
+                        Date(timeIntervalSince1970: $0.rawValue)
+                    }
+                }
+            }
+            
+            describe("its apparentTemperatureLowTime") {
+                beforeEach {
+                    data = try! DailyData.fixtures.valid.object(for: bundle)
+                }
+                
+                it("should be a date created from the raw property") {
+                    expect(data.apparentTemperatureLowTime) == data.rawApparentTemperatureLowTime.map {
+                        Date(timeIntervalSince1970: $0.rawValue)
+                    }
+                }
+            }
+            
+            describe("its apparentTemperatureMaxTime") {
+                beforeEach {
+                    data = try! DailyData.fixtures.valid.object(for: bundle)
+                }
+                
+                it("should be a date created from the raw property") {
+                    expect(data.apparentTemperatureMaxTime) == data.rawApparentTemperatureMaxTime.map {
+                        Date(timeIntervalSince1970: $0.rawValue)
+                    }
+                }
+            }
+            
+            describe("its apparentTemperatureMinTime") {
+                beforeEach {
+                    data = try! DailyData.fixtures.valid.object(for: bundle)
+                }
+                
+                it("should be a date created from the raw property") {
+                    expect(data.apparentTemperatureMinTime) == data.rawApparentTemperatureMinTime.map {
+                        Date(timeIntervalSince1970: $0.rawValue)
+                    }
+                }
+            }
+            
+            describe("its temperatureHighTime") {
+                beforeEach {
+                    data = try! DailyData.fixtures.valid.object(for: bundle)
+                }
+                
+                it("should be a date created from the raw property") {
+                    expect(data.temperatureHighTime) == data.rawTemperatureHighTime.map {
+                        Date(timeIntervalSince1970: $0.rawValue)
+                    }
+                }
+            }
+            
+            describe("its temperatureLowTime") {
+                beforeEach {
+                    data = try! DailyData.fixtures.valid.object(for: bundle)
+                }
+                
+                it("should be a date created from the raw property") {
+                    expect(data.temperatureLowTime) == data.rawTemperatureLowTime.map {
+                        Date(timeIntervalSince1970: $0.rawValue)
+                    }
+                }
+            }
+            
+            describe("its temperatureMaxTime") {
+                beforeEach {
+                    data = try! DailyData.fixtures.valid.object(for: bundle)
+                }
+                
+                it("should be a date created from the raw property") {
+                    expect(data.temperatureMaxTime) == data.rawTemperatureMaxTime.map {
+                        Date(timeIntervalSince1970: $0.rawValue)
+                    }
+                }
+            }
+            
+            describe("its temperatureMinTime") {
+                beforeEach {
+                    data = try! DailyData.fixtures.valid.object(for: bundle)
+                }
+                
+                it("should be a date created from the raw property") {
+                    expect(data.temperatureMinTime) == data.rawTemperatureMinTime.map {
+                        Date(timeIntervalSince1970: $0.rawValue)
+                    }
+                }
+            }
+            
+            describe("its uvIndexTime") {
+                beforeEach {
+                    data = try! DailyData.fixtures.valid.object(for: bundle)
+                }
+                
+                it("should be a date created from the raw property") {
+                    expect(data.uvIndexTime) == data.rawUvIndexTime.map {
+                        Date(timeIntervalSince1970: $0.rawValue)
+                    }
+                }
+            }
+            
+            describe("its windGustTime") {
+                beforeEach {
+                    data = try! DailyData.fixtures.valid.object(for: bundle)
+                }
+                
+                it("should be a date created from the raw property") {
+                    expect(data.windGustTime) == data.rawWindGustTime.map {
+                        Date(timeIntervalSince1970: $0.rawValue)
+                    }
+                }
+            }
+            
             describe("its apparentTemperatureHigh") {
                 beforeEach {
                     data = try! DailyData.fixtures.valid.object(for: bundle)
@@ -20,7 +140,7 @@ internal final class DailyDataSpec: QuickSpec {
                 
                 describe("its value") {
                     it("should be equal to its rawApparentTemperatureHigh") {
-                        expect(data.apparentTemperatureHigh?.value) == data.rawApparentTemperatureHigh
+                        expect(data.apparentTemperatureHigh?.value) == data.rawApparentTemperatureHigh?.rawValue
                     }
                 }
                 
@@ -38,7 +158,7 @@ internal final class DailyDataSpec: QuickSpec {
                 
                 describe("its value") {
                     it("should be equal to its rawApparentTemperatureLow") {
-                        expect(data.apparentTemperatureLow?.value) == data.rawApparentTemperatureLow
+                        expect(data.apparentTemperatureLow?.value) == data.rawApparentTemperatureLow?.rawValue
                     }
                 }
                 
@@ -56,7 +176,7 @@ internal final class DailyDataSpec: QuickSpec {
                 
                 describe("its value") {
                     it("should be equal to its rawApparentTemperatureMax") {
-                        expect(data.apparentTemperatureMax?.value) == data.rawApparentTemperatureMax
+                        expect(data.apparentTemperatureMax?.value) == data.rawApparentTemperatureMax?.rawValue
                     }
                 }
                 
@@ -74,7 +194,7 @@ internal final class DailyDataSpec: QuickSpec {
                 
                 describe("its value") {
                     it("should be equal to its rawApparentTemperatureMin") {
-                        expect(data.apparentTemperatureMin?.value) == data.rawApparentTemperatureMin
+                        expect(data.apparentTemperatureMin?.value) == data.rawApparentTemperatureMin?.rawValue
                     }
                 }
                 
@@ -92,7 +212,7 @@ internal final class DailyDataSpec: QuickSpec {
                 
                 describe("its value") {
                     it("should be equal to its rawTemperatureHigh") {
-                        expect(data.temperatureHigh?.value) == data.rawTemperatureHigh
+                        expect(data.temperatureHigh?.value) == data.rawTemperatureHigh?.rawValue
                     }
                 }
                 
@@ -110,7 +230,7 @@ internal final class DailyDataSpec: QuickSpec {
                 
                 describe("its value") {
                     it("should be equal to its rawTemperatureLow") {
-                        expect(data.temperatureLow?.value) == data.rawTemperatureLow
+                        expect(data.temperatureLow?.value) == data.rawTemperatureLow?.rawValue
                     }
                 }
                 
@@ -128,7 +248,7 @@ internal final class DailyDataSpec: QuickSpec {
                 
                 describe("its value") {
                     it("should be equal to its rawTemperatureMax") {
-                        expect(data.temperatureMax?.value) == data.rawTemperatureMax
+                        expect(data.temperatureMax?.value) == data.rawTemperatureMax?.rawValue
                     }
                 }
                 
@@ -146,7 +266,7 @@ internal final class DailyDataSpec: QuickSpec {
                 
                 describe("its value") {
                     it("should be equal to its rawTemperatureMin") {
-                        expect(data.temperatureMin?.value) == data.rawTemperatureMin
+                        expect(data.temperatureMin?.value) == data.rawTemperatureMin?.rawValue
                     }
                 }
                 

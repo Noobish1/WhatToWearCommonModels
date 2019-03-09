@@ -3,7 +3,7 @@ import Nimble
 import WhatToWearCommonCore
 @testable import WhatToWearCommonModels
 
-internal final class DataPointSpec: QuickSpec {
+internal final class HourlyDataPointSpec: QuickSpec {
     internal override func spec() {
         describe("HourlyDataPoint") {
             var bundle: Bundle!
@@ -11,6 +11,16 @@ internal final class DataPointSpec: QuickSpec {
             
             beforeEach {
                 bundle = Bundle(for: type(of: self))
+            }
+            
+            describe("its time") {
+                beforeEach {
+                    dataPoint = try! HourlyDataPoint.fixtures.valid.object(for: bundle)
+                }
+                
+                it("should be a date created from the rawTime value") {
+                    expect(dataPoint.time) == Date(timeIntervalSince1970: dataPoint.rawTime.rawValue)
+                }
             }
             
             describe("its windDirection") {
@@ -30,7 +40,7 @@ internal final class DataPointSpec: QuickSpec {
                 
                 describe("its value") {
                     it("should be equal to its rawWindBearing") {
-                        expect(dataPoint.windBearing?.value) == dataPoint.rawWindBearing
+                        expect(dataPoint.windBearing?.value) == dataPoint.rawWindBearing?.rawValue
                     }
                 }
                 
@@ -48,7 +58,7 @@ internal final class DataPointSpec: QuickSpec {
                 
                 describe("its value") {
                     it("should be equal to its rawApparentTemperature") {
-                        expect(dataPoint.apparentTemperature.value) == dataPoint.rawApparentTemperature
+                        expect(dataPoint.apparentTemperature.value) == dataPoint.rawApparentTemperature.rawValue
                     }
                 }
                 
@@ -66,7 +76,7 @@ internal final class DataPointSpec: QuickSpec {
                 
                 describe("its value") {
                     it("should be equal to its rawTemperature") {
-                        expect(dataPoint.temperature.value) == dataPoint.rawTemperature
+                        expect(dataPoint.temperature.value) == dataPoint.rawTemperature.rawValue
                     }
                 }
                 
@@ -84,7 +94,7 @@ internal final class DataPointSpec: QuickSpec {
                 
                 describe("its value") {
                     it("should be equal to its rawDewPoint") {
-                        expect(dataPoint.dewPoint?.value) == dataPoint.rawDewPoint
+                        expect(dataPoint.dewPoint?.value) == dataPoint.rawDewPoint?.rawValue
                     }
                 }
                 
@@ -102,7 +112,7 @@ internal final class DataPointSpec: QuickSpec {
                 
                 describe("its value") {
                     it("should be equal to its rawPrecipAccumulation") {
-                        expect(dataPoint.precipAccumulation?.value) == dataPoint.rawPrecipAccumulation
+                        expect(dataPoint.precipAccumulation?.value) == dataPoint.rawPrecipAccumulation?.rawValue
                     }
                 }
                 
@@ -120,7 +130,7 @@ internal final class DataPointSpec: QuickSpec {
                 
                 describe("its value") {
                     it("should be equal to its rawPressure") {
-                        expect(dataPoint.pressure?.value) == dataPoint.rawPressure
+                        expect(dataPoint.pressure?.value) == dataPoint.rawPressure?.rawValue
                     }
                 }
                 
@@ -138,7 +148,7 @@ internal final class DataPointSpec: QuickSpec {
                 
                 describe("its value") {
                     it("should be equal to its rawVisibility") {
-                        expect(dataPoint.visibility?.value) == dataPoint.rawVisibility
+                        expect(dataPoint.visibility?.value) == dataPoint.rawVisibility?.rawValue
                     }
                 }
                 
@@ -156,7 +166,7 @@ internal final class DataPointSpec: QuickSpec {
                 
                 describe("its value") {
                     it("should be equal to its rawWindGust") {
-                        expect(dataPoint.windGust?.value) == dataPoint.rawWindGust
+                        expect(dataPoint.windGust?.value) == dataPoint.rawWindGust?.rawValue
                     }
                 }
                 
