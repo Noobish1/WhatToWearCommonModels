@@ -5,8 +5,8 @@ public enum PercentageTag {}
 
 public typealias Percentage<A> = Tagged<PercentageTag, A>
 
-public extension Tagged where Tag == PercentageTag {
-    public var percent: Tagged<PercentageTag, RawValue> {
-        return self
+public extension Int {
+    public var percent: Percentage<CGFloat> {
+        return Percentage(rawValue: CGFloat(self) / 100)
     }
 }
