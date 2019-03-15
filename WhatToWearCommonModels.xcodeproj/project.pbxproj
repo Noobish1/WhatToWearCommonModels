@@ -13,6 +13,9 @@
 		7523B07E207DDB4F003304FC /* HourlyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B07A207DDB4E003304FC /* HourlyForecast.swift */; };
 		7523B07F207DDB4F003304FC /* HourlyDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B07B207DDB4E003304FC /* HourlyDataPoint.swift */; };
 		7523B080207DDB4F003304FC /* PrecipitationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B07C207DDB4F003304FC /* PrecipitationType.swift */; };
+		7523D934223BA39800AFC9FF /* Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523D933223BA39800AFC9FF /* Radians.swift */; };
+		7523D936223BA53200AFC9FF /* DegreesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523D935223BA53200AFC9FF /* DegreesSpec.swift */; };
+		7523D938223BA67500AFC9FF /* RadiansSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523D937223BA67500AFC9FF /* RadiansSpec.swift */; };
 		75371BDA20C4F1D800A62482 /* forecast-bad-timezone.json in Resources */ = {isa = PBXBuildFile; fileRef = 75371BD220C4F1D800A62482 /* forecast-bad-timezone.json */; };
 		75371BDB20C4F1D800A62482 /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 75371BD320C4F1D800A62482 /* forecast.json */; };
 		75371BDC20C4F1D800A62482 /* datapoint-with-precip.json in Resources */ = {isa = PBXBuildFile; fileRef = 75371BD520C4F1D800A62482 /* datapoint-with-precip.json */; };
@@ -76,6 +79,9 @@
 		7523B07B207DDB4E003304FC /* HourlyDataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyDataPoint.swift; sourceTree = "<group>"; };
 		7523B07C207DDB4F003304FC /* PrecipitationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecipitationType.swift; sourceTree = "<group>"; };
 		7523B083207DE8D0003304FC /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		7523D933223BA39800AFC9FF /* Radians.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radians.swift; sourceTree = "<group>"; };
+		7523D935223BA53200AFC9FF /* DegreesSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegreesSpec.swift; sourceTree = "<group>"; };
+		7523D937223BA67500AFC9FF /* RadiansSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiansSpec.swift; sourceTree = "<group>"; };
 		75371BD220C4F1D800A62482 /* forecast-bad-timezone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "forecast-bad-timezone.json"; sourceTree = "<group>"; };
 		75371BD320C4F1D800A62482 /* forecast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = forecast.json; sourceTree = "<group>"; };
 		75371BD520C4F1D800A62482 /* datapoint-with-precip.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "datapoint-with-precip.json"; sourceTree = "<group>"; };
@@ -273,6 +279,7 @@
 				7586C94A2233A54700FBC3BF /* MetersPerSecond.swift */,
 				7586C94C2233A56A00FBC3BF /* Hectopascals.swift */,
 				7586C94E2233A59A00FBC3BF /* Percentage.swift */,
+				7523D933223BA39800AFC9FF /* Radians.swift */,
 			);
 			path = Units;
 			sourceTree = "<group>";
@@ -319,6 +326,8 @@
 				755CAAA52215044900817717 /* DailyForecastSpec.swift */,
 				7547D91B2217A6DC009900D1 /* DailyDataSpec.swift */,
 				7586C9592233AF3700FBC3BF /* PercentageSpec.swift */,
+				7523D935223BA53200AFC9FF /* DegreesSpec.swift */,
+				7523D937223BA67500AFC9FF /* RadiansSpec.swift */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -600,6 +609,7 @@
 				7586C9542233A67C00FBC3BF /* Centimeters.swift in Sources */,
 				75A2E0AB2212BA08007150B0 /* DailyData.swift in Sources */,
 				7586C9522233A67C00FBC3BF /* Celsius.swift in Sources */,
+				7523D934223BA39800AFC9FF /* Radians.swift in Sources */,
 				7586C9562233A67C00FBC3BF /* MetersPerSecond.swift in Sources */,
 				7523B080207DDB4F003304FC /* PrecipitationType.swift in Sources */,
 				7586C9512233A67C00FBC3BF /* Seconds.swift in Sources */,
@@ -614,6 +624,7 @@
 			files = (
 				75E4F2BD20F2258E00EB5DF0 /* WindDirectionSpec.swift in Sources */,
 				7599363C20B16FDB0053B5DC /* PrecipitationTypeSpec.swift in Sources */,
+				7523D938223BA67500AFC9FF /* RadiansSpec.swift in Sources */,
 				7599363E20B17E130053B5DC /* HourlyDataPointSpec.swift in Sources */,
 				755CAAA62215044900817717 /* DailyForecastSpec.swift in Sources */,
 				755CAAAD221543B400817717 /* DailyForecast.swift in Sources */,
@@ -624,6 +635,7 @@
 				758A1DE220E09F1900589C3B /* HourlyForecast.swift in Sources */,
 				7586C95A2233AF3700FBC3BF /* PercentageSpec.swift in Sources */,
 				758A1DE020E09E4B00589C3B /* HourlyDataPoint.swift in Sources */,
+				7523D936223BA53200AFC9FF /* DegreesSpec.swift in Sources */,
 				7547D9212217A80A009900D1 /* DailyData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
