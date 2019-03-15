@@ -1,6 +1,6 @@
 {
   "name": "WhatToWearCommonCore",
-  "version": "1.17.0",
+  "version": "1.18.1",
   "summary": "Common core files for both WhatToWear and WhatToWearBackend",
   "homepage": "https://github.com/Noobish1/whattowearcommoncore",
   "license": "MIT",
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "git@github.com:Noobish1/WhatToWearCommonCore.git",
-    "tag": "1.17.0"
+    "tag": "1.18.1"
   },
   "requires_arc": true,
   "source_files": "WhatToWearCommonCore/**/*.swift",

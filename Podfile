@@ -5,7 +5,7 @@ use_frameworks!
 platform :ios, '10.0'
 
 target 'WhatToWearCommonModels' do
-    pod 'WhatToWearCommonCore', :git => 'git@github.com:Noobish1/whattowearcommoncore.git', :tag => '1.17.0'
+    pod 'WhatToWearCommonCore', :git => 'git@github.com:Noobish1/whattowearcommoncore.git', :tag => '1.18.1'
     pod 'Tagged', '0.3.0'
     
     # Debug pods
@@ -13,8 +13,8 @@ target 'WhatToWearCommonModels' do
     
     target 'WhatToWearCommonModelsTests' do
         inherit! :search_paths
-        pod 'Quick', '1.3.2'
-        pod 'Nimble', '7.3.1'
+        pod 'Quick', '2.0.0'
+        pod 'Nimble', '8.0.1'
         pod 'WhatToWearCommonTesting', :git => 'git@github.com:Noobish1/whattowearcommontesting.git', :tag => '1.6.0'
         
         # Have to do this so the tests run, I don't know why
@@ -23,18 +23,10 @@ target 'WhatToWearCommonModels' do
 end
 
 post_install do | installer |
-    # Set swift versions on pods
-    updated_pods = ['WhatToWearCommonCore', 'WhatToWearCommonTesting']
-    
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
             config.build_settings['ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES'] = 'YES'
-            
-            if updated_pods.include? target.name
-                config.build_settings['SWIFT_VERSION'] = '4.2'
-            else
-                config.build_settings['SWIFT_VERSION'] = '4.0'
-            end
+            config.build_settings['SWIFT_VERSION'] = '4.2'
         end
     end
 end
