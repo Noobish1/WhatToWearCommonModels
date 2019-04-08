@@ -23,6 +23,16 @@ internal final class HourlyDataPointSpec: QuickSpec {
                 }
             }
             
+            describe("its dayOfWeek") {
+                beforeEach {
+                    dataPoint = try! HourlyDataPoint.fixtures.valid.object(for: bundle)
+                }
+                
+                it("should be a DayOfWeek created from the date value") {
+                    expect(dataPoint.dayOfWeek) == DayOfWeek(date: dataPoint.time)
+                }
+            }
+            
             describe("its windDirection") {
                 beforeEach {
                     dataPoint = try! HourlyDataPoint.fixtures.valid.object(for: bundle)

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4AFFE369155E2EF92C546EFB /* Pods_WhatToWearCommonModelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651459EAA04E2CCB8C362BD6 /* Pods_WhatToWearCommonModelsTests.framework */; };
+		75182B87225AEC23001F6939 /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75182B86225AEC23001F6939 /* DayOfWeek.swift */; };
+		75182B89225AF456001F6939 /* DayOfWeekSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75182B88225AF456001F6939 /* DayOfWeekSpec.swift */; };
 		7523B06B207DDA98003304FC /* WhatToWearCommonModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 7523B069207DDA98003304FC /* WhatToWearCommonModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7523B07D207DDB4F003304FC /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B079207DDB4E003304FC /* Forecast.swift */; };
 		7523B07E207DDB4F003304FC /* HourlyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523B07A207DDB4E003304FC /* HourlyForecast.swift */; };
@@ -68,6 +70,8 @@
 		4A17ADCEFC4AA43F2AFB9E64 /* Pods-WhatToWearCommonModelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModelsTests.debug.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		57A26898F8D6B14B62D670D2 /* Pods-WhatToWearCommonModels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModels.debug.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModels/Pods-WhatToWearCommonModels.debug.xcconfig"; sourceTree = "<group>"; };
 		651459EAA04E2CCB8C362BD6 /* Pods_WhatToWearCommonModelsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonModelsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75182B86225AEC23001F6939 /* DayOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
+		75182B88225AF456001F6939 /* DayOfWeekSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeekSpec.swift; sourceTree = "<group>"; };
 		7523B066207DDA98003304FC /* WhatToWearCommonModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatToWearCommonModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7523B069207DDA98003304FC /* WhatToWearCommonModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhatToWearCommonModels.h; sourceTree = "<group>"; };
 		7523B06A207DDA98003304FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 				7523B07C207DDB4F003304FC /* PrecipitationType.swift */,
 				75A2E0A82212B8ED007150B0 /* DailyForecast.swift */,
 				75A2E0AA2212BA08007150B0 /* DailyData.swift */,
+				75182B86225AEC23001F6939 /* DayOfWeek.swift */,
 				7586C9502233A61200FBC3BF /* Units */,
 			);
 			path = Models;
@@ -328,6 +333,7 @@
 				7586C9592233AF3700FBC3BF /* PercentageSpec.swift */,
 				7523D935223BA53200AFC9FF /* DegreesSpec.swift */,
 				7523D937223BA67500AFC9FF /* RadiansSpec.swift */,
+				75182B88225AF456001F6939 /* DayOfWeekSpec.swift */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -599,6 +605,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75182B87225AEC23001F6939 /* DayOfWeek.swift in Sources */,
 				7586C9532233A67C00FBC3BF /* Kilometers.swift in Sources */,
 				7523B07F207DDB4F003304FC /* HourlyDataPoint.swift in Sources */,
 				7523B07D207DDB4F003304FC /* Forecast.swift in Sources */,
@@ -630,6 +637,7 @@
 				755CAAAD221543B400817717 /* DailyForecast.swift in Sources */,
 				75C07BB820AEC6FE008DE137 /* HourlyForecastSpec.swift in Sources */,
 				758A1DE420E09FCC00589C3B /* Forecast.swift in Sources */,
+				75182B89225AF456001F6939 /* DayOfWeekSpec.swift in Sources */,
 				75C07BB620AEC0C8008DE137 /* ForecastSpec.swift in Sources */,
 				7547D91C2217A6DC009900D1 /* DailyDataSpec.swift in Sources */,
 				758A1DE220E09F1900589C3B /* HourlyForecast.swift in Sources */,
