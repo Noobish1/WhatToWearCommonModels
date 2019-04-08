@@ -2,11 +2,14 @@ import Foundation
 import WhatToWearCommonCore
 
 // MARK: PrecipitationType
-public enum PrecipitationType: String, Equatable {
+public enum PrecipitationType: String {
     case rain = "rain"
     case snow = "snow"
     case sleet = "sleet"
 }
+
+// MARK: Equatable
+extension PrecipitationType: Equatable {}
 
 // MARK: CaseIterable
 extension PrecipitationType: CaseIterable {}

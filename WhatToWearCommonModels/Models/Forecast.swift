@@ -3,7 +3,7 @@ import Foundation
 import WhatToWearCommonCore
 
 // MARK: Forecast
-public struct Forecast: Equatable {
+public struct Forecast {
     // MARK: properties
     internal let latitude: Double
     internal let longitude: Double
@@ -16,6 +16,9 @@ public struct Forecast: Equatable {
         return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
 }
+
+// MARK: Equatable
+extension Forecast: Equatable {}
 
 // MARK: ContainerCodable
 extension Forecast: ContainerCodable {
@@ -47,7 +50,10 @@ extension Forecast: ContainerCodable {
     }
     
     // MARK: ContainerEncodable
-    public func encodeValue(forKey key: CodingKeys, in container: inout KeyedEncodingContainer<CodingKeys>) throws {
+    public func encodeValue(
+        forKey key: CodingKeys,
+        in container: inout KeyedEncodingContainer<CodingKeys>
+    ) throws {
         switch key {
             case .latitude: try container.encode(latitude, forKey: key)
             case .longitude: try container.encode(longitude, forKey: key)

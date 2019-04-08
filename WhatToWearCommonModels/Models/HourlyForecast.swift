@@ -1,9 +1,13 @@
 import Foundation
 import WhatToWearCommonCore
 
-public struct HourlyForecast: Equatable {
+// MARK: HourlyForecast
+public struct HourlyForecast {
     public let data: NonEmptyArray<HourlyDataPoint>
 }
+
+// MARK: Equatable
+extension HourlyForecast: Equatable {}
 
 // MARK: Codable
 extension HourlyForecast: ContainerCodable {

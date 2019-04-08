@@ -25,6 +25,15 @@ public enum DayOfWeek: Int {
     }
 }
 
+// MARK: CaseIterable
+extension DayOfWeek: CaseIterable {}
+
+// MARK: Codable
+extension DayOfWeek: Codable {}
+
+// MARK: Equatable
+extension DayOfWeek: Equatable {}
+
 // MARK: StringRepresentable
 extension DayOfWeek: StringRepresentable {
     public var stringRepresentation: String {

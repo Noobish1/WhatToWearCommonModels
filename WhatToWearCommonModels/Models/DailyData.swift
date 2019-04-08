@@ -1,28 +1,7 @@
 import Foundation
 
 // MARK: DailyData
-public struct DailyData: Codable, Equatable {
-    private enum CodingKeys: String, CodingKey {
-        case rawApparentTemperatureHighTime = "apparentTemperatureHighTime"
-        case rawApparentTemperatureLowTime = "apparentTemperatureLowTime"
-        case rawApparentTemperatureMaxTime = "apparentTemperatureMaxTime"
-        case rawApparentTemperatureMinTime = "apparentTemperatureMinTime"
-        case rawTemperatureHighTime = "temperatureHighTime"
-        case rawTemperatureLowTime = "temperatureLowTime"
-        case rawTemperatureMaxTime = "temperatureMaxTime"
-        case rawTemperatureMinTime = "temperatureMinTime"
-        case rawUvIndexTime = "uvIndexTime"
-        case rawWindGustTime = "windGustTime"
-        case rawApparentTemperatureHigh = "apparentTemperatureHigh"
-        case rawApparentTemperatureLow = "apparentTemperatureLow"
-        case rawApparentTemperatureMax = "apparentTemperatureMax"
-        case rawApparentTemperatureMin = "apparentTemperatureMin"
-        case rawTemperatureHigh = "temperatureHigh"
-        case rawTemperatureLow = "temperatureLow"
-        case rawTemperatureMax = "temperatureMax"
-        case rawTemperatureMin = "temperatureMin"
-    }
-    
+public struct DailyData {
     // Times
     internal let rawApparentTemperatureHighTime: Seconds<Double>?
     internal let rawApparentTemperatureLowTime: Seconds<Double>?
@@ -44,6 +23,33 @@ public struct DailyData: Codable, Equatable {
     internal let rawTemperatureLow: Celsius<Double>?
     internal let rawTemperatureMax: Celsius<Double>?
     internal let rawTemperatureMin: Celsius<Double>?
+}
+
+// MARK: Equatable
+extension DailyData: Equatable {}
+
+// MARK: Codable
+extension DailyData: Codable {
+    private enum CodingKeys: String, CodingKey {
+        case rawApparentTemperatureHighTime = "apparentTemperatureHighTime"
+        case rawApparentTemperatureLowTime = "apparentTemperatureLowTime"
+        case rawApparentTemperatureMaxTime = "apparentTemperatureMaxTime"
+        case rawApparentTemperatureMinTime = "apparentTemperatureMinTime"
+        case rawTemperatureHighTime = "temperatureHighTime"
+        case rawTemperatureLowTime = "temperatureLowTime"
+        case rawTemperatureMaxTime = "temperatureMaxTime"
+        case rawTemperatureMinTime = "temperatureMinTime"
+        case rawUvIndexTime = "uvIndexTime"
+        case rawWindGustTime = "windGustTime"
+        case rawApparentTemperatureHigh = "apparentTemperatureHigh"
+        case rawApparentTemperatureLow = "apparentTemperatureLow"
+        case rawApparentTemperatureMax = "apparentTemperatureMax"
+        case rawApparentTemperatureMin = "apparentTemperatureMin"
+        case rawTemperatureHigh = "temperatureHigh"
+        case rawTemperatureLow = "temperatureLow"
+        case rawTemperatureMax = "temperatureMax"
+        case rawTemperatureMin = "temperatureMin"
+    }
 }
 
 // MARK: Extensions

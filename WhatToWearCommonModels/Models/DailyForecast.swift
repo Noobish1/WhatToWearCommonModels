@@ -2,11 +2,14 @@ import Foundation
 import WhatToWearCommonCore
 
 // MARK: DailyForecast
-public struct DailyForecast: Equatable {
+public struct DailyForecast {
     internal let internalData: NonEmptyArray<DailyData>
     
     public var data: DailyData { return internalData.first }
 }
+
+// MARK: Equatable
+extension DailyForecast: Equatable {}
 
 // MARK: ContainerCodable
 extension DailyForecast: ContainerCodable {
