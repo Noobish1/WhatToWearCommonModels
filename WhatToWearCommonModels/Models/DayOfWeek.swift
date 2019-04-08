@@ -16,11 +16,12 @@ public enum DayOfWeek: Int {
         
         let weekDay = calendar.component(.weekday, from: date)
         
-        guard let stuff = DayOfWeek(rawValue: weekDay) else {
-            fatalError("No Weekday could be created from weekday Int \(weekDay)")
-        }
+        // I can't find any way of making this fatalError
+        // swiftlint:disable force_unwrapping
+        let dayOfWeek = DayOfWeek(rawValue: weekDay)!
+        // swiftlint:enable force_unwrapping
         
-        self = stuff
+        self = dayOfWeek
     }
 }
 
