@@ -87,12 +87,4 @@ public extension HourlyDataPoint {
     public var windGust: Measurement<UnitSpeed>? {
         return rawWindGust?.measurement
     }
-    
-    public var optionalTemperature: Measurement<UnitTemperature>? {
-        return temperature
-    }
-    
-    public var optionalApparentTemperature: Measurement<UnitTemperature>? {
-        return apparentTemperature
-    }
 }

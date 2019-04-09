@@ -187,26 +187,6 @@ internal final class HourlyDataPointSpec: QuickSpec {
                 }
             }
             
-            describe("its optionalTemperature") {
-                beforeEach {
-                    dataPoint = try! HourlyDataPoint.fixtures.valid.object(for: bundle)
-                }
-                
-                it("should return the same value as its temperature") {
-                    expect(dataPoint.optionalTemperature) == dataPoint.temperature
-                }
-            }
-            
-            describe("its optionalApparentTemperature") {
-                beforeEach {
-                    dataPoint = try! HourlyDataPoint.fixtures.valid.object(for: bundle)
-                }
-                
-                it("should return the same value as its apparentTemperature") {
-                    expect(dataPoint.optionalApparentTemperature) == dataPoint.apparentTemperature
-                }
-            }
-            
             describe("its encoded form") {
                 var dataPoint: HourlyDataPoint!
                 
