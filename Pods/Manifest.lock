@@ -2,9 +2,9 @@ PODS:
   - Nimble (8.0.1)
   - Quick (2.0.0)
   - SwiftLint (0.26.0)
-  - Tagged (0.3.0)
-  - TaggedTime (0.3.0):
-    - Tagged (~> 0.3.0)
+  - Tagged (0.4.0)
+  - TaggedTime (0.4.0):
+    - Tagged (~> 0.4.0)
   - WhatToWearCommonCore (1.18.1)
   - WhatToWearCommonTesting (1.6.0):
     - WhatToWearCommonCore
@@ -13,8 +13,8 @@ DEPENDENCIES:
   - Nimble (= 8.0.1)
   - Quick (= 2.0.0)
   - SwiftLint (= 0.26.0)
-  - Tagged (= 0.3.0)
-  - TaggedTime (= 0.3.0)
+  - Tagged (= 0.4.0)
+  - TaggedTime (= 0.4.0)
   - "WhatToWearCommonCore (from `git@github.com:Noobish1/whattowearcommoncore.git`, tag `1.18.1`)"
   - "WhatToWearCommonTesting (from `git@github.com:Noobish1/whattowearcommontesting.git`, tag `1.6.0`)"
 
@@ -46,11 +46,11 @@ SPEC CHECKSUMS:
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
   Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
-  Tagged: 2b8146eff542cc7b0b76c46061483326ba71ea07
-  TaggedTime: 6e1e6e5d5055dbdd08211bd8f0525f0430d510e3
+  Tagged: a6babffe08b180c499a7a422661621bd4f330840
+  TaggedTime: 7ca04e5a182d30c7077d37a543f458ad0a12ef01
   WhatToWearCommonCore: 5a53b43dc1a284b6a2716d0d357133eecedafe73
   WhatToWearCommonTesting: 4eb81a851ae2f574798ec9ce145f1b2c9b8cceb4
 
-PODFILE CHECKSUM: 513db53b1bd0a44eff153c85a795e5a68030de19
+PODFILE CHECKSUM: 5148d6eef07a59f113f45abf98641ad18cc3c3cb
 
 COCOAPODS: 1.6.0

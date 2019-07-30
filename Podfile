@@ -6,7 +6,7 @@ platform :ios, '10.0'
 
 target 'WhatToWearCommonModels' do
     pod 'WhatToWearCommonCore', :git => 'git@github.com:Noobish1/whattowearcommoncore.git', :tag => '1.18.1'
-    pod 'Tagged', '0.3.0'
+    pod 'Tagged', '0.4.0'
     
     # Debug pods
     pod 'SwiftLint', '0.26.0', :configurations => 'Debug'
@@ -18,7 +18,7 @@ target 'WhatToWearCommonModels' do
         pod 'WhatToWearCommonTesting', :git => 'git@github.com:Noobish1/whattowearcommontesting.git', :tag => '1.6.0'
         
         # Have to do this so the tests run, I don't know why
-        pod 'TaggedTime', '0.3.0'
+        pod 'TaggedTime', '0.4.0'
     end
 end
 
