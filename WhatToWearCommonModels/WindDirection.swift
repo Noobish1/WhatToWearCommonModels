@@ -2,7 +2,7 @@ import Foundation
 import WhatToWearCommonCore
 
 // MARK: WindDirection
-public enum WindDirection: String, CaseIterable {
+public enum WindDirection: String, Codable, CaseIterable {
     case north = "north"
     case south = "south"
     case east = "east"

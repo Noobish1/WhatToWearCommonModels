@@ -2,7 +2,7 @@ import Foundation
 import WhatToWearCommonCore
 
 // MARK: DayOfWeek
-public enum DayOfWeek: Int {
+public enum DayOfWeek: Int, Codable, CaseIterable {
     case monday = 2
     case tuesday = 3
     case wednesday = 4
