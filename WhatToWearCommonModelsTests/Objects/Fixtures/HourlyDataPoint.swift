@@ -3,12 +3,19 @@ import WhatToWearCommonModels
 import WhatToWearCommonTesting
 
 extension HourlyDataPoint: Fixturable {
-    public enum Fixtures: String, FixtureProtocol {
+    public enum Fixtures: FixtureProtocol {
         public typealias EnclosingType = HourlyDataPoint
-        
-        case valid = "datapoint-with-precip"
-        case withoutPrecip = "datapoint-without-precip"
+
+        case valid
+        case withoutPrecip
+
+        public var url: URL {
+            switch self {
+                case .valid:
+                    return R.file.datapointWithPrecipJson()!
+                case .withoutPrecip:
+                    return R.file.datapointWithoutPrecipJson()!
+            }
+        }
     }
-    
-    public static let fixtures = Fixtures.self
 }

@@ -3,11 +3,15 @@ import WhatToWearCommonModels
 import WhatToWearCommonTesting
 
 extension DailyData: Fixturable {
-    public enum Fixtures: String, FixtureProtocol {
+    public enum Fixtures: FixtureProtocol {
         public typealias EnclosingType = DailyData
-        
-        case valid = "dailydata"
+
+        case valid
+
+        public var url: URL {
+            switch self {
+                case .valid: return R.file.dailydataJson()!
+            }
+        }
     }
-    
-    public static let fixtures = Fixtures.self
 }

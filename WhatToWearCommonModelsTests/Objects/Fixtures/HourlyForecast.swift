@@ -3,12 +3,19 @@ import WhatToWearCommonModels
 import WhatToWearCommonTesting
 
 extension HourlyForecast: Fixturable {
-    public enum Fixtures: String, FixtureProtocol {
+    public enum Fixtures: FixtureProtocol {
         public typealias EnclosingType = HourlyForecast
-        
-        case valid = "hourlyforecast"
-        case emptyData = "hourlyforecast-empty-data"
+
+        case valid
+        case emptyData
+
+        public var url: URL {
+            switch self {
+                case .valid:
+                    return R.file.hourlyforecastJson()!
+                case .emptyData:
+                    return R.file.hourlyforecastEmptyDataJson()!
+            }
+        }
     }
-    
-    public static let fixtures = Fixtures.self
 }

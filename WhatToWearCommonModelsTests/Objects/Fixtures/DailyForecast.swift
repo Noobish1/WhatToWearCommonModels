@@ -3,12 +3,19 @@ import WhatToWearCommonModels
 import WhatToWearCommonTesting
 
 extension DailyForecast: Fixturable {
-    public enum Fixtures: String, FixtureProtocol {
+    public enum Fixtures: FixtureProtocol {
         public typealias EnclosingType = DailyForecast
-        
-        case valid = "dailyforecast"
-        case emptyData = "dailyforecast-empty-data"
+
+        case valid
+        case emptyData
+
+        public var url: URL {
+            switch self {
+                case .valid:
+                    return R.file.dailyforecastJson()!
+                case .emptyData:
+                    return R.file.dailyforecastEmptyDataJson()!
+            }
+        }
     }
-    
-    public static let fixtures = Fixtures.self
 }

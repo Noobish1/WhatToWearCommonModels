@@ -3,12 +3,19 @@ import WhatToWearCommonModels
 import WhatToWearCommonTesting
 
 extension Forecast: Fixturable {
-    public enum Fixtures: String, FixtureProtocol {
+    public enum Fixtures: FixtureProtocol {
         public typealias EnclosingType = Forecast
-        
-        case valid = "forecast"
-        case invalidTimeZone = "forecast-bad-timezone"
+
+        case valid
+        case invalidTimeZone
+
+        public var url: URL {
+            switch self {
+                case .valid:
+                    return R.file.forecastJson()!
+                case .invalidTimeZone:
+                    return R.file.forecastBadTimezoneJson()!
+            }
+        }
     }
-    
-    public static let fixtures = Fixtures.self
 }

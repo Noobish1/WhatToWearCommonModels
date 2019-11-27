@@ -6,40 +6,38 @@ import WhatToWearCommonCore
 internal final class ForecastSpec: QuickSpec {
     internal override func spec() {
         describe("Forecast") {
-            var bundle: Bundle!
             var encoder: JSONEncoder!
             var decoder: JSONDecoder!
-            
+
             beforeEach {
-                bundle = Bundle(for: type(of: self))
                 encoder = JSONEncoder()
                 decoder = JSONDecoder()
             }
-            
+
             describe("its coordinate") {
                 var forecast: Forecast!
-                
+
                 beforeEach {
-                    forecast = try! Forecast.fixtures.valid.object(for: bundle)
+                    forecast = try! Forecast.fixtures.valid.object()
                 }
-                
+
                 it("should have the latitude of the forecast") {
                     expect(forecast.coordinate.latitude) == forecast.latitude
                 }
-                
+
                 it("should have the longitude of the forecast") {
                     expect(forecast.coordinate.longitude) == forecast.longitude
                 }
             }
-            
+
             describe("its init from decoder") {
                 var data: Data!
-                
+
                 context("when given an invalid timeZone") {
                     beforeEach {
-                        data = try! Forecast.fixtures.invalidTimeZone.fixtureData(for: bundle)
+                        data = try! Forecast.fixtures.invalidTimeZone.fixtureData()
                     }
-                    
+
                     it("should throw a invalidTimeZone error") {
                         expect {
                             try decoder.decode(Forecast.self, from: data)
@@ -48,12 +46,12 @@ internal final class ForecastSpec: QuickSpec {
                         )
                     }
                 }
-                
+
                 context("when not given an invalid timeZone") {
                     beforeEach {
-                        data = try! Forecast.fixtures.valid.fixtureData(for: bundle)
+                        data = try! Forecast.fixtures.valid.fixtureData()
                     }
-                    
+
                     it("should not throw an error") {
                         expect {
                             try decoder.decode(Forecast.self, from: data)
@@ -63,14 +61,14 @@ internal final class ForecastSpec: QuickSpec {
                     }
                 }
             }
-            
+
             describe("its encode to encoder") {
                 var forecast: Forecast!
-                
+
                 beforeEach {
-                    forecast = try! Forecast.fixtures.valid.object(for: bundle)
+                    forecast = try! Forecast.fixtures.valid.object()
                 }
-                
+
                 it("should return a Data when encoded") {
                     expect {
                         _ = try encoder.encode(forecast)
@@ -79,17 +77,17 @@ internal final class ForecastSpec: QuickSpec {
                     )
                 }
             }
-            
+
             describe("its encoded form") {
                 var forecast: Forecast!
-                
+
                 beforeEach {
-                    let originalForecast = try! Forecast.fixtures.valid.object(for: bundle)
+                    let originalForecast = try! Forecast.fixtures.valid.object()
                     let newData = try! encoder.encode(originalForecast)
-                    
+
                     forecast = try! decoder.decode(Forecast.self, from: newData)
                 }
-                
+
                 it("should be decodable back into a object") {
                     expect(forecast).toNot(beNil())
                 }

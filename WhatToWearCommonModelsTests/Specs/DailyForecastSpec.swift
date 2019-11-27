@@ -1,40 +1,38 @@
 import Quick
 import Nimble
-import WhatToWearCommonCore
+@testable import WhatToWearCommonCore
 @testable import WhatToWearCommonModels
 
 internal final class DailyForecastSpec: QuickSpec {
     internal override func spec() {
         describe("DailyForecast") {
-            var bundle: Bundle!
             var encoder: JSONEncoder!
             var decoder: JSONDecoder!
-            
+
             beforeEach {
-                bundle = Bundle(for: type(of: self))
                 encoder = JSONEncoder()
                 decoder = JSONDecoder()
             }
-            
+
             describe("its data") {
                 var forecast: DailyForecast!
-                
+
                 beforeEach {
-                    forecast = try! DailyForecast.fixtures.valid.object(for: bundle)
+                    forecast = try! DailyForecast.fixtures.valid.object()
                 }
-                
+
                 it("should be its the first object in the internalData array") {
                     expect(forecast.data) == forecast.internalData.first
                 }
             }
-            
+
             describe("its encoder to encoder") {
                 var forecast: DailyForecast!
-                
+
                 beforeEach {
-                    forecast = try! DailyForecast.fixtures.valid.object(for: bundle)
+                    forecast = try! DailyForecast.fixtures.valid.object()
                 }
-                
+
                 it("should return a Data when encoded") {
                     expect {
                         _ = try encoder.encode(forecast)
@@ -43,29 +41,29 @@ internal final class DailyForecastSpec: QuickSpec {
                     )
                 }
             }
-            
+
             describe("its init from decoder") {
                 var data: Data!
-                
+
                 context("when the given data array is empty") {
                     beforeEach {
-                        data = try! DailyForecast.fixtures.emptyData.fixtureData(for: bundle)
+                        data = try! DailyForecast.fixtures.emptyData.fixtureData()
                     }
-                    
+
                     it("should throw a emptyDataArray error") {
                         expect {
                             try decoder.decode(DailyForecast.self, from: data)
                         }.to(
-                            throwError(DailyForecast.DecodingError.emptyDataArray)
+                            throwError(NonEmptyArray<DailyData>.DecodingError.emptyArray)
                         )
                     }
                 }
-                
+
                 context("when the given data array is not empty") {
                     beforeEach {
-                        data = try! DailyForecast.fixtures.valid.fixtureData(for: bundle)
+                        data = try! DailyForecast.fixtures.valid.fixtureData()
                     }
-                    
+
                     it("should not throw an error") {
                         expect {
                             try decoder.decode(DailyForecast.self, from: data)
@@ -75,17 +73,17 @@ internal final class DailyForecastSpec: QuickSpec {
                     }
                 }
             }
-            
+
             describe("its encoded form") {
                 var forecast: DailyForecast!
-                
+
                 beforeEach {
-                    let originalForecast = try! DailyForecast.fixtures.valid.object(for: bundle)
+                    let originalForecast = try! DailyForecast.fixtures.valid.object()
                     let newData = try! encoder.encode(originalForecast)
-                    
+
                     forecast = try! decoder.decode(DailyForecast.self, from: newData)
                 }
-                
+
                 it("should be decodable back into a object") {
                     expect(forecast).toNot(beNil())
                 }

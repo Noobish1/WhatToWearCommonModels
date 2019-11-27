@@ -9,14 +9,14 @@ internal final class PercentageSpec: QuickSpec {
                 context("when called on an Int") {
                     var originalInt: Int!
                     var percentage: Percentage<CGFloat>!
-                    
+
                     beforeEach {
                         let ourInt = Int.random(in: 0...100)
-                        
+
                         originalInt = ourInt
                         percentage = ourInt.percent
                     }
-                    
+
                     it("should return a percentage with its rawValue equal to the given value divided by 100") {
                         expect(percentage.rawValue) == (CGFloat(originalInt) / 100)
                     }
