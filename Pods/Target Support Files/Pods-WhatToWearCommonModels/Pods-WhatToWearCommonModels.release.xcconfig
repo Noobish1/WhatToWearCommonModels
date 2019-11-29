@@ -1,6 +1,6 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Tagged" "${PODS_CONFIGURATION_BUILD_DIR}/WhatToWearCommonCore"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Tagged-iOS" "${PODS_CONFIGURATION_BUILD_DIR}/WhatToWearCommonCore-iOS"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Tagged/Tagged.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/WhatToWearCommonCore/WhatToWearCommonCore.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Tagged-iOS/Tagged.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/WhatToWearCommonCore-iOS/WhatToWearCommonCore.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks' '@executable_path/../../Frameworks'
 OTHER_LDFLAGS = $(inherited) -framework "Tagged" -framework "WhatToWearCommonCore"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS

@@ -16,6 +16,24 @@
 		75371BDE20C4F1D800A62482 /* hourlyforecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 75371BD820C4F1D800A62482 /* hourlyforecast.json */; };
 		75371BDF20C4F1D800A62482 /* hourlyforecast-empty-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 75371BD920C4F1D800A62482 /* hourlyforecast-empty-data.json */; };
 		7547D91F2217A78C009900D1 /* dailydata.json in Resources */ = {isa = PBXBuildFile; fileRef = 7547D91E2217A78C009900D1 /* dailydata.json */; };
+		754DB6722390B2B900D9F848 /* WhatToWearCommonModels_Mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 754DB6642390B2B900D9F848 /* WhatToWearCommonModels_Mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		754DB67C2390B3AA00D9F848 /* DailyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56745238E0D7500615F04 /* DailyData.swift */; };
+		754DB67D2390B3AA00D9F848 /* DailyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56748238E0D7600615F04 /* DailyForecast.swift */; };
+		754DB67E2390B3AA00D9F848 /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56742238E0D7500615F04 /* DayOfWeek.swift */; };
+		754DB67F2390B3AA00D9F848 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56741238E0D7500615F04 /* Forecast.swift */; };
+		754DB6802390B3AA00D9F848 /* HourlyDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56746238E0D7500615F04 /* HourlyDataPoint.swift */; };
+		754DB6812390B3AA00D9F848 /* HourlyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56744238E0D7500615F04 /* HourlyForecast.swift */; };
+		754DB6822390B3AA00D9F848 /* PrecipitationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56743238E0D7500615F04 /* PrecipitationType.swift */; };
+		754DB6832390B3AA00D9F848 /* WindDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56747238E0D7500615F04 /* WindDirection.swift */; };
+		754DB6842390B3B400D9F848 /* Celsius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56753238E0D8100615F04 /* Celsius.swift */; };
+		754DB6852390B3B400D9F848 /* Centimeters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56754238E0D8100615F04 /* Centimeters.swift */; };
+		754DB6862390B3B400D9F848 /* Degrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56758238E0D8100615F04 /* Degrees.swift */; };
+		754DB6872390B3B400D9F848 /* Hectopascals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56757238E0D8100615F04 /* Hectopascals.swift */; };
+		754DB6882390B3B400D9F848 /* Kilometers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56756238E0D8100615F04 /* Kilometers.swift */; };
+		754DB6892390B3B400D9F848 /* MetersPerSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56752238E0D8000615F04 /* MetersPerSecond.swift */; };
+		754DB68A2390B3B400D9F848 /* Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56755238E0D8100615F04 /* Percentage.swift */; };
+		754DB68B2390B3B400D9F848 /* Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56751238E0D8000615F04 /* Radians.swift */; };
+		754DB68C2390B3B400D9F848 /* Seconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56759238E0D8100615F04 /* Seconds.swift */; };
 		755CAAA922152A7E00817717 /* dailyforecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 755CAAA822152A7E00817717 /* dailyforecast.json */; };
 		755CAAAB2215427500817717 /* dailyforecast-empty-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 755CAAAA2215427500817717 /* dailyforecast-empty-data.json */; };
 		75C07BA720AE87B5008DE137 /* WhatToWearCommonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7523B066207DDA98003304FC /* WhatToWearCommonModels.framework */; };
@@ -52,6 +70,7 @@
 		75E5677F238E11B900615F04 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E5677A238E11B900615F04 /* Forecast.swift */; };
 		75E56780238E11B900615F04 /* DailyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E5677B238E11B900615F04 /* DailyForecast.swift */; };
 		75E56784238E12D800615F04 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56783238E12D800615F04 /* R.generated.swift */; };
+		8CD481FF92AD9CB3DD6A2860 /* Pods_WhatToWearCommonModels_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F12F828B19648F3FC3FE20 /* Pods_WhatToWearCommonModels_Mac.framework */; };
 		FD22E5900934DAAA550F95A2 /* Pods_WhatToWearCommonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9185B5FA6436FDE357578C /* Pods_WhatToWearCommonModels.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +89,8 @@
 		4A17ADCEFC4AA43F2AFB9E64 /* Pods-WhatToWearCommonModelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModelsTests.debug.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		57A26898F8D6B14B62D670D2 /* Pods-WhatToWearCommonModels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModels.debug.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModels/Pods-WhatToWearCommonModels.debug.xcconfig"; sourceTree = "<group>"; };
 		651459EAA04E2CCB8C362BD6 /* Pods_WhatToWearCommonModelsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonModelsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F12F828B19648F3FC3FE20 /* Pods_WhatToWearCommonModels_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonModels_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73F6A1972B7EDB6A022F618D /* Pods-WhatToWearCommonModels-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModels-Mac.release.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModels-Mac/Pods-WhatToWearCommonModels-Mac.release.xcconfig"; sourceTree = "<group>"; };
 		7523B066207DDA98003304FC /* WhatToWearCommonModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatToWearCommonModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7523B069207DDA98003304FC /* WhatToWearCommonModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhatToWearCommonModels.h; sourceTree = "<group>"; };
 		7523B06A207DDA98003304FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +105,9 @@
 		75371BD820C4F1D800A62482 /* hourlyforecast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hourlyforecast.json; sourceTree = "<group>"; };
 		75371BD920C4F1D800A62482 /* hourlyforecast-empty-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "hourlyforecast-empty-data.json"; sourceTree = "<group>"; };
 		7547D91E2217A78C009900D1 /* dailydata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dailydata.json; sourceTree = "<group>"; };
+		754DB6622390B2B900D9F848 /* WhatToWearCommonModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatToWearCommonModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		754DB6642390B2B900D9F848 /* WhatToWearCommonModels_Mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhatToWearCommonModels_Mac.h; sourceTree = "<group>"; };
+		754DB6652390B2B900D9F848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		755CAAA822152A7E00817717 /* dailyforecast.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dailyforecast.json; sourceTree = "<group>"; };
 		755CAAAA2215427500817717 /* dailyforecast-empty-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "dailyforecast-empty-data.json"; sourceTree = "<group>"; };
 		759392D22162215E00307AC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -125,6 +149,7 @@
 		75E56783238E12D800615F04 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		75FAA03420E4A3710083AC58 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		7641DA2F0EE177F646B3DE6A /* Pods-WhatToWearCommonModelsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModelsTests.release.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests.release.xcconfig"; sourceTree = "<group>"; };
+		EE8FFB0AF4B18C6E383E6FEB /* Pods-WhatToWearCommonModels-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModels-Mac.debug.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModels-Mac/Pods-WhatToWearCommonModels-Mac.debug.xcconfig"; sourceTree = "<group>"; };
 		F4FCC98010D782887125FDED /* Pods-WhatToWearCommonModels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModels.release.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModels/Pods-WhatToWearCommonModels.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +159,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD22E5900934DAAA550F95A2 /* Pods_WhatToWearCommonModels.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754DB65F2390B2B900D9F848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD481FF92AD9CB3DD6A2860 /* Pods_WhatToWearCommonModels_Mac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +193,7 @@
 				7523B074207DDACF003304FC /* WhatToWearCommonModels.podspec */,
 				7523B068207DDA98003304FC /* WhatToWearCommonModels */,
 				75C07BA320AE87B5008DE137 /* WhatToWearCommonModelsTests */,
+				754DB6632390B2B900D9F848 /* WhatToWearCommonModels-Mac */,
 				7523B067207DDA98003304FC /* Products */,
 				F2D4263C74F7A2FB2F3DB671 /* Pods */,
 				80B9AD802CC3EEEE29D91FE0 /* Frameworks */,
@@ -171,6 +205,7 @@
 			children = (
 				7523B066207DDA98003304FC /* WhatToWearCommonModels.framework */,
 				75C07BA220AE87B5008DE137 /* WhatToWearCommonModelsTests.xctest */,
+				754DB6622390B2B900D9F848 /* WhatToWearCommonModels.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,6 +289,15 @@
 				7547D91E2217A78C009900D1 /* dailydata.json */,
 			);
 			path = DailyData;
+			sourceTree = "<group>";
+		};
+		754DB6632390B2B900D9F848 /* WhatToWearCommonModels-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				754DB6642390B2B900D9F848 /* WhatToWearCommonModels_Mac.h */,
+				754DB6652390B2B900D9F848 /* Info.plist */,
+			);
+			path = "WhatToWearCommonModels-Mac";
 			sourceTree = "<group>";
 		};
 		75551F5120DE20EE00206B75 /* Objects */ = {
@@ -352,6 +396,7 @@
 				759392D22162215E00307AC2 /* Foundation.framework */,
 				2B9185B5FA6436FDE357578C /* Pods_WhatToWearCommonModels.framework */,
 				651459EAA04E2CCB8C362BD6 /* Pods_WhatToWearCommonModelsTests.framework */,
+				72F12F828B19648F3FC3FE20 /* Pods_WhatToWearCommonModels_Mac.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -363,6 +408,8 @@
 				F4FCC98010D782887125FDED /* Pods-WhatToWearCommonModels.release.xcconfig */,
 				4A17ADCEFC4AA43F2AFB9E64 /* Pods-WhatToWearCommonModelsTests.debug.xcconfig */,
 				7641DA2F0EE177F646B3DE6A /* Pods-WhatToWearCommonModelsTests.release.xcconfig */,
+				EE8FFB0AF4B18C6E383E6FEB /* Pods-WhatToWearCommonModels-Mac.debug.xcconfig */,
+				73F6A1972B7EDB6A022F618D /* Pods-WhatToWearCommonModels-Mac.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -375,6 +422,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7523B06B207DDA98003304FC /* WhatToWearCommonModels.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754DB65D2390B2B900D9F848 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754DB6722390B2B900D9F848 /* WhatToWearCommonModels_Mac.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +456,28 @@
 			name = WhatToWearCommonModels;
 			productName = WhatToWearCommonModels;
 			productReference = 7523B066207DDA98003304FC /* WhatToWearCommonModels.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		754DB6612390B2B900D9F848 /* WhatToWearCommonModels-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754DB6772390B2B900D9F848 /* Build configuration list for PBXNativeTarget "WhatToWearCommonModels-Mac" */;
+			buildPhases = (
+				D12B35B51EA6081628FF5D25 /* [CP] Check Pods Manifest.lock */,
+				754DB65D2390B2B900D9F848 /* Headers */,
+				754DB65E2390B2B900D9F848 /* Sources */,
+				754DB65F2390B2B900D9F848 /* Frameworks */,
+				754DB6602390B2B900D9F848 /* Resources */,
+				754DB6792390B2FC00D9F848 /* SwiftLint autocorrect */,
+				754DB67A2390B30F00D9F848 /* SwiftLint lint */,
+				754DB67B2390B33C00D9F848 /* Highlight TODOs and FIXMes */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WhatToWearCommonModels-Mac";
+			productName = "WhatToWearCommonModels-Mac";
+			productReference = 754DB6622390B2B900D9F848 /* WhatToWearCommonModels.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		75C07BA120AE87B5008DE137 /* WhatToWearCommonModelsTests */ = {
@@ -430,13 +507,16 @@
 		7523B05D207DDA98003304FC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Noobish1;
 				TargetAttributes = {
 					7523B065207DDA98003304FC = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 1100;
+					};
+					754DB6612390B2B900D9F848 = {
+						CreatedOnToolsVersion = 11.2.1;
 					};
 					75C07BA120AE87B5008DE137 = {
 						CreatedOnToolsVersion = 9.3;
@@ -458,12 +538,20 @@
 			targets = (
 				7523B065207DDA98003304FC /* WhatToWearCommonModels */,
 				75C07BA120AE87B5008DE137 /* WhatToWearCommonModelsTests */,
+				754DB6612390B2B900D9F848 /* WhatToWearCommonModels-Mac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7523B064207DDA98003304FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754DB6602390B2B900D9F848 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -511,6 +599,60 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		754DB6792390B2FC00D9F848 /* SwiftLint autocorrect */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint autocorrect";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect --quiet\n";
+		};
+		754DB67A2390B30F00D9F848 /* SwiftLint lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -o pipefail\n\n\"${PODS_ROOT}/SwiftLint/swiftlint\" --quiet --strict | sed 's/warning:/error:/g'\n";
+		};
+		754DB67B2390B33C00D9F848 /* Highlight TODOs and FIXMes */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Highlight TODOs and FIXMes";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO|FIXME|\\?\\?\\?:|\\!\\!\\!:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -not -path \"*/Pods/*\" -print0 | \\\nxargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | \\\nperl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
 		7597B6A520FDCFF800E420F7 /* Highlight TODOs and FiXMEs */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -523,7 +665,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "KEYWORDS=\"TODO|FIXME|\\?\\?\\?:|\\!\\!\\!:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -not -path \"*/Pods/*\" -print0 | \\\nxargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | \\\nperl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"";
+			shellScript = "KEYWORDS=\"TODO|FIXME|\\?\\?\\?:|\\!\\!\\!:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -not -path \"*/Pods/*\" -print0 | \\\nxargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | \\\nperl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
 		};
 		75E56781238E125200615F04 /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -539,7 +681,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/WhatToWearCommonModelsTests/Generated/R.generated.swift,
+				"$SRCROOT/WhatToWearCommonModelsTests/Generated/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -557,7 +699,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect --quiet";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect --quiet\n";
 		};
 		75FAA03620E4A3E10083AC58 /* SwiftLint lint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -571,7 +713,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -o pipefail\n\n\"${PODS_ROOT}/SwiftLint/swiftlint\" --quiet --strict | sed 's/warning:/error:/g'";
+			shellScript = "set -e\nset -o pipefail\n\n\"${PODS_ROOT}/SwiftLint/swiftlint\" --quiet --strict | sed 's/warning:/error:/g'\n";
 		};
 		A4E4776BCD92FDAEAB48CDFA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -589,6 +731,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-WhatToWearCommonModels-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D12B35B51EA6081628FF5D25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatToWearCommonModels-Mac-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -636,6 +800,30 @@
 				75E5675E238E0D8100615F04 /* Percentage.swift in Sources */,
 				75E56760238E0D8100615F04 /* Hectopascals.swift in Sources */,
 				75E5675B238E0D8100615F04 /* MetersPerSecond.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754DB65E2390B2B900D9F848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754DB6842390B3B400D9F848 /* Celsius.swift in Sources */,
+				754DB6852390B3B400D9F848 /* Centimeters.swift in Sources */,
+				754DB6862390B3B400D9F848 /* Degrees.swift in Sources */,
+				754DB6872390B3B400D9F848 /* Hectopascals.swift in Sources */,
+				754DB6882390B3B400D9F848 /* Kilometers.swift in Sources */,
+				754DB6892390B3B400D9F848 /* MetersPerSecond.swift in Sources */,
+				754DB68A2390B3B400D9F848 /* Percentage.swift in Sources */,
+				754DB68B2390B3B400D9F848 /* Radians.swift in Sources */,
+				754DB68C2390B3B400D9F848 /* Seconds.swift in Sources */,
+				754DB67C2390B3AA00D9F848 /* DailyData.swift in Sources */,
+				754DB67D2390B3AA00D9F848 /* DailyForecast.swift in Sources */,
+				754DB67E2390B3AA00D9F848 /* DayOfWeek.swift in Sources */,
+				754DB67F2390B3AA00D9F848 /* Forecast.swift in Sources */,
+				754DB6802390B3AA00D9F848 /* HourlyDataPoint.swift in Sources */,
+				754DB6812390B3AA00D9F848 /* HourlyForecast.swift in Sources */,
+				754DB6822390B3AA00D9F848 /* PrecipitationType.swift in Sources */,
+				754DB6832390B3AA00D9F848 /* WindDirection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,7 +895,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -772,7 +960,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -807,7 +995,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3JE2245GFQ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 28;
+				DYLIB_CURRENT_VERSION = 29;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "WhatToWearCommonModels/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -835,7 +1023,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3JE2245GFQ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 28;
+				DYLIB_CURRENT_VERSION = 29;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "WhatToWearCommonModels/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -848,6 +1036,65 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		754DB6732390B2B900D9F848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE8FFB0AF4B18C6E383E6FEB /* Pods-WhatToWearCommonModels-Mac.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 29;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3JE2245GFQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 29;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "WhatToWearCommonModels-Mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noobish1.WhatToWearCommonModels-Mac";
+				PRODUCT_NAME = WhatToWearCommonModels;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		754DB6742390B2B900D9F848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73F6A1972B7EDB6A022F618D /* Pods-WhatToWearCommonModels-Mac.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 29;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3JE2245GFQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 29;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "WhatToWearCommonModels-Mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noobish1.WhatToWearCommonModels-Mac";
+				PRODUCT_NAME = WhatToWearCommonModels;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -907,6 +1154,15 @@
 			buildConfigurations = (
 				7523B06F207DDA98003304FC /* Debug */,
 				7523B070207DDA98003304FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754DB6772390B2B900D9F848 /* Build configuration list for PBXNativeTarget "WhatToWearCommonModels-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754DB6732390B2B900D9F848 /* Debug */,
+				754DB6742390B2B900D9F848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -13,12 +13,12 @@
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
-	<string>FMWK</string>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>2.2.0</string>
 	<key>CFBundleVersion</key>
 	<string>29</string>
-	<key>NSPrincipalClass</key>
-	<string></string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2019 Noobish1. All rights reserved.</string>
 </dict>
 </plist>

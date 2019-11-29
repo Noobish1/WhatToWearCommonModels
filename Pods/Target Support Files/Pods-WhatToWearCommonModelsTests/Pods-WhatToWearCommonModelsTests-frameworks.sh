@@ -161,8 +161,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Tagged/Tagged.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/WhatToWearCommonCore/WhatToWearCommonCore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Tagged-iOS/Tagged.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WhatToWearCommonCore-iOS/WhatToWearCommonCore.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Quick/Quick.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework"
@@ -170,8 +170,8 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/WhatToWearCommonTesting/WhatToWearCommonTesting.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Tagged/Tagged.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/WhatToWearCommonCore/WhatToWearCommonCore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Tagged-iOS/Tagged.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WhatToWearCommonCore-iOS/WhatToWearCommonCore.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Quick/Quick.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework"

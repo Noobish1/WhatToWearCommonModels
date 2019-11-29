@@ -1,5 +1,5 @@
 framework module Tagged {
-  umbrella header "Tagged-umbrella.h"
+  umbrella header "Tagged-iOS-umbrella.h"
 
   export *
   module * { export * }

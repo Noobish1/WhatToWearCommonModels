@@ -1,5 +1,5 @@
 framework module WhatToWearCommonCore {
-  umbrella header "WhatToWearCommonCore-umbrella.h"
+  umbrella header "WhatToWearCommonCore-macOS-umbrella.h"
 
   export *
   module * { export * }

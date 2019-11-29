@@ -1,0 +1,6 @@
+framework module WhatToWearCommonCore {
+  umbrella header "WhatToWearCommonCore-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

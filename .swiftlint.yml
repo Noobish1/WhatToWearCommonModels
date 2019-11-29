@@ -50,6 +50,7 @@ opt_in_rules:
   - explicit_enum_raw_value
 included:
   - WhatToWearCommonModels
+  - WhatToWearCommonModels-Mac
 cyclomatic_complexity:
   ignores_case_statements: true
 trailing_whitespace:
