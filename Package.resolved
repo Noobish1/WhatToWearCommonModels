@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "WhatToWearCommonCore",
-        "repositoryURL": "https://BlairMcArthur@bitbucket.org/BlairMcArthur/whattowearcommoncore.git",
+        "repositoryURL": "https://github.com/Noobish1/whattowearcommoncore.git",
         "state": {
           "branch": null,
-          "revision": "11506e883f9600791a7f2f0e5f438688e8b48df0",
-          "version": "1.0.0"
+          "revision": "7ff4e8544bd42a9dca738a585280d1a3cc35b70f",
+          "version": "2.1.0"
         }
       }
     ]
