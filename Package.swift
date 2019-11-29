@@ -15,6 +15,6 @@ let package = Package(
         .package(url: "https://github.com/pointfreeco/swift-tagged.git", from: "0.4.0"),
     ],
     targets: [
-        .target(name: name, dependencies: ["WhatToWearCommonCore"], path: name),
+        .target(name: name, dependencies: ["WhatToWearCommonCore", "Tagged"], path: name),
     ]
 )
