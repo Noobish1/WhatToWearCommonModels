@@ -1,6 +1,6 @@
 import Foundation
 
-internal struct VerifyParams: Codable {
-    internal let email: String
-    internal let verificationId: Int
+public struct VerifyParams: Codable {
+    public let email: String
+    public let verificationId: Int
 }

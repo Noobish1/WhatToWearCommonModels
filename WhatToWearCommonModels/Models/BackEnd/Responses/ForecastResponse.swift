@@ -1,7 +1,7 @@
 import Foundation
 
 // MARK: ForecastResponse
-internal struct ForecastResponse: Codable {
-    internal let forecast: Forecast
-    internal let user: UserResponse
+public struct ForecastResponse: Codable {
+    public let forecast: Forecast
+    public let user: UserResponse
 }

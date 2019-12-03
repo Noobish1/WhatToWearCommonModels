@@ -1,6 +1,6 @@
 import Foundation
 
-internal struct SignupParams: Codable {
-    internal var email: String
-    internal var password: String
+public struct SignupParams: Codable {
+    public var email: String
+    public var password: String
 }

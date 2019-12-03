@@ -1,5 +1,5 @@
 import Foundation
 
-internal struct AddForecastsParams: Codable {
-    internal let numberOfForecasts: Int
+public struct AddForecastsParams: Codable {
+    public let numberOfForecasts: Int
 }

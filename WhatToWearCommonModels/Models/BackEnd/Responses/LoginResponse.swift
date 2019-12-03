@@ -1,8 +1,8 @@
 import Foundation
 
 // MARK: LoginResponse
-internal struct LoginResponse: Codable {
+public struct LoginResponse: Codable {
     // MARK: properties
-    internal let token: String
-    internal let user: UserResponse
+    public let token: String
+    public let user: UserResponse
 }

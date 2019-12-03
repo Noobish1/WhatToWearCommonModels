@@ -1,7 +1,7 @@
 import Foundation
 
-internal struct ForecastParams: Codable {
-    internal let lat: Double
-    internal let lon: Double
-    internal let time: Int
+public struct ForecastParams: Codable {
+    public let lat: Double
+    public let lon: Double
+    public let time: Int
 }

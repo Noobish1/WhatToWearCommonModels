@@ -1,11 +1,11 @@
 import Foundation
 
 // MARK: UserResponse
-internal struct UserResponse: Codable {
+public struct UserResponse: Codable {
     // MARK: properties
-    internal let id: UUID
-    internal let email: String
-    internal let callsMade: Int
-    internal let callLimit: Int
-    internal let verified: Bool
+    public let id: UUID
+    public let email: String
+    public let callsMade: Int
+    public let callLimit: Int
+    public let verified: Bool
 }
