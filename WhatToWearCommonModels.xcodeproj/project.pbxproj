@@ -213,14 +213,6 @@
 		7523B068207DDA98003304FC /* WhatToWearCommonModels */ = {
 			isa = PBXGroup;
 			children = (
-				75E56745238E0D7500615F04 /* DailyData.swift */,
-				75E56748238E0D7600615F04 /* DailyForecast.swift */,
-				75E56742238E0D7500615F04 /* DayOfWeek.swift */,
-				75E56741238E0D7500615F04 /* Forecast.swift */,
-				75E56746238E0D7500615F04 /* HourlyDataPoint.swift */,
-				75E56744238E0D7500615F04 /* HourlyForecast.swift */,
-				75E56743238E0D7500615F04 /* PrecipitationType.swift */,
-				75E56747238E0D7500615F04 /* WindDirection.swift */,
 				7523B078207DDB4E003304FC /* Models */,
 				7523B071207DDA9E003304FC /* Supporting Files */,
 			);
@@ -239,6 +231,7 @@
 		7523B078207DDB4E003304FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				75BAF06F2396FE14008B48BD /* Forecast */,
 				7586C9502233A61200FBC3BF /* Units */,
 			);
 			path = Models;
@@ -343,6 +336,21 @@
 				75E56779238E11B800615F04 /* HourlyForecast.swift */,
 			);
 			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		75BAF06F2396FE14008B48BD /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				75E56745238E0D7500615F04 /* DailyData.swift */,
+				75E56748238E0D7600615F04 /* DailyForecast.swift */,
+				75E56742238E0D7500615F04 /* DayOfWeek.swift */,
+				75E56741238E0D7500615F04 /* Forecast.swift */,
+				75E56746238E0D7500615F04 /* HourlyDataPoint.swift */,
+				75E56744238E0D7500615F04 /* HourlyForecast.swift */,
+				75E56743238E0D7500615F04 /* PrecipitationType.swift */,
+				75E56747238E0D7500615F04 /* WindDirection.swift */,
+			);
+			path = Forecast;
 			sourceTree = "<group>";
 		};
 		75C07BA320AE87B5008DE137 /* WhatToWearCommonModelsTests */ = {
@@ -681,7 +689,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/WhatToWearCommonModelsTests/Generated/R.generated.swift",
+				$SRCROOT/WhatToWearCommonModelsTests/Generated/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
