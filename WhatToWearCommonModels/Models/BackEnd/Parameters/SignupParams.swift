@@ -1,6 +1,13 @@
 import Foundation
 
 public struct SignupParams: Codable {
-    public var email: String
-    public var password: String
+    // MARK: properties
+    public let email: String
+    public let password: String
+    
+    // MARK: init
+    public init(email: String, password: String) {
+        self.email = email
+        self.password = password
+    }
 }
