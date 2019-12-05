@@ -2,12 +2,10 @@ import Foundation
 
 public struct VerifyParams: Codable {
     // MARK: properties
-    public let email: String
-    public let verificationId: Int
+    public let verificationCode: Int
     
     // MARK: init
-    public init(email: String, verificationId: Int) {
-        self.email = email
-        self.verificationId = verificationId
+    public init(verificationCode: Int) {
+        self.verificationCode = verificationCode
     }
 }
