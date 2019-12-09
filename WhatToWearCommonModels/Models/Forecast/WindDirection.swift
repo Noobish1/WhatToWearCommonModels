@@ -2,7 +2,7 @@ import Foundation
 import WhatToWearCommonCore
 
 // MARK: WindDirection
-public enum WindDirection: String, Codable, CaseIterable {
+public enum WindDirection: String, FiniteSetValueProtocol {
     case north = "north"
     case south = "south"
     case east = "east"
@@ -52,5 +52,16 @@ public enum WindDirection: String, Codable, CaseIterable {
         }
 
         return nil
+    }
+}
+
+// MARK: SelectableValueProtocol
+extension WindDirection: SelectableConditionValueProtocol {
+    public static func specializedMeasurement(from wrapper: WeatherMeasurement) -> SelectableMeasurement<Self>? {
+        guard case .enumeration(.windDirection(let measurement)) = wrapper else {
+            return nil
+        }
+        
+        return measurement
     }
 }

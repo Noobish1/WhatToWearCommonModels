@@ -2,7 +2,7 @@ import Foundation
 import WhatToWearCommonCore
 
 // MARK: MeasurementSystem
-public enum MeasurementSystem: String, NonEmptyCaseIterable, Equatable, Codable {
+public enum MeasurementSystem: String, FiniteSetValueProtocol {
     case metric = "metric"
     case imperial = "imperial"
 }

@@ -2,7 +2,7 @@ import Foundation
 import WhatToWearCommonCore
 
 // MARK: WindType
-public enum WindType: String, NonEmptyCaseIterable, Equatable, Codable {
+public enum WindType: String, FiniteSetValueProtocol {
     case gust = "gust"
     case speed = "speed"
 }

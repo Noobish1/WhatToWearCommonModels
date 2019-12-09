@@ -2,7 +2,7 @@ import Foundation
 import WhatToWearCommonCore
 
 // MARK: TemperatureType
-public enum TemperatureType: String, NonEmptyCaseIterable, Equatable, Codable {
+public enum TemperatureType: String, FiniteSetValueProtocol {
     case apparent = "apparent"
     case air = "air"
 }

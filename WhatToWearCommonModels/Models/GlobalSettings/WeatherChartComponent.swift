@@ -2,7 +2,7 @@ import Foundation
 import WhatToWearCommonCore
 
 // MARK: WeatherChartComponent
-public enum WeatherChartComponent: String, Hashable, Codable, NonEmptyCaseIterable {
+public enum WeatherChartComponent: String, Hashable, FiniteSetValueProtocol {
     // 1.2.0
     case temperature = "temperature"
     case cloudCover = "cloudCover"

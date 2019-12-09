@@ -52,7 +52,7 @@ included:
   - WhatToWearCommonModels
   - WhatToWearCommonModels-Mac
 cyclomatic_complexity:
-  ignores_case_statements: true
+  ignores_case_statements: false
 trailing_whitespace:
   ignores_empty_lines: true
 colon:
@@ -76,6 +76,16 @@ file_name:
   excluded:
     - HTTPMethod.swift
     - KeyedAPIParameters.swift
+    - PercentageMeasurements.swift
+    - TimeMeasurements.swift
+    - SelectableMeasurements.swift
+    - RawDoubleMeasurements.swift
+    - CalculatedPercentageMeasurements.swift
+    - TemperatureMeasurements.swift
+    - SpeedMeasurements.swift
+    - AngleMeasurements.swift
+    - LengthMeasurements.swift
+    - PressureMeasurements.swift
 modifier_order:
   preferred_modifier_order:
     - acl

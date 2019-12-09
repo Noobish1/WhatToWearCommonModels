@@ -42,6 +42,110 @@
 		75B73DEB239EE1F300004F5B /* StoredLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DE7239EE1F300004F5B /* StoredLocations.swift */; };
 		75B73DEE239EE2E500004F5B /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DED239EE2E500004F5B /* CLLocationCoordinate2D.swift */; };
 		75B73DEF239EE2E500004F5B /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DED239EE2E500004F5B /* CLLocationCoordinate2D.swift */; };
+		75B73DF5239EE53D00004F5B /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DF2239EE53D00004F5B /* Rule.swift */; };
+		75B73DF6239EE53D00004F5B /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DF2239EE53D00004F5B /* Rule.swift */; };
+		75B73DF7239EE53D00004F5B /* RuleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DF3239EE53D00004F5B /* RuleGroup.swift */; };
+		75B73DF8239EE53D00004F5B /* RuleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DF3239EE53D00004F5B /* RuleGroup.swift */; };
+		75B73DF9239EE53D00004F5B /* StoredRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DF4239EE53D00004F5B /* StoredRules.swift */; };
+		75B73DFA239EE53D00004F5B /* StoredRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DF4239EE53D00004F5B /* StoredRules.swift */; };
+		75B73E01239EE71F00004F5B /* DoubleCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DFC239EE71E00004F5B /* DoubleCondition.swift */; };
+		75B73E02239EE71F00004F5B /* DoubleCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DFC239EE71E00004F5B /* DoubleCondition.swift */; };
+		75B73E03239EE71F00004F5B /* SelectableCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DFD239EE71E00004F5B /* SelectableCondition.swift */; };
+		75B73E04239EE71F00004F5B /* SelectableCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DFD239EE71E00004F5B /* SelectableCondition.swift */; };
+		75B73E05239EE71F00004F5B /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DFE239EE71F00004F5B /* Condition.swift */; };
+		75B73E06239EE71F00004F5B /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DFE239EE71F00004F5B /* Condition.swift */; };
+		75B73E07239EE71F00004F5B /* TimeCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DFF239EE71F00004F5B /* TimeCondition.swift */; };
+		75B73E08239EE71F00004F5B /* TimeCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DFF239EE71F00004F5B /* TimeCondition.swift */; };
+		75B73E09239EE71F00004F5B /* EnumCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E00239EE71F00004F5B /* EnumCondition.swift */; };
+		75B73E0A239EE71F00004F5B /* EnumCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E00239EE71F00004F5B /* EnumCondition.swift */; };
+		75B73E22239EE78700004F5B /* CalculatedPercentageMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E0D239EE78500004F5B /* CalculatedPercentageMeasurement.swift */; };
+		75B73E23239EE78700004F5B /* CalculatedPercentageMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E0D239EE78500004F5B /* CalculatedPercentageMeasurement.swift */; };
+		75B73E24239EE78700004F5B /* AngleMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E0E239EE78600004F5B /* AngleMeasurements.swift */; };
+		75B73E25239EE78700004F5B /* AngleMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E0E239EE78600004F5B /* AngleMeasurements.swift */; };
+		75B73E2C239EE78700004F5B /* DoubleMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E12239EE78600004F5B /* DoubleMeasurement.swift */; };
+		75B73E2D239EE78700004F5B /* DoubleMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E12239EE78600004F5B /* DoubleMeasurement.swift */; };
+		75B73E30239EE78700004F5B /* MeasurementValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E14239EE78600004F5B /* MeasurementValue.swift */; };
+		75B73E31239EE78700004F5B /* MeasurementValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E14239EE78600004F5B /* MeasurementValue.swift */; };
+		75B73E32239EE78700004F5B /* UnitMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E15239EE78700004F5B /* UnitMeasurement.swift */; };
+		75B73E33239EE78700004F5B /* UnitMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E15239EE78700004F5B /* UnitMeasurement.swift */; };
+		75B73E34239EE78700004F5B /* PercentageMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E16239EE78700004F5B /* PercentageMeasurement.swift */; };
+		75B73E35239EE78700004F5B /* PercentageMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E16239EE78700004F5B /* PercentageMeasurement.swift */; };
+		75B73E36239EE78700004F5B /* EnumMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E17239EE78700004F5B /* EnumMeasurement.swift */; };
+		75B73E37239EE78700004F5B /* EnumMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E17239EE78700004F5B /* EnumMeasurement.swift */; };
+		75B73E3A239EE78700004F5B /* TimeMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E19239EE78700004F5B /* TimeMeasurement.swift */; };
+		75B73E3B239EE78700004F5B /* TimeMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E19239EE78700004F5B /* TimeMeasurement.swift */; };
+		75B73E3C239EE78700004F5B /* SelectableMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E1A239EE78700004F5B /* SelectableMeasurement.swift */; };
+		75B73E3D239EE78700004F5B /* SelectableMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E1A239EE78700004F5B /* SelectableMeasurement.swift */; };
+		75B73E44239EE78700004F5B /* RawDoubleMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E1E239EE78700004F5B /* RawDoubleMeasurement.swift */; };
+		75B73E45239EE78700004F5B /* RawDoubleMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E1E239EE78700004F5B /* RawDoubleMeasurement.swift */; };
+		75B73E4F239EE88200004F5B /* MilitaryTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E49239EE88200004F5B /* MilitaryTime.swift */; };
+		75B73E50239EE88200004F5B /* MilitaryTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E49239EE88200004F5B /* MilitaryTime.swift */; };
+		75B73E51239EE88200004F5B /* TimeRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E4A239EE88200004F5B /* TimeRange.swift */; };
+		75B73E52239EE88200004F5B /* TimeRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E4A239EE88200004F5B /* TimeRange.swift */; };
+		75B73E53239EE88200004F5B /* SelectableMeasurementSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E4C239EE88200004F5B /* SelectableMeasurementSymbol.swift */; };
+		75B73E54239EE88200004F5B /* SelectableMeasurementSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E4C239EE88200004F5B /* SelectableMeasurementSymbol.swift */; };
+		75B73E55239EE88200004F5B /* DoubleSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E4D239EE88200004F5B /* DoubleSymbol.swift */; };
+		75B73E56239EE88200004F5B /* DoubleSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E4D239EE88200004F5B /* DoubleSymbol.swift */; };
+		75B73E57239EE88200004F5B /* TimeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E4E239EE88200004F5B /* TimeSymbol.swift */; };
+		75B73E58239EE88200004F5B /* TimeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E4E239EE88200004F5B /* TimeSymbol.swift */; };
+		75B73E64239EE93A00004F5B /* BasicMeasurementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E5A239EE93800004F5B /* BasicMeasurementProtocol.swift */; };
+		75B73E65239EE93A00004F5B /* BasicMeasurementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E5A239EE93800004F5B /* BasicMeasurementProtocol.swift */; };
+		75B73E66239EE93A00004F5B /* SymbolProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E5B239EE93800004F5B /* SymbolProtocol.swift */; };
+		75B73E67239EE93A00004F5B /* SymbolProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E5B239EE93800004F5B /* SymbolProtocol.swift */; };
+		75B73E68239EE93A00004F5B /* DoubleMeasurementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E5C239EE93800004F5B /* DoubleMeasurementProtocol.swift */; };
+		75B73E69239EE93A00004F5B /* DoubleMeasurementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E5C239EE93800004F5B /* DoubleMeasurementProtocol.swift */; };
+		75B73E6A239EE93A00004F5B /* PercentageMeasurementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E5D239EE93800004F5B /* PercentageMeasurementProtocol.swift */; };
+		75B73E6B239EE93A00004F5B /* PercentageMeasurementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E5D239EE93800004F5B /* PercentageMeasurementProtocol.swift */; };
+		75B73E6C239EE93A00004F5B /* MeasurementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E5E239EE93900004F5B /* MeasurementProtocol.swift */; };
+		75B73E6D239EE93A00004F5B /* MeasurementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E5E239EE93900004F5B /* MeasurementProtocol.swift */; };
+		75B73E6E239EE93A00004F5B /* ConditionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E5F239EE93900004F5B /* ConditionProtocol.swift */; };
+		75B73E6F239EE93A00004F5B /* ConditionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E5F239EE93900004F5B /* ConditionProtocol.swift */; };
+		75B73E70239EE93A00004F5B /* BasicDoubleMeasurementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E60239EE93900004F5B /* BasicDoubleMeasurementProtocol.swift */; };
+		75B73E71239EE93A00004F5B /* BasicDoubleMeasurementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E60239EE93900004F5B /* BasicDoubleMeasurementProtocol.swift */; };
+		75B73E72239EE93A00004F5B /* SelectableConditionValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E61239EE93900004F5B /* SelectableConditionValueProtocol.swift */; };
+		75B73E73239EE93A00004F5B /* SelectableConditionValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E61239EE93900004F5B /* SelectableConditionValueProtocol.swift */; };
+		75B73E74239EE93A00004F5B /* BasicConditionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E62239EE93900004F5B /* BasicConditionProtocol.swift */; };
+		75B73E75239EE93A00004F5B /* BasicConditionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E62239EE93900004F5B /* BasicConditionProtocol.swift */; };
+		75B73E76239EE93A00004F5B /* SingleSymbolProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E63239EE93A00004F5B /* SingleSymbolProtocol.swift */; };
+		75B73E77239EE93A00004F5B /* SingleSymbolProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E63239EE93A00004F5B /* SingleSymbolProtocol.swift */; };
+		75B73E79239EEA0F00004F5B /* DisplayedValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E78239EEA0F00004F5B /* DisplayedValue.swift */; };
+		75B73E7A239EEA0F00004F5B /* DisplayedValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E78239EEA0F00004F5B /* DisplayedValue.swift */; };
+		75B73E7C239EEB0E00004F5B /* FiniteSetValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E7B239EEB0E00004F5B /* FiniteSetValueProtocol.swift */; };
+		75B73E7D239EEB0E00004F5B /* FiniteSetValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E7B239EEB0E00004F5B /* FiniteSetValueProtocol.swift */; };
+		75B73E88239EEBD500004F5B /* CalculatedPercentageMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E7E239EEBD300004F5B /* CalculatedPercentageMeasurements.swift */; };
+		75B73E89239EEBD500004F5B /* CalculatedPercentageMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E7E239EEBD300004F5B /* CalculatedPercentageMeasurements.swift */; };
+		75B73E8A239EEBD500004F5B /* PressureMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E7F239EEBD400004F5B /* PressureMeasurements.swift */; };
+		75B73E8B239EEBD500004F5B /* PressureMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E7F239EEBD400004F5B /* PressureMeasurements.swift */; };
+		75B73E8C239EEBD500004F5B /* SelectableMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E80239EEBD400004F5B /* SelectableMeasurements.swift */; };
+		75B73E8D239EEBD500004F5B /* SelectableMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E80239EEBD400004F5B /* SelectableMeasurements.swift */; };
+		75B73E8E239EEBD500004F5B /* RawDoubleMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E81239EEBD400004F5B /* RawDoubleMeasurements.swift */; };
+		75B73E8F239EEBD500004F5B /* RawDoubleMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E81239EEBD400004F5B /* RawDoubleMeasurements.swift */; };
+		75B73E90239EEBD500004F5B /* PercentageMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E82239EEBD400004F5B /* PercentageMeasurements.swift */; };
+		75B73E91239EEBD500004F5B /* PercentageMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E82239EEBD400004F5B /* PercentageMeasurements.swift */; };
+		75B73E92239EEBD500004F5B /* SpeedMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E83239EEBD400004F5B /* SpeedMeasurements.swift */; };
+		75B73E93239EEBD500004F5B /* SpeedMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E83239EEBD400004F5B /* SpeedMeasurements.swift */; };
+		75B73E94239EEBD500004F5B /* LengthMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E84239EEBD400004F5B /* LengthMeasurements.swift */; };
+		75B73E95239EEBD500004F5B /* LengthMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E84239EEBD400004F5B /* LengthMeasurements.swift */; };
+		75B73E96239EEBD500004F5B /* WeatherMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E85239EEBD400004F5B /* WeatherMeasurement.swift */; };
+		75B73E97239EEBD500004F5B /* WeatherMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E85239EEBD400004F5B /* WeatherMeasurement.swift */; };
+		75B73E98239EEBD500004F5B /* TimeMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E86239EEBD400004F5B /* TimeMeasurements.swift */; };
+		75B73E99239EEBD500004F5B /* TimeMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E86239EEBD400004F5B /* TimeMeasurements.swift */; };
+		75B73E9E239EEC3D00004F5B /* SunCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E9D239EEC3D00004F5B /* SunCalculator.swift */; };
+		75B73E9F239EEC3D00004F5B /* SunCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73E9D239EEC3D00004F5B /* SunCalculator.swift */; };
+		75B73EC5239EF34600004F5B /* TemperatureMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73EC4239EF34600004F5B /* TemperatureMeasurements.swift */; };
+		75B73EC6239EF34600004F5B /* TemperatureMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73EC4239EF34600004F5B /* TemperatureMeasurements.swift */; };
+		75B73EC9239EFD7400004F5B /* TimeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73EC8239EFD7400004F5B /* TimeSettings.swift */; };
+		75B73ECA239EFD7400004F5B /* TimeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73EC8239EFD7400004F5B /* TimeSettings.swift */; };
+		75B73ECD239EFDD800004F5B /* TimeConditionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73ECB239EFDD800004F5B /* TimeConditionSpec.swift */; };
+		75B73ECE239EFDD800004F5B /* SelectableConditionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73ECC239EFDD800004F5B /* SelectableConditionSpec.swift */; };
+		75B73ED2239EFE4B00004F5B /* TimeCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73ECF239EFE4B00004F5B /* TimeCondition.swift */; };
+		75B73ED3239EFE4B00004F5B /* DoubleCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73ED0239EFE4B00004F5B /* DoubleCondition.swift */; };
+		75B73ED4239EFE4B00004F5B /* SelectableCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73ED1239EFE4B00004F5B /* SelectableCondition.swift */; };
+		75B73EDB239EFF3200004F5B /* time-condition.json in Resources */ = {isa = PBXBuildFile; fileRef = 75B73ED6239EFF3200004F5B /* time-condition.json */; };
+		75B73EDC239EFF3200004F5B /* day-of-week-condition.json in Resources */ = {isa = PBXBuildFile; fileRef = 75B73ED7239EFF3200004F5B /* day-of-week-condition.json */; };
+		75B73EDD239EFF3200004F5B /* double-condition.json in Resources */ = {isa = PBXBuildFile; fileRef = 75B73ED8239EFF3200004F5B /* double-condition.json */; };
+		75B73EDE239EFF3200004F5B /* precip-condition.json in Resources */ = {isa = PBXBuildFile; fileRef = 75B73ED9239EFF3200004F5B /* precip-condition.json */; };
+		75B73EDF239EFF3200004F5B /* wind-direction-condition.json in Resources */ = {isa = PBXBuildFile; fileRef = 75B73EDA239EFF3200004F5B /* wind-direction-condition.json */; };
 		75BAF07A239701FC008B48BD /* ForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BAF072239701FC008B48BD /* ForecastResponse.swift */; };
 		75BAF07B239701FC008B48BD /* ForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BAF072239701FC008B48BD /* ForecastResponse.swift */; };
 		75BAF07C239701FC008B48BD /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BAF073239701FC008B48BD /* UserResponse.swift */; };
@@ -148,6 +252,63 @@
 		75B73DE6239EE1F300004F5B /* ValidLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidLocation.swift; sourceTree = "<group>"; };
 		75B73DE7239EE1F300004F5B /* StoredLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoredLocations.swift; sourceTree = "<group>"; };
 		75B73DED239EE2E500004F5B /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
+		75B73DF2239EE53D00004F5B /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		75B73DF3239EE53D00004F5B /* RuleGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleGroup.swift; sourceTree = "<group>"; };
+		75B73DF4239EE53D00004F5B /* StoredRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoredRules.swift; sourceTree = "<group>"; };
+		75B73DFC239EE71E00004F5B /* DoubleCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleCondition.swift; sourceTree = "<group>"; };
+		75B73DFD239EE71E00004F5B /* SelectableCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectableCondition.swift; sourceTree = "<group>"; };
+		75B73DFE239EE71F00004F5B /* Condition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
+		75B73DFF239EE71F00004F5B /* TimeCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCondition.swift; sourceTree = "<group>"; };
+		75B73E00239EE71F00004F5B /* EnumCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumCondition.swift; sourceTree = "<group>"; };
+		75B73E0D239EE78500004F5B /* CalculatedPercentageMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatedPercentageMeasurement.swift; sourceTree = "<group>"; };
+		75B73E0E239EE78600004F5B /* AngleMeasurements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleMeasurements.swift; sourceTree = "<group>"; };
+		75B73E12239EE78600004F5B /* DoubleMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleMeasurement.swift; sourceTree = "<group>"; };
+		75B73E14239EE78600004F5B /* MeasurementValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementValue.swift; sourceTree = "<group>"; };
+		75B73E15239EE78700004F5B /* UnitMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitMeasurement.swift; sourceTree = "<group>"; };
+		75B73E16239EE78700004F5B /* PercentageMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentageMeasurement.swift; sourceTree = "<group>"; };
+		75B73E17239EE78700004F5B /* EnumMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumMeasurement.swift; sourceTree = "<group>"; };
+		75B73E19239EE78700004F5B /* TimeMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMeasurement.swift; sourceTree = "<group>"; };
+		75B73E1A239EE78700004F5B /* SelectableMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectableMeasurement.swift; sourceTree = "<group>"; };
+		75B73E1E239EE78700004F5B /* RawDoubleMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawDoubleMeasurement.swift; sourceTree = "<group>"; };
+		75B73E49239EE88200004F5B /* MilitaryTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilitaryTime.swift; sourceTree = "<group>"; };
+		75B73E4A239EE88200004F5B /* TimeRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRange.swift; sourceTree = "<group>"; };
+		75B73E4C239EE88200004F5B /* SelectableMeasurementSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectableMeasurementSymbol.swift; sourceTree = "<group>"; };
+		75B73E4D239EE88200004F5B /* DoubleSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleSymbol.swift; sourceTree = "<group>"; };
+		75B73E4E239EE88200004F5B /* TimeSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSymbol.swift; sourceTree = "<group>"; };
+		75B73E5A239EE93800004F5B /* BasicMeasurementProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicMeasurementProtocol.swift; sourceTree = "<group>"; };
+		75B73E5B239EE93800004F5B /* SymbolProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolProtocol.swift; sourceTree = "<group>"; };
+		75B73E5C239EE93800004F5B /* DoubleMeasurementProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleMeasurementProtocol.swift; sourceTree = "<group>"; };
+		75B73E5D239EE93800004F5B /* PercentageMeasurementProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentageMeasurementProtocol.swift; sourceTree = "<group>"; };
+		75B73E5E239EE93900004F5B /* MeasurementProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementProtocol.swift; sourceTree = "<group>"; };
+		75B73E5F239EE93900004F5B /* ConditionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConditionProtocol.swift; sourceTree = "<group>"; };
+		75B73E60239EE93900004F5B /* BasicDoubleMeasurementProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicDoubleMeasurementProtocol.swift; sourceTree = "<group>"; };
+		75B73E61239EE93900004F5B /* SelectableConditionValueProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectableConditionValueProtocol.swift; sourceTree = "<group>"; };
+		75B73E62239EE93900004F5B /* BasicConditionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicConditionProtocol.swift; sourceTree = "<group>"; };
+		75B73E63239EE93A00004F5B /* SingleSymbolProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleSymbolProtocol.swift; sourceTree = "<group>"; };
+		75B73E78239EEA0F00004F5B /* DisplayedValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayedValue.swift; sourceTree = "<group>"; };
+		75B73E7B239EEB0E00004F5B /* FiniteSetValueProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiniteSetValueProtocol.swift; sourceTree = "<group>"; };
+		75B73E7E239EEBD300004F5B /* CalculatedPercentageMeasurements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatedPercentageMeasurements.swift; sourceTree = "<group>"; };
+		75B73E7F239EEBD400004F5B /* PressureMeasurements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PressureMeasurements.swift; sourceTree = "<group>"; };
+		75B73E80239EEBD400004F5B /* SelectableMeasurements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectableMeasurements.swift; sourceTree = "<group>"; };
+		75B73E81239EEBD400004F5B /* RawDoubleMeasurements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawDoubleMeasurements.swift; sourceTree = "<group>"; };
+		75B73E82239EEBD400004F5B /* PercentageMeasurements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentageMeasurements.swift; sourceTree = "<group>"; };
+		75B73E83239EEBD400004F5B /* SpeedMeasurements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedMeasurements.swift; sourceTree = "<group>"; };
+		75B73E84239EEBD400004F5B /* LengthMeasurements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LengthMeasurements.swift; sourceTree = "<group>"; };
+		75B73E85239EEBD400004F5B /* WeatherMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherMeasurement.swift; sourceTree = "<group>"; };
+		75B73E86239EEBD400004F5B /* TimeMeasurements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMeasurements.swift; sourceTree = "<group>"; };
+		75B73E9D239EEC3D00004F5B /* SunCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunCalculator.swift; sourceTree = "<group>"; };
+		75B73EC4239EF34600004F5B /* TemperatureMeasurements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureMeasurements.swift; sourceTree = "<group>"; };
+		75B73EC8239EFD7400004F5B /* TimeSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSettings.swift; sourceTree = "<group>"; };
+		75B73ECB239EFDD800004F5B /* TimeConditionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeConditionSpec.swift; sourceTree = "<group>"; };
+		75B73ECC239EFDD800004F5B /* SelectableConditionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectableConditionSpec.swift; sourceTree = "<group>"; };
+		75B73ECF239EFE4B00004F5B /* TimeCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCondition.swift; sourceTree = "<group>"; };
+		75B73ED0239EFE4B00004F5B /* DoubleCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleCondition.swift; sourceTree = "<group>"; };
+		75B73ED1239EFE4B00004F5B /* SelectableCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectableCondition.swift; sourceTree = "<group>"; };
+		75B73ED6239EFF3200004F5B /* time-condition.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "time-condition.json"; sourceTree = "<group>"; };
+		75B73ED7239EFF3200004F5B /* day-of-week-condition.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "day-of-week-condition.json"; sourceTree = "<group>"; };
+		75B73ED8239EFF3200004F5B /* double-condition.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "double-condition.json"; sourceTree = "<group>"; };
+		75B73ED9239EFF3200004F5B /* precip-condition.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "precip-condition.json"; sourceTree = "<group>"; };
+		75B73EDA239EFF3200004F5B /* wind-direction-condition.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wind-direction-condition.json"; sourceTree = "<group>"; };
 		75BAF072239701FC008B48BD /* ForecastResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastResponse.swift; sourceTree = "<group>"; };
 		75BAF073239701FC008B48BD /* UserResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		75BAF074239701FC008B48BD /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
@@ -264,6 +425,8 @@
 		7523B068207DDA98003304FC /* WhatToWearCommonModels */ = {
 			isa = PBXGroup;
 			children = (
+				75B73E9C239EEC2300004F5B /* Objects */,
+				75B73E59239EE8E500004F5B /* Protocols */,
 				75B73DEC239EE23B00004F5B /* Extensions */,
 				7523B078207DDB4E003304FC /* Models */,
 				7523B071207DDA9E003304FC /* Supporting Files */,
@@ -283,6 +446,8 @@
 		7523B078207DDB4E003304FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				75B73EC7239EFD5300004F5B /* TimeSettings */,
+				75B73DFB239EE54300004F5B /* Rules */,
 				75B73DF1239EE4CF00004F5B /* Locations */,
 				75B73DF0239EE4C400004F5B /* GlobalSettings */,
 				75BAF070239700DF008B48BD /* BackEnd */,
@@ -295,11 +460,8 @@
 		75371BD020C4F1D800A62482 /* Example data */ = {
 			isa = PBXGroup;
 			children = (
-				7547D91D2217A701009900D1 /* DailyData */,
-				755CAAA72215293900817717 /* DailyForecast */,
-				75371BD120C4F1D800A62482 /* Forecast */,
-				75371BD420C4F1D800A62482 /* DataPoint */,
-				75371BD720C4F1D800A62482 /* HourlyForecast */,
+				75B73ED5239EFF3200004F5B /* Conditions */,
+				75B73EE0239EFF3900004F5B /* Forecast */,
 			);
 			path = "Example data";
 			sourceTree = "<group>";
@@ -384,6 +546,9 @@
 		758A1DDE20E09E3400589C3B /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
+				75B73ED0239EFE4B00004F5B /* DoubleCondition.swift */,
+				75B73ED1239EFE4B00004F5B /* SelectableCondition.swift */,
+				75B73ECF239EFE4B00004F5B /* TimeCondition.swift */,
 				75E56778238E11B800615F04 /* DailyData.swift */,
 				75E5677B238E11B900615F04 /* DailyForecast.swift */,
 				75E5677A238E11B900615F04 /* Forecast.swift */,
@@ -422,6 +587,129 @@
 				75B73DE6239EE1F300004F5B /* ValidLocation.swift */,
 			);
 			path = Locations;
+			sourceTree = "<group>";
+		};
+		75B73DFB239EE54300004F5B /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				75B73E78239EEA0F00004F5B /* DisplayedValue.swift */,
+				75B73E4A239EE88200004F5B /* TimeRange.swift */,
+				75B73E49239EE88200004F5B /* MilitaryTime.swift */,
+				75B73E4B239EE88200004F5B /* Symbols */,
+				75B73E48239EE79000004F5B /* Measurements */,
+				75B73E0B239EE72800004F5B /* Condition */,
+				75B73DF2239EE53D00004F5B /* Rule.swift */,
+				75B73DF3239EE53D00004F5B /* RuleGroup.swift */,
+				75B73DF4239EE53D00004F5B /* StoredRules.swift */,
+			);
+			path = Rules;
+			sourceTree = "<group>";
+		};
+		75B73E0B239EE72800004F5B /* Condition */ = {
+			isa = PBXGroup;
+			children = (
+				75B73DFE239EE71F00004F5B /* Condition.swift */,
+				75B73DFC239EE71E00004F5B /* DoubleCondition.swift */,
+				75B73E00239EE71F00004F5B /* EnumCondition.swift */,
+				75B73DFD239EE71E00004F5B /* SelectableCondition.swift */,
+				75B73DFF239EE71F00004F5B /* TimeCondition.swift */,
+			);
+			path = Condition;
+			sourceTree = "<group>";
+		};
+		75B73E48239EE79000004F5B /* Measurements */ = {
+			isa = PBXGroup;
+			children = (
+				75B73EC4239EF34600004F5B /* TemperatureMeasurements.swift */,
+				75B73E0E239EE78600004F5B /* AngleMeasurements.swift */,
+				75B73E7E239EEBD300004F5B /* CalculatedPercentageMeasurements.swift */,
+				75B73E84239EEBD400004F5B /* LengthMeasurements.swift */,
+				75B73E82239EEBD400004F5B /* PercentageMeasurements.swift */,
+				75B73E7F239EEBD400004F5B /* PressureMeasurements.swift */,
+				75B73E81239EEBD400004F5B /* RawDoubleMeasurements.swift */,
+				75B73E80239EEBD400004F5B /* SelectableMeasurements.swift */,
+				75B73E83239EEBD400004F5B /* SpeedMeasurements.swift */,
+				75B73E86239EEBD400004F5B /* TimeMeasurements.swift */,
+				75B73E85239EEBD400004F5B /* WeatherMeasurement.swift */,
+				75B73E0D239EE78500004F5B /* CalculatedPercentageMeasurement.swift */,
+				75B73E12239EE78600004F5B /* DoubleMeasurement.swift */,
+				75B73E17239EE78700004F5B /* EnumMeasurement.swift */,
+				75B73E14239EE78600004F5B /* MeasurementValue.swift */,
+				75B73E16239EE78700004F5B /* PercentageMeasurement.swift */,
+				75B73E1E239EE78700004F5B /* RawDoubleMeasurement.swift */,
+				75B73E1A239EE78700004F5B /* SelectableMeasurement.swift */,
+				75B73E19239EE78700004F5B /* TimeMeasurement.swift */,
+				75B73E15239EE78700004F5B /* UnitMeasurement.swift */,
+			);
+			path = Measurements;
+			sourceTree = "<group>";
+		};
+		75B73E4B239EE88200004F5B /* Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				75B73E4C239EE88200004F5B /* SelectableMeasurementSymbol.swift */,
+				75B73E4D239EE88200004F5B /* DoubleSymbol.swift */,
+				75B73E4E239EE88200004F5B /* TimeSymbol.swift */,
+			);
+			path = Symbols;
+			sourceTree = "<group>";
+		};
+		75B73E59239EE8E500004F5B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				75B73E7B239EEB0E00004F5B /* FiniteSetValueProtocol.swift */,
+				75B73E62239EE93900004F5B /* BasicConditionProtocol.swift */,
+				75B73E60239EE93900004F5B /* BasicDoubleMeasurementProtocol.swift */,
+				75B73E5A239EE93800004F5B /* BasicMeasurementProtocol.swift */,
+				75B73E5F239EE93900004F5B /* ConditionProtocol.swift */,
+				75B73E5C239EE93800004F5B /* DoubleMeasurementProtocol.swift */,
+				75B73E5E239EE93900004F5B /* MeasurementProtocol.swift */,
+				75B73E5D239EE93800004F5B /* PercentageMeasurementProtocol.swift */,
+				75B73E61239EE93900004F5B /* SelectableConditionValueProtocol.swift */,
+				75B73E63239EE93A00004F5B /* SingleSymbolProtocol.swift */,
+				75B73E5B239EE93800004F5B /* SymbolProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		75B73E9C239EEC2300004F5B /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				75B73E9D239EEC3D00004F5B /* SunCalculator.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		75B73EC7239EFD5300004F5B /* TimeSettings */ = {
+			isa = PBXGroup;
+			children = (
+				75B73EC8239EFD7400004F5B /* TimeSettings.swift */,
+			);
+			path = TimeSettings;
+			sourceTree = "<group>";
+		};
+		75B73ED5239EFF3200004F5B /* Conditions */ = {
+			isa = PBXGroup;
+			children = (
+				75B73ED6239EFF3200004F5B /* time-condition.json */,
+				75B73ED7239EFF3200004F5B /* day-of-week-condition.json */,
+				75B73ED8239EFF3200004F5B /* double-condition.json */,
+				75B73ED9239EFF3200004F5B /* precip-condition.json */,
+				75B73EDA239EFF3200004F5B /* wind-direction-condition.json */,
+			);
+			path = Conditions;
+			sourceTree = "<group>";
+		};
+		75B73EE0239EFF3900004F5B /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				7547D91D2217A701009900D1 /* DailyData */,
+				755CAAA72215293900817717 /* DailyForecast */,
+				75371BD120C4F1D800A62482 /* Forecast */,
+				75371BD420C4F1D800A62482 /* DataPoint */,
+				75371BD720C4F1D800A62482 /* HourlyForecast */,
+			);
+			path = Forecast;
 			sourceTree = "<group>";
 		};
 		75BAF06F2396FE14008B48BD /* Forecast */ = {
@@ -492,6 +780,8 @@
 		75C07BB420AEC0B4008DE137 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				75B73ECC239EFDD800004F5B /* SelectableConditionSpec.swift */,
+				75B73ECB239EFDD800004F5B /* TimeConditionSpec.swift */,
 				75E56764238E0DBF00615F04 /* DailyDataSpec.swift */,
 				75E56766238E0DC000615F04 /* DailyForecastSpec.swift */,
 				75E56767238E0DC000615F04 /* DayOfWeekSpec.swift */,
@@ -687,15 +977,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B73EDB239EFF3200004F5B /* time-condition.json in Resources */,
 				75371BDB20C4F1D800A62482 /* forecast.json in Resources */,
 				75371BDC20C4F1D800A62482 /* datapoint-with-precip.json in Resources */,
 				755CAAAB2215427500817717 /* dailyforecast-empty-data.json in Resources */,
 				755CAAA922152A7E00817717 /* dailyforecast.json in Resources */,
+				75B73EDE239EFF3200004F5B /* precip-condition.json in Resources */,
 				75371BDE20C4F1D800A62482 /* hourlyforecast.json in Resources */,
 				75371BDF20C4F1D800A62482 /* hourlyforecast-empty-data.json in Resources */,
 				75371BDD20C4F1D800A62482 /* datapoint-without-precip.json in Resources */,
+				75B73EDD239EFF3200004F5B /* double-condition.json in Resources */,
+				75B73EDC239EFF3200004F5B /* day-of-week-condition.json in Resources */,
 				75371BDA20C4F1D800A62482 /* forecast-bad-timezone.json in Resources */,
 				7547D91F2217A78C009900D1 /* dailydata.json in Resources */,
+				75B73EDF239EFF3200004F5B /* wind-direction-condition.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -910,37 +1205,84 @@
 			files = (
 				75E56750238E0D7600615F04 /* DailyForecast.swift in Sources */,
 				75E5674B238E0D7600615F04 /* PrecipitationType.swift in Sources */,
+				75B73E79239EEA0F00004F5B /* DisplayedValue.swift in Sources */,
+				75B73E01239EE71F00004F5B /* DoubleCondition.swift in Sources */,
 				75CD69E0239DEF6C008BE20A /* AppBackgroundOptions.swift in Sources */,
 				75E5674D238E0D7600615F04 /* DailyData.swift in Sources */,
+				75B73E88239EEBD500004F5B /* CalculatedPercentageMeasurements.swift in Sources */,
+				75B73E98239EEBD500004F5B /* TimeMeasurements.swift in Sources */,
 				75E5674C238E0D7600615F04 /* HourlyForecast.swift in Sources */,
 				75CD69DC239DEF6C008BE20A /* TemperatureType.swift in Sources */,
+				75B73E8E239EEBD500004F5B /* RawDoubleMeasurements.swift in Sources */,
+				75B73DF5239EE53D00004F5B /* Rule.swift in Sources */,
+				75B73DF7239EE53D00004F5B /* RuleGroup.swift in Sources */,
+				75B73E05239EE71F00004F5B /* Condition.swift in Sources */,
+				75B73E44239EE78700004F5B /* RawDoubleMeasurement.swift in Sources */,
+				75B73E57239EE88200004F5B /* TimeSymbol.swift in Sources */,
 				75E5674E238E0D7600615F04 /* HourlyDataPoint.swift in Sources */,
 				75BAF084239701FC008B48BD /* ForecastParams.swift in Sources */,
+				75B73E74239EE93A00004F5B /* BasicConditionProtocol.swift in Sources */,
+				75B73E9E239EEC3D00004F5B /* SunCalculator.swift in Sources */,
 				75E5675C238E0D8100615F04 /* Celsius.swift in Sources */,
+				75B73E4F239EE88200004F5B /* MilitaryTime.swift in Sources */,
+				75B73E3A239EE78700004F5B /* TimeMeasurement.swift in Sources */,
 				75BAF080239701FC008B48BD /* AddForecastsParams.swift in Sources */,
 				75B73DEA239EE1F300004F5B /* StoredLocations.swift in Sources */,
 				75CD69D6239DEF6C008BE20A /* GlobalSettings.swift in Sources */,
+				75B73E72239EE93A00004F5B /* SelectableConditionValueProtocol.swift in Sources */,
 				75CD69E6239DF12C008BE20A /* WeatherChartComponent.swift in Sources */,
 				75E5675F238E0D8100615F04 /* Kilometers.swift in Sources */,
+				75B73E92239EEBD500004F5B /* SpeedMeasurements.swift in Sources */,
 				75E56761238E0D8100615F04 /* Degrees.swift in Sources */,
+				75B73EC5239EF34600004F5B /* TemperatureMeasurements.swift in Sources */,
+				75B73E6A239EE93A00004F5B /* PercentageMeasurementProtocol.swift in Sources */,
+				75B73E66239EE93A00004F5B /* SymbolProtocol.swift in Sources */,
+				75B73E3C239EE78700004F5B /* SelectableMeasurement.swift in Sources */,
+				75B73E55239EE88200004F5B /* DoubleSymbol.swift in Sources */,
 				75B73DEE239EE2E500004F5B /* CLLocationCoordinate2D.swift in Sources */,
+				75B73E2C239EE78700004F5B /* DoubleMeasurement.swift in Sources */,
 				75E5675A238E0D8100615F04 /* Radians.swift in Sources */,
+				75B73E53239EE88200004F5B /* SelectableMeasurementSymbol.swift in Sources */,
 				75E5675D238E0D8100615F04 /* Centimeters.swift in Sources */,
+				75B73E76239EE93A00004F5B /* SingleSymbolProtocol.swift in Sources */,
 				75E56762238E0D8100615F04 /* Seconds.swift in Sources */,
+				75B73E6C239EE93A00004F5B /* MeasurementProtocol.swift in Sources */,
+				75B73DF9239EE53D00004F5B /* StoredRules.swift in Sources */,
+				75B73E7C239EEB0E00004F5B /* FiniteSetValueProtocol.swift in Sources */,
+				75B73E64239EE93A00004F5B /* BasicMeasurementProtocol.swift in Sources */,
+				75B73E03239EE71F00004F5B /* SelectableCondition.swift in Sources */,
 				75BAF082239701FC008B48BD /* VerifyParams.swift in Sources */,
+				75B73E22239EE78700004F5B /* CalculatedPercentageMeasurement.swift in Sources */,
+				75B73E07239EE71F00004F5B /* TimeCondition.swift in Sources */,
+				75B73E36239EE78700004F5B /* EnumMeasurement.swift in Sources */,
+				75B73E8A239EEBD500004F5B /* PressureMeasurements.swift in Sources */,
+				75B73E51239EE88200004F5B /* TimeRange.swift in Sources */,
 				75E56749238E0D7600615F04 /* Forecast.swift in Sources */,
 				75BAF086239701FC008B48BD /* SignupParams.swift in Sources */,
 				75CD69D8239DEF6C008BE20A /* MeasurementSystem.swift in Sources */,
+				75B73EC9239EFD7400004F5B /* TimeSettings.swift in Sources */,
+				75B73E8C239EEBD500004F5B /* SelectableMeasurements.swift in Sources */,
+				75B73E96239EEBD500004F5B /* WeatherMeasurement.swift in Sources */,
+				75B73E6E239EE93A00004F5B /* ConditionProtocol.swift in Sources */,
 				75E5674A238E0D7600615F04 /* DayOfWeek.swift in Sources */,
+				75B73E24239EE78700004F5B /* AngleMeasurements.swift in Sources */,
+				75B73E94239EEBD500004F5B /* LengthMeasurements.swift in Sources */,
 				75CD69DA239DEF6C008BE20A /* WindType.swift in Sources */,
+				75B73E30239EE78700004F5B /* MeasurementValue.swift in Sources */,
+				75B73E68239EE93A00004F5B /* DoubleMeasurementProtocol.swift in Sources */,
 				75B73DE8239EE1F300004F5B /* ValidLocation.swift in Sources */,
 				75BAF07C239701FC008B48BD /* UserResponse.swift in Sources */,
 				75BAF07E239701FC008B48BD /* LoginResponse.swift in Sources */,
 				75CD69DE239DEF6C008BE20A /* AppBackground.swift in Sources */,
+				75B73E90239EEBD500004F5B /* PercentageMeasurements.swift in Sources */,
 				75E5674F238E0D7600615F04 /* WindDirection.swift in Sources */,
+				75B73E70239EE93A00004F5B /* BasicDoubleMeasurementProtocol.swift in Sources */,
+				75B73E34239EE78700004F5B /* PercentageMeasurement.swift in Sources */,
 				75E5675E238E0D8100615F04 /* Percentage.swift in Sources */,
 				75E56760238E0D8100615F04 /* Hectopascals.swift in Sources */,
 				75E5675B238E0D8100615F04 /* MetersPerSecond.swift in Sources */,
+				75B73E09239EE71F00004F5B /* EnumCondition.swift in Sources */,
+				75B73E32239EE78700004F5B /* UnitMeasurement.swift in Sources */,
 				75BAF07A239701FC008B48BD /* ForecastResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -951,37 +1293,84 @@
 			files = (
 				754DB6842390B3B400D9F848 /* Celsius.swift in Sources */,
 				754DB6852390B3B400D9F848 /* Centimeters.swift in Sources */,
+				75B73E7A239EEA0F00004F5B /* DisplayedValue.swift in Sources */,
+				75B73E02239EE71F00004F5B /* DoubleCondition.swift in Sources */,
 				75CD69E1239DEF6C008BE20A /* AppBackgroundOptions.swift in Sources */,
 				754DB6862390B3B400D9F848 /* Degrees.swift in Sources */,
+				75B73E89239EEBD500004F5B /* CalculatedPercentageMeasurements.swift in Sources */,
+				75B73E99239EEBD500004F5B /* TimeMeasurements.swift in Sources */,
 				754DB6872390B3B400D9F848 /* Hectopascals.swift in Sources */,
 				75CD69DD239DEF6C008BE20A /* TemperatureType.swift in Sources */,
+				75B73E8F239EEBD500004F5B /* RawDoubleMeasurements.swift in Sources */,
+				75B73DF6239EE53D00004F5B /* Rule.swift in Sources */,
+				75B73DF8239EE53D00004F5B /* RuleGroup.swift in Sources */,
+				75B73E06239EE71F00004F5B /* Condition.swift in Sources */,
+				75B73E45239EE78700004F5B /* RawDoubleMeasurement.swift in Sources */,
+				75B73E58239EE88200004F5B /* TimeSymbol.swift in Sources */,
 				754DB6882390B3B400D9F848 /* Kilometers.swift in Sources */,
 				75BAF085239701FC008B48BD /* ForecastParams.swift in Sources */,
+				75B73E75239EE93A00004F5B /* BasicConditionProtocol.swift in Sources */,
+				75B73E9F239EEC3D00004F5B /* SunCalculator.swift in Sources */,
 				754DB6892390B3B400D9F848 /* MetersPerSecond.swift in Sources */,
+				75B73E50239EE88200004F5B /* MilitaryTime.swift in Sources */,
+				75B73E3B239EE78700004F5B /* TimeMeasurement.swift in Sources */,
 				75BAF081239701FC008B48BD /* AddForecastsParams.swift in Sources */,
 				75B73DEB239EE1F300004F5B /* StoredLocations.swift in Sources */,
 				75CD69D7239DEF6C008BE20A /* GlobalSettings.swift in Sources */,
+				75B73E73239EE93A00004F5B /* SelectableConditionValueProtocol.swift in Sources */,
 				75CD69E7239DF12C008BE20A /* WeatherChartComponent.swift in Sources */,
 				754DB68A2390B3B400D9F848 /* Percentage.swift in Sources */,
+				75B73E93239EEBD500004F5B /* SpeedMeasurements.swift in Sources */,
 				754DB68B2390B3B400D9F848 /* Radians.swift in Sources */,
+				75B73EC6239EF34600004F5B /* TemperatureMeasurements.swift in Sources */,
+				75B73E6B239EE93A00004F5B /* PercentageMeasurementProtocol.swift in Sources */,
+				75B73E67239EE93A00004F5B /* SymbolProtocol.swift in Sources */,
+				75B73E3D239EE78700004F5B /* SelectableMeasurement.swift in Sources */,
+				75B73E56239EE88200004F5B /* DoubleSymbol.swift in Sources */,
 				75B73DEF239EE2E500004F5B /* CLLocationCoordinate2D.swift in Sources */,
+				75B73E2D239EE78700004F5B /* DoubleMeasurement.swift in Sources */,
 				754DB68C2390B3B400D9F848 /* Seconds.swift in Sources */,
+				75B73E54239EE88200004F5B /* SelectableMeasurementSymbol.swift in Sources */,
 				754DB67C2390B3AA00D9F848 /* DailyData.swift in Sources */,
+				75B73E77239EE93A00004F5B /* SingleSymbolProtocol.swift in Sources */,
 				754DB67D2390B3AA00D9F848 /* DailyForecast.swift in Sources */,
+				75B73E6D239EE93A00004F5B /* MeasurementProtocol.swift in Sources */,
+				75B73DFA239EE53D00004F5B /* StoredRules.swift in Sources */,
+				75B73E7D239EEB0E00004F5B /* FiniteSetValueProtocol.swift in Sources */,
+				75B73E65239EE93A00004F5B /* BasicMeasurementProtocol.swift in Sources */,
+				75B73E04239EE71F00004F5B /* SelectableCondition.swift in Sources */,
 				75BAF083239701FC008B48BD /* VerifyParams.swift in Sources */,
+				75B73E23239EE78700004F5B /* CalculatedPercentageMeasurement.swift in Sources */,
+				75B73E08239EE71F00004F5B /* TimeCondition.swift in Sources */,
+				75B73E37239EE78700004F5B /* EnumMeasurement.swift in Sources */,
+				75B73E8B239EEBD500004F5B /* PressureMeasurements.swift in Sources */,
+				75B73E52239EE88200004F5B /* TimeRange.swift in Sources */,
 				754DB67E2390B3AA00D9F848 /* DayOfWeek.swift in Sources */,
 				75BAF087239701FC008B48BD /* SignupParams.swift in Sources */,
 				75CD69D9239DEF6C008BE20A /* MeasurementSystem.swift in Sources */,
+				75B73ECA239EFD7400004F5B /* TimeSettings.swift in Sources */,
+				75B73E8D239EEBD500004F5B /* SelectableMeasurements.swift in Sources */,
+				75B73E97239EEBD500004F5B /* WeatherMeasurement.swift in Sources */,
+				75B73E6F239EE93A00004F5B /* ConditionProtocol.swift in Sources */,
 				754DB67F2390B3AA00D9F848 /* Forecast.swift in Sources */,
+				75B73E25239EE78700004F5B /* AngleMeasurements.swift in Sources */,
+				75B73E95239EEBD500004F5B /* LengthMeasurements.swift in Sources */,
 				75CD69DB239DEF6C008BE20A /* WindType.swift in Sources */,
+				75B73E31239EE78700004F5B /* MeasurementValue.swift in Sources */,
+				75B73E69239EE93A00004F5B /* DoubleMeasurementProtocol.swift in Sources */,
 				75B73DE9239EE1F300004F5B /* ValidLocation.swift in Sources */,
 				75BAF07D239701FC008B48BD /* UserResponse.swift in Sources */,
 				75BAF07F239701FC008B48BD /* LoginResponse.swift in Sources */,
 				75CD69DF239DEF6C008BE20A /* AppBackground.swift in Sources */,
+				75B73E91239EEBD500004F5B /* PercentageMeasurements.swift in Sources */,
 				754DB6802390B3AA00D9F848 /* HourlyDataPoint.swift in Sources */,
+				75B73E71239EE93A00004F5B /* BasicDoubleMeasurementProtocol.swift in Sources */,
+				75B73E35239EE78700004F5B /* PercentageMeasurement.swift in Sources */,
 				754DB6812390B3AA00D9F848 /* HourlyForecast.swift in Sources */,
 				754DB6822390B3AA00D9F848 /* PrecipitationType.swift in Sources */,
 				754DB6832390B3AA00D9F848 /* WindDirection.swift in Sources */,
+				75B73E0A239EE71F00004F5B /* EnumCondition.swift in Sources */,
+				75B73E33239EE78700004F5B /* UnitMeasurement.swift in Sources */,
 				75BAF07B239701FC008B48BD /* ForecastResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -994,12 +1383,17 @@
 				75E56770238E0DC000615F04 /* DailyForecastSpec.swift in Sources */,
 				75E5677F238E11B900615F04 /* Forecast.swift in Sources */,
 				75E56771238E0DC000615F04 /* DayOfWeekSpec.swift in Sources */,
+				75B73ED2239EFE4B00004F5B /* TimeCondition.swift in Sources */,
 				75E56776238E0DC000615F04 /* ForecastSpec.swift in Sources */,
 				75E56772238E0DC000615F04 /* HourlyForecastSpec.swift in Sources */,
+				75B73ECE239EFDD800004F5B /* SelectableConditionSpec.swift in Sources */,
 				75E56773238E0DC000615F04 /* WindDirectionSpec.swift in Sources */,
 				75E5676F238E0DC000615F04 /* HourlyDataPointSpec.swift in Sources */,
+				75B73ED3239EFE4B00004F5B /* DoubleCondition.swift in Sources */,
 				75E56774238E0DC000615F04 /* DegreesSpec.swift in Sources */,
 				75E5677E238E11B900615F04 /* HourlyForecast.swift in Sources */,
+				75B73ECD239EFDD800004F5B /* TimeConditionSpec.swift in Sources */,
+				75B73ED4239EFE4B00004F5B /* SelectableCondition.swift in Sources */,
 				75E56775238E0DC000615F04 /* PercentageSpec.swift in Sources */,
 				75E56784238E12D800615F04 /* R.generated.swift in Sources */,
 				75E5676D238E0DC000615F04 /* RadiansSpec.swift in Sources */,

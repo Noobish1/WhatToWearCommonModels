@@ -2,7 +2,7 @@ import Foundation
 import WhatToWearCommonCore
 
 // MARK: AppBackgroundOptions
-public enum AppBackgroundOptions: String, NonEmptyCaseIterable, Codable, Equatable {
+public enum AppBackgroundOptions: String, FiniteSetValueProtocol {
     case original = "original"
     case blueToRed = "blueToRed"
     case blueToBrown = "blueToBrown"
