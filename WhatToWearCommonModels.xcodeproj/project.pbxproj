@@ -283,15 +283,8 @@
 		7523B078207DDB4E003304FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				75B73DE7239EE1F300004F5B /* StoredLocations.swift */,
-				75B73DE6239EE1F300004F5B /* ValidLocation.swift */,
-				75CD69E5239DF12B008BE20A /* WeatherChartComponent.swift */,
-				75CD69D4239DEF6C008BE20A /* AppBackground.swift */,
-				75CD69D5239DEF6C008BE20A /* AppBackgroundOptions.swift */,
-				75CD69D0239DEF6B008BE20A /* GlobalSettings.swift */,
-				75CD69D1239DEF6B008BE20A /* MeasurementSystem.swift */,
-				75CD69D3239DEF6B008BE20A /* TemperatureType.swift */,
-				75CD69D2239DEF6B008BE20A /* WindType.swift */,
+				75B73DF1239EE4CF00004F5B /* Locations */,
+				75B73DF0239EE4C400004F5B /* GlobalSettings */,
 				75BAF070239700DF008B48BD /* BackEnd */,
 				75BAF06F2396FE14008B48BD /* Forecast */,
 				7586C9502233A61200FBC3BF /* Units */,
@@ -406,6 +399,29 @@
 				75B73DED239EE2E500004F5B /* CLLocationCoordinate2D.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		75B73DF0239EE4C400004F5B /* GlobalSettings */ = {
+			isa = PBXGroup;
+			children = (
+				75CD69E5239DF12B008BE20A /* WeatherChartComponent.swift */,
+				75CD69D4239DEF6C008BE20A /* AppBackground.swift */,
+				75CD69D5239DEF6C008BE20A /* AppBackgroundOptions.swift */,
+				75CD69D0239DEF6B008BE20A /* GlobalSettings.swift */,
+				75CD69D1239DEF6B008BE20A /* MeasurementSystem.swift */,
+				75CD69D3239DEF6B008BE20A /* TemperatureType.swift */,
+				75CD69D2239DEF6B008BE20A /* WindType.swift */,
+			);
+			path = GlobalSettings;
+			sourceTree = "<group>";
+		};
+		75B73DF1239EE4CF00004F5B /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				75B73DE7239EE1F300004F5B /* StoredLocations.swift */,
+				75B73DE6239EE1F300004F5B /* ValidLocation.swift */,
+			);
+			path = Locations;
 			sourceTree = "<group>";
 		};
 		75BAF06F2396FE14008B48BD /* Forecast */ = {
