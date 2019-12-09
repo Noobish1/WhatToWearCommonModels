@@ -51,6 +51,20 @@
 		75BAF086239701FC008B48BD /* SignupParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BAF079239701FC008B48BD /* SignupParams.swift */; };
 		75BAF087239701FC008B48BD /* SignupParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BAF079239701FC008B48BD /* SignupParams.swift */; };
 		75C07BA720AE87B5008DE137 /* WhatToWearCommonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7523B066207DDA98003304FC /* WhatToWearCommonModels.framework */; };
+		75CD69D6239DEF6C008BE20A /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69D0239DEF6B008BE20A /* GlobalSettings.swift */; };
+		75CD69D7239DEF6C008BE20A /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69D0239DEF6B008BE20A /* GlobalSettings.swift */; };
+		75CD69D8239DEF6C008BE20A /* MeasurementSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69D1239DEF6B008BE20A /* MeasurementSystem.swift */; };
+		75CD69D9239DEF6C008BE20A /* MeasurementSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69D1239DEF6B008BE20A /* MeasurementSystem.swift */; };
+		75CD69DA239DEF6C008BE20A /* WindType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69D2239DEF6B008BE20A /* WindType.swift */; };
+		75CD69DB239DEF6C008BE20A /* WindType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69D2239DEF6B008BE20A /* WindType.swift */; };
+		75CD69DC239DEF6C008BE20A /* TemperatureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69D3239DEF6B008BE20A /* TemperatureType.swift */; };
+		75CD69DD239DEF6C008BE20A /* TemperatureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69D3239DEF6B008BE20A /* TemperatureType.swift */; };
+		75CD69DE239DEF6C008BE20A /* AppBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69D4239DEF6C008BE20A /* AppBackground.swift */; };
+		75CD69DF239DEF6C008BE20A /* AppBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69D4239DEF6C008BE20A /* AppBackground.swift */; };
+		75CD69E0239DEF6C008BE20A /* AppBackgroundOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69D5239DEF6C008BE20A /* AppBackgroundOptions.swift */; };
+		75CD69E1239DEF6C008BE20A /* AppBackgroundOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69D5239DEF6C008BE20A /* AppBackgroundOptions.swift */; };
+		75CD69E6239DF12C008BE20A /* WeatherChartComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69E5239DF12B008BE20A /* WeatherChartComponent.swift */; };
+		75CD69E7239DF12C008BE20A /* WeatherChartComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69E5239DF12B008BE20A /* WeatherChartComponent.swift */; };
 		75E56749238E0D7600615F04 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56741238E0D7500615F04 /* Forecast.swift */; };
 		75E5674A238E0D7600615F04 /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56742238E0D7500615F04 /* DayOfWeek.swift */; };
 		75E5674B238E0D7600615F04 /* PrecipitationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56743238E0D7500615F04 /* PrecipitationType.swift */; };
@@ -135,6 +149,13 @@
 		75C07BA220AE87B5008DE137 /* WhatToWearCommonModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearCommonModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C07BA620AE87B5008DE137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75C07BAD20AE9093008DE137 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		75CD69D0239DEF6B008BE20A /* GlobalSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
+		75CD69D1239DEF6B008BE20A /* MeasurementSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementSystem.swift; sourceTree = "<group>"; };
+		75CD69D2239DEF6B008BE20A /* WindType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindType.swift; sourceTree = "<group>"; };
+		75CD69D3239DEF6B008BE20A /* TemperatureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureType.swift; sourceTree = "<group>"; };
+		75CD69D4239DEF6C008BE20A /* AppBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBackground.swift; sourceTree = "<group>"; };
+		75CD69D5239DEF6C008BE20A /* AppBackgroundOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBackgroundOptions.swift; sourceTree = "<group>"; };
+		75CD69E5239DF12B008BE20A /* WeatherChartComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherChartComponent.swift; sourceTree = "<group>"; };
 		75E56741238E0D7500615F04 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		75E56742238E0D7500615F04 /* DayOfWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
 		75E56743238E0D7500615F04 /* PrecipitationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecipitationType.swift; sourceTree = "<group>"; };
@@ -252,6 +273,13 @@
 		7523B078207DDB4E003304FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				75CD69E5239DF12B008BE20A /* WeatherChartComponent.swift */,
+				75CD69D4239DEF6C008BE20A /* AppBackground.swift */,
+				75CD69D5239DEF6C008BE20A /* AppBackgroundOptions.swift */,
+				75CD69D0239DEF6B008BE20A /* GlobalSettings.swift */,
+				75CD69D1239DEF6B008BE20A /* MeasurementSystem.swift */,
+				75CD69D3239DEF6B008BE20A /* TemperatureType.swift */,
+				75CD69D2239DEF6B008BE20A /* WindType.swift */,
 				75BAF070239700DF008B48BD /* BackEnd */,
 				75BAF06F2396FE14008B48BD /* Forecast */,
 				7586C9502233A61200FBC3BF /* Units */,
@@ -845,12 +873,16 @@
 			files = (
 				75E56750238E0D7600615F04 /* DailyForecast.swift in Sources */,
 				75E5674B238E0D7600615F04 /* PrecipitationType.swift in Sources */,
+				75CD69E0239DEF6C008BE20A /* AppBackgroundOptions.swift in Sources */,
 				75E5674D238E0D7600615F04 /* DailyData.swift in Sources */,
 				75E5674C238E0D7600615F04 /* HourlyForecast.swift in Sources */,
+				75CD69DC239DEF6C008BE20A /* TemperatureType.swift in Sources */,
 				75E5674E238E0D7600615F04 /* HourlyDataPoint.swift in Sources */,
 				75BAF084239701FC008B48BD /* ForecastParams.swift in Sources */,
 				75E5675C238E0D8100615F04 /* Celsius.swift in Sources */,
 				75BAF080239701FC008B48BD /* AddForecastsParams.swift in Sources */,
+				75CD69D6239DEF6C008BE20A /* GlobalSettings.swift in Sources */,
+				75CD69E6239DF12C008BE20A /* WeatherChartComponent.swift in Sources */,
 				75E5675F238E0D8100615F04 /* Kilometers.swift in Sources */,
 				75E56761238E0D8100615F04 /* Degrees.swift in Sources */,
 				75E5675A238E0D8100615F04 /* Radians.swift in Sources */,
@@ -859,9 +891,12 @@
 				75BAF082239701FC008B48BD /* VerifyParams.swift in Sources */,
 				75E56749238E0D7600615F04 /* Forecast.swift in Sources */,
 				75BAF086239701FC008B48BD /* SignupParams.swift in Sources */,
+				75CD69D8239DEF6C008BE20A /* MeasurementSystem.swift in Sources */,
 				75E5674A238E0D7600615F04 /* DayOfWeek.swift in Sources */,
+				75CD69DA239DEF6C008BE20A /* WindType.swift in Sources */,
 				75BAF07C239701FC008B48BD /* UserResponse.swift in Sources */,
 				75BAF07E239701FC008B48BD /* LoginResponse.swift in Sources */,
+				75CD69DE239DEF6C008BE20A /* AppBackground.swift in Sources */,
 				75E5674F238E0D7600615F04 /* WindDirection.swift in Sources */,
 				75E5675E238E0D8100615F04 /* Percentage.swift in Sources */,
 				75E56760238E0D8100615F04 /* Hectopascals.swift in Sources */,
@@ -876,12 +911,16 @@
 			files = (
 				754DB6842390B3B400D9F848 /* Celsius.swift in Sources */,
 				754DB6852390B3B400D9F848 /* Centimeters.swift in Sources */,
+				75CD69E1239DEF6C008BE20A /* AppBackgroundOptions.swift in Sources */,
 				754DB6862390B3B400D9F848 /* Degrees.swift in Sources */,
 				754DB6872390B3B400D9F848 /* Hectopascals.swift in Sources */,
+				75CD69DD239DEF6C008BE20A /* TemperatureType.swift in Sources */,
 				754DB6882390B3B400D9F848 /* Kilometers.swift in Sources */,
 				75BAF085239701FC008B48BD /* ForecastParams.swift in Sources */,
 				754DB6892390B3B400D9F848 /* MetersPerSecond.swift in Sources */,
 				75BAF081239701FC008B48BD /* AddForecastsParams.swift in Sources */,
+				75CD69D7239DEF6C008BE20A /* GlobalSettings.swift in Sources */,
+				75CD69E7239DF12C008BE20A /* WeatherChartComponent.swift in Sources */,
 				754DB68A2390B3B400D9F848 /* Percentage.swift in Sources */,
 				754DB68B2390B3B400D9F848 /* Radians.swift in Sources */,
 				754DB68C2390B3B400D9F848 /* Seconds.swift in Sources */,
@@ -890,9 +929,12 @@
 				75BAF083239701FC008B48BD /* VerifyParams.swift in Sources */,
 				754DB67E2390B3AA00D9F848 /* DayOfWeek.swift in Sources */,
 				75BAF087239701FC008B48BD /* SignupParams.swift in Sources */,
+				75CD69D9239DEF6C008BE20A /* MeasurementSystem.swift in Sources */,
 				754DB67F2390B3AA00D9F848 /* Forecast.swift in Sources */,
+				75CD69DB239DEF6C008BE20A /* WindType.swift in Sources */,
 				75BAF07D239701FC008B48BD /* UserResponse.swift in Sources */,
 				75BAF07F239701FC008B48BD /* LoginResponse.swift in Sources */,
+				75CD69DF239DEF6C008BE20A /* AppBackground.swift in Sources */,
 				754DB6802390B3AA00D9F848 /* HourlyDataPoint.swift in Sources */,
 				754DB6812390B3AA00D9F848 /* HourlyForecast.swift in Sources */,
 				754DB6822390B3AA00D9F848 /* PrecipitationType.swift in Sources */,
