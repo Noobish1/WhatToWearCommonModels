@@ -8,7 +8,7 @@ PODS:
   - Tagged (0.4.0)
   - TaggedTime (0.4.0):
     - Tagged (~> 0.4.0)
-  - WhatToWearCommonCore (2.3.0)
+  - WhatToWearCommonCore (2.4.0)
   - WhatToWearCommonTesting (2.1.0)
 
 DEPENDENCIES:
@@ -18,7 +18,7 @@ DEPENDENCIES:
   - SwiftLint (= 0.37.0)
   - Tagged (= 0.4.0)
   - TaggedTime (= 0.4.0)
-  - WhatToWearCommonCore (= 2.3.0)
+  - WhatToWearCommonCore (= 2.4.0)
   - WhatToWearCommonTesting (= 2.1.0)
 
 SPEC REPOS:
@@ -42,9 +42,9 @@ SPEC CHECKSUMS:
   SwiftLint: c078a14d7d7ade75e5507795d185e3da41d844d2
   Tagged: a6babffe08b180c499a7a422661621bd4f330840
   TaggedTime: 7ca04e5a182d30c7077d37a543f458ad0a12ef01
-  WhatToWearCommonCore: a76a29b2a54329a095b26ff5cd77356db1c51ab2
+  WhatToWearCommonCore: 3e1d74509027a780436256ecad48311df8abf689
   WhatToWearCommonTesting: 0ebc53dd1f94cb961b10998ce77e61c7908a8a60
 
-PODFILE CHECKSUM: 5bf426da74de03c1b0bed0ff7b01057938bfbbee
+PODFILE CHECKSUM: e632022ea90231d9210d2b716ac56ec973755141
 
 COCOAPODS: 1.7.5
