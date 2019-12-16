@@ -1,7 +1,7 @@
 import Foundation
 
 // MARK: UserResponse
-public struct UserResponse: Codable {
+public struct UserResponse: Codable, Equatable {
     // MARK: properties
     public let id: UUID
     public let email: String

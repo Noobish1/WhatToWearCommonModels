@@ -1,7 +1,7 @@
 import Foundation
 
 // MARK: LoginResponse
-public struct LoginResponse: Codable {
+public struct LoginResponse: Codable, Equatable {
     // MARK: properties
     public let token: String
     public let user: UserResponse
