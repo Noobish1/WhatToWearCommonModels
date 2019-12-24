@@ -122,8 +122,8 @@ internal final class HourlyDataPointSpec: QuickSpec {
                 }
 
                 describe("its unit") {
-                    it("should be millimeters") {
-                        expect(dataPoint.precipAccumulation?.unit) == .millimeters
+                    it("should be centimeters") {
+                        expect(dataPoint.precipAccumulation?.unit) == .centimeters
                     }
                 }
             }

@@ -18,6 +18,7 @@
 		7547D91F2217A78C009900D1 /* dailydata.json in Resources */ = {isa = PBXBuildFile; fileRef = 7547D91E2217A78C009900D1 /* dailydata.json */; };
 		755CAAA922152A7E00817717 /* dailyforecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 755CAAA822152A7E00817717 /* dailyforecast.json */; };
 		755CAAAB2215427500817717 /* dailyforecast-empty-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 755CAAAA2215427500817717 /* dailyforecast-empty-data.json */; };
+		759EA43223B1F36D005BD8EB /* Centimeters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759EA43123B1F36D005BD8EB /* Centimeters.swift */; };
 		75C07BA720AE87B5008DE137 /* WhatToWearCommonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7523B066207DDA98003304FC /* WhatToWearCommonModels.framework */; };
 		75E56749238E0D7600615F04 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56741238E0D7500615F04 /* Forecast.swift */; };
 		75E5674A238E0D7600615F04 /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56742238E0D7500615F04 /* DayOfWeek.swift */; };
@@ -87,6 +88,7 @@
 		755CAAA822152A7E00817717 /* dailyforecast.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dailyforecast.json; sourceTree = "<group>"; };
 		755CAAAA2215427500817717 /* dailyforecast-empty-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "dailyforecast-empty-data.json"; sourceTree = "<group>"; };
 		759392D22162215E00307AC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		759EA43123B1F36D005BD8EB /* Centimeters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Centimeters.swift; sourceTree = "<group>"; };
 		75C07BA220AE87B5008DE137 /* WhatToWearCommonModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearCommonModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C07BA620AE87B5008DE137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75C07BAD20AE9093008DE137 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -285,6 +287,7 @@
 				75E56755238E0D8100615F04 /* Percentage.swift */,
 				75E56751238E0D8000615F04 /* Radians.swift */,
 				75E56759238E0D8100615F04 /* Seconds.swift */,
+				759EA43123B1F36D005BD8EB /* Centimeters.swift */,
 			);
 			path = Units;
 			sourceTree = "<group>";
@@ -620,6 +623,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75E56750238E0D7600615F04 /* DailyForecast.swift in Sources */,
+				759EA43223B1F36D005BD8EB /* Centimeters.swift in Sources */,
 				75E5674B238E0D7600615F04 /* PrecipitationType.swift in Sources */,
 				75E5674D238E0D7600615F04 /* DailyData.swift in Sources */,
 				75E5674C238E0D7600615F04 /* HourlyForecast.swift in Sources */,

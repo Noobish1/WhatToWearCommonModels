@@ -34,7 +34,7 @@ public struct HourlyDataPoint {
     internal let rawWindSpeed: MetersPerSecond<Double>?
     internal let rawWindGust: MetersPerSecond<Double>?
     internal let rawDewPoint: Celsius<Double>?
-    internal let rawPrecipAccumulation: Millimeters<Double>?
+    internal let rawPrecipAccumulation: Centimeters<Double>?
     internal let rawPrecipIntensity: Millimeters<Double>?
     internal let rawPressure: Hectopascals<Double>?
     internal let rawVisibility: Kilometers<Double>?
