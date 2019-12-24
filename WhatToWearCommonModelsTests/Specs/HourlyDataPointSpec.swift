@@ -122,8 +122,26 @@ internal final class HourlyDataPointSpec: QuickSpec {
                 }
 
                 describe("its unit") {
-                    it("should be centimeters") {
-                        expect(dataPoint.precipAccumulation?.unit) == .centimeters
+                    it("should be millimeters") {
+                        expect(dataPoint.precipAccumulation?.unit) == .millimeters
+                    }
+                }
+            }
+            
+            describe("its precipIntensity") {
+                beforeEach {
+                    dataPoint = try! HourlyDataPoint.fixtures.valid.object()
+                }
+
+                describe("its value") {
+                    it("should be equal to its rawPrecipIntensity") {
+                        expect(dataPoint.precipIntensity?.value) == dataPoint.rawPrecipIntensity?.rawValue
+                    }
+                }
+
+                describe("its unit") {
+                    it("should be millimeters") {
+                        expect(dataPoint.precipIntensity?.unit) == .millimeters
                     }
                 }
             }
