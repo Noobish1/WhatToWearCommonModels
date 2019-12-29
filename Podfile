@@ -1,4 +1,4 @@
-source 'https://github.com/Noobish1/whattowearspecs.git'
+source 'git@github.com:Noobish1/whattowearspecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 use_frameworks!
