@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                      = "WhatToWearCommonModels"
-    s.version                   = "2.2.0"
+    s.version                   = "2.3.0"
     s.summary                   = "Common model files for both WhatToWear and WhatToWearBackend"
     s.homepage                  = "https://github.com/Noobish1/whattowearcommonmodels"
     s.license                   = "MIT"
