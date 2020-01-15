@@ -52,10 +52,6 @@ extension HourlyDataPoint {
         return rawTime.date
     }
 
-    public var dayOfWeek: DayOfWeek {
-        return DayOfWeek(date: time)
-    }
-
     public var visibility: Measurement<UnitLength>? {
         return rawVisibility?.measurement
     }

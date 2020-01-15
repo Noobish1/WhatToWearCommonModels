@@ -8,6 +8,16 @@ internal final class DailyDataSpec: QuickSpec {
         describe("DailyData") {
             var data: DailyData!
 
+            describe("its dayOfWeek") {
+                beforeEach {
+                    data = try! DailyData.fixtures.valid.object()
+                }
+
+                it("should be a DayOfWeek created from the date value") {
+                    expect(data.dayOfWeek) == DayOfWeek(date: data.rawTime.date)
+                }
+            }
+            
             describe("its apparentTemperatureHighTime") {
                 beforeEach {
                     data = try! DailyData.fixtures.valid.object()
