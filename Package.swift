@@ -11,7 +11,7 @@ let package = Package(
     ],
     products: [.library(name: name, targets: [name])],
     dependencies: [
-        .package(url: "https://github.com/Noobish1/whattowearcommoncore.git", from: "2.2.0"),
+        .package(url: "https://github.com/Noobish1/whattowearcommoncore.git", .branch("feature/using-backend")),
         .package(url: "https://github.com/pointfreeco/swift-tagged.git", from: "0.4.0"),
     ],
     targets: [
