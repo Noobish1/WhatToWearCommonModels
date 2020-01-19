@@ -15,6 +15,7 @@ public struct HourlyDataPoint {
         case rawWindBearing = "windBearing"
         case rawDewPoint = "dewPoint"
         case rawPrecipAccumulation = "precipAccumulation"
+        case rawPrecipIntensity = "precipIntensity"
         case rawPressure = "pressure"
         case uvIndex = "uvIndex"
         case rawVisibility = "visibility"
@@ -34,6 +35,7 @@ public struct HourlyDataPoint {
     internal let rawWindGust: MetersPerSecond<Double>?
     internal let rawDewPoint: Celsius<Double>?
     internal let rawPrecipAccumulation: Centimeters<Double>?
+    internal let rawPrecipIntensity: Millimeters<Double>?
     internal let rawPressure: Hectopascals<Double>?
     internal let rawVisibility: Kilometers<Double>?
 }
@@ -50,10 +52,6 @@ extension HourlyDataPoint {
         return rawTime.date
     }
 
-    public var dayOfWeek: DayOfWeek {
-        return DayOfWeek(date: time)
-    }
-
     public var visibility: Measurement<UnitLength>? {
         return rawVisibility?.measurement
     }
@@ -64,6 +62,10 @@ extension HourlyDataPoint {
 
     public var precipAccumulation: Measurement<UnitLength>? {
         return rawPrecipAccumulation?.measurement
+    }
+    
+    public var precipIntensity: Measurement<UnitLength>? {
+        return rawPrecipIntensity?.measurement
     }
 
     public var dewPoint: Measurement<UnitTemperature>? {

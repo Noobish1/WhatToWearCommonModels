@@ -26,7 +26,7 @@ extension SelectableMeasurement where Value == DayOfWeek {
     internal static func dayOfWeek(for id: MeasurementID) -> Self {
         return Self(
             id: id,
-            value: .hourly({ $0.dayOfWeek }),
+            value: .daily({ $0.dayOfWeek }),
             name: NSLocalizedString("Day of Week", comment: ""),
             explanation: NSLocalizedString("The day of week.", comment: "")
         )

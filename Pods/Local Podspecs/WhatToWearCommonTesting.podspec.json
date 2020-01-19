@@ -1,6 +1,6 @@
 {
   "name": "WhatToWearCommonTesting",
-  "version": "1.6.0",
+  "version": "2.1.0",
   "summary": "Common testing files for both WhatToWear and WhatToWearBackend",
   "homepage": "https://github.com/Noobish1/whattowearcommontesting",
   "license": "MIT",
@@ -8,19 +8,16 @@
     "Blair McArthur": "blair.mcarthur@icloud.com"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "10.0",
+    "osx": "10.14"
   },
   "source": {
-    "git": "git@github.com:Noobish1/whattowearcommontesting.git",
-    "tag": "1.6.0"
+    "git": "https://github.com/Noobish1/whattowearcommontesting.git",
+    "tag": "2.1.0"
   },
   "requires_arc": true,
   "source_files": "WhatToWearCommonTesting/**/*.swift",
   "module_name": "WhatToWearCommonTesting",
-  "swift_version": "4.2",
-  "dependencies": {
-    "WhatToWearCommonCore": [
-
-    ]
-  }
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
 }

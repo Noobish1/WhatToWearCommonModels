@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AFFE369155E2EF92C546EFB /* Pods_WhatToWearCommonModelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651459EAA04E2CCB8C362BD6 /* Pods_WhatToWearCommonModelsTests.framework */; };
+		316D766D99BA469CC6BE7D68 /* Pods_WhatToWearCommonModels_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F36F2E2F61DCB5FB579AC7A /* Pods_WhatToWearCommonModels_Mac.framework */; };
+		38A5AD1BFDF3420BE225F849 /* Pods_WhatToWearCommonModelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B694084EA335DC8C7261DA0E /* Pods_WhatToWearCommonModelsTests.framework */; };
 		7523B06B207DDA98003304FC /* WhatToWearCommonModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 7523B069207DDA98003304FC /* WhatToWearCommonModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7532284923D506EE002C51CB /* Centimeters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759EA43123B1F36D005BD8EB /* Centimeters.swift */; };
+		7532284A23D5077E002C51CB /* Millimeters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56754238E0D8100615F04 /* Millimeters.swift */; };
 		75371BDA20C4F1D800A62482 /* forecast-bad-timezone.json in Resources */ = {isa = PBXBuildFile; fileRef = 75371BD220C4F1D800A62482 /* forecast-bad-timezone.json */; };
 		75371BDB20C4F1D800A62482 /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 75371BD320C4F1D800A62482 /* forecast.json */; };
 		75371BDC20C4F1D800A62482 /* datapoint-with-precip.json in Resources */ = {isa = PBXBuildFile; fileRef = 75371BD520C4F1D800A62482 /* datapoint-with-precip.json */; };
@@ -26,7 +29,7 @@
 		754DB6822390B3AA00D9F848 /* PrecipitationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56743238E0D7500615F04 /* PrecipitationType.swift */; };
 		754DB6832390B3AA00D9F848 /* WindDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56747238E0D7500615F04 /* WindDirection.swift */; };
 		754DB6842390B3B400D9F848 /* Celsius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56753238E0D8100615F04 /* Celsius.swift */; };
-		754DB6852390B3B400D9F848 /* Centimeters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56754238E0D8100615F04 /* Centimeters.swift */; };
+		754DB6852390B3B400D9F848 /* Millimeters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56754238E0D8100615F04 /* Millimeters.swift */; };
 		754DB6862390B3B400D9F848 /* Degrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56758238E0D8100615F04 /* Degrees.swift */; };
 		754DB6872390B3B400D9F848 /* Hectopascals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56757238E0D8100615F04 /* Hectopascals.swift */; };
 		754DB6882390B3B400D9F848 /* Kilometers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56756238E0D8100615F04 /* Kilometers.swift */; };
@@ -36,6 +39,7 @@
 		754DB68C2390B3B400D9F848 /* Seconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56759238E0D8100615F04 /* Seconds.swift */; };
 		755CAAA922152A7E00817717 /* dailyforecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 755CAAA822152A7E00817717 /* dailyforecast.json */; };
 		755CAAAB2215427500817717 /* dailyforecast-empty-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 755CAAAA2215427500817717 /* dailyforecast-empty-data.json */; };
+		759EA43223B1F36D005BD8EB /* Centimeters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759EA43123B1F36D005BD8EB /* Centimeters.swift */; };
 		75B73DE8239EE1F300004F5B /* ValidLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DE6239EE1F300004F5B /* ValidLocation.swift */; };
 		75B73DE9239EE1F300004F5B /* ValidLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DE6239EE1F300004F5B /* ValidLocation.swift */; };
 		75B73DEA239EE1F300004F5B /* StoredLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DE7239EE1F300004F5B /* StoredLocations.swift */; };
@@ -186,7 +190,6 @@
 		75E5675A238E0D8100615F04 /* Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56751238E0D8000615F04 /* Radians.swift */; };
 		75E5675B238E0D8100615F04 /* MetersPerSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56752238E0D8000615F04 /* MetersPerSecond.swift */; };
 		75E5675C238E0D8100615F04 /* Celsius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56753238E0D8100615F04 /* Celsius.swift */; };
-		75E5675D238E0D8100615F04 /* Centimeters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56754238E0D8100615F04 /* Centimeters.swift */; };
 		75E5675E238E0D8100615F04 /* Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56755238E0D8100615F04 /* Percentage.swift */; };
 		75E5675F238E0D8100615F04 /* Kilometers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56756238E0D8100615F04 /* Kilometers.swift */; };
 		75E56760238E0D8100615F04 /* Hectopascals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56757238E0D8100615F04 /* Hectopascals.swift */; };
@@ -208,8 +211,7 @@
 		75E5677F238E11B900615F04 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E5677A238E11B900615F04 /* Forecast.swift */; };
 		75E56780238E11B900615F04 /* DailyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E5677B238E11B900615F04 /* DailyForecast.swift */; };
 		75E56784238E12D800615F04 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56783238E12D800615F04 /* R.generated.swift */; };
-		8CD481FF92AD9CB3DD6A2860 /* Pods_WhatToWearCommonModels_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F12F828B19648F3FC3FE20 /* Pods_WhatToWearCommonModels_Mac.framework */; };
-		FD22E5900934DAAA550F95A2 /* Pods_WhatToWearCommonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9185B5FA6436FDE357578C /* Pods_WhatToWearCommonModels.framework */; };
+		D557288E12B312B12BB6E71F /* Pods_WhatToWearCommonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41E9DD4C2D1BEF75F505901 /* Pods_WhatToWearCommonModels.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -223,12 +225,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2B9185B5FA6436FDE357578C /* Pods_WhatToWearCommonModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A17ADCEFC4AA43F2AFB9E64 /* Pods-WhatToWearCommonModelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModelsTests.debug.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		57A26898F8D6B14B62D670D2 /* Pods-WhatToWearCommonModels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModels.debug.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModels/Pods-WhatToWearCommonModels.debug.xcconfig"; sourceTree = "<group>"; };
-		651459EAA04E2CCB8C362BD6 /* Pods_WhatToWearCommonModelsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonModelsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		72F12F828B19648F3FC3FE20 /* Pods_WhatToWearCommonModels_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonModels_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		73F6A1972B7EDB6A022F618D /* Pods-WhatToWearCommonModels-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModels-Mac.release.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModels-Mac/Pods-WhatToWearCommonModels-Mac.release.xcconfig"; sourceTree = "<group>"; };
+		02564FE980C8FCBAE38A129D /* Pods-WhatToWearCommonModelsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModelsTests.release.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests.release.xcconfig"; sourceTree = "<group>"; };
+		29302CEE2A8B2380D41A345D /* Pods-WhatToWearCommonModelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModelsTests.debug.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F36F2E2F61DCB5FB579AC7A /* Pods_WhatToWearCommonModels_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonModels_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D090FAE83CD319B3FD9759A /* Pods-WhatToWearCommonModels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModels.debug.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModels/Pods-WhatToWearCommonModels.debug.xcconfig"; sourceTree = "<group>"; };
 		7523B066207DDA98003304FC /* WhatToWearCommonModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatToWearCommonModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7523B069207DDA98003304FC /* WhatToWearCommonModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhatToWearCommonModels.h; sourceTree = "<group>"; };
 		7523B06A207DDA98003304FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -249,6 +249,7 @@
 		755CAAA822152A7E00817717 /* dailyforecast.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dailyforecast.json; sourceTree = "<group>"; };
 		755CAAAA2215427500817717 /* dailyforecast-empty-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "dailyforecast-empty-data.json"; sourceTree = "<group>"; };
 		759392D22162215E00307AC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		759EA43123B1F36D005BD8EB /* Centimeters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Centimeters.swift; sourceTree = "<group>"; };
 		75B73DE6239EE1F300004F5B /* ValidLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidLocation.swift; sourceTree = "<group>"; };
 		75B73DE7239EE1F300004F5B /* StoredLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoredLocations.swift; sourceTree = "<group>"; };
 		75B73DED239EE2E500004F5B /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
@@ -337,7 +338,7 @@
 		75E56751238E0D8000615F04 /* Radians.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Radians.swift; sourceTree = "<group>"; };
 		75E56752238E0D8000615F04 /* MetersPerSecond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetersPerSecond.swift; sourceTree = "<group>"; };
 		75E56753238E0D8100615F04 /* Celsius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Celsius.swift; sourceTree = "<group>"; };
-		75E56754238E0D8100615F04 /* Centimeters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Centimeters.swift; sourceTree = "<group>"; };
+		75E56754238E0D8100615F04 /* Millimeters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Millimeters.swift; sourceTree = "<group>"; };
 		75E56755238E0D8100615F04 /* Percentage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Percentage.swift; sourceTree = "<group>"; };
 		75E56756238E0D8100615F04 /* Kilometers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kilometers.swift; sourceTree = "<group>"; };
 		75E56757238E0D8100615F04 /* Hectopascals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hectopascals.swift; sourceTree = "<group>"; };
@@ -360,9 +361,11 @@
 		75E5677B238E11B900615F04 /* DailyForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyForecast.swift; sourceTree = "<group>"; };
 		75E56783238E12D800615F04 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		75FAA03420E4A3710083AC58 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
-		7641DA2F0EE177F646B3DE6A /* Pods-WhatToWearCommonModelsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModelsTests.release.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests.release.xcconfig"; sourceTree = "<group>"; };
-		EE8FFB0AF4B18C6E383E6FEB /* Pods-WhatToWearCommonModels-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModels-Mac.debug.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModels-Mac/Pods-WhatToWearCommonModels-Mac.debug.xcconfig"; sourceTree = "<group>"; };
-		F4FCC98010D782887125FDED /* Pods-WhatToWearCommonModels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModels.release.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModels/Pods-WhatToWearCommonModels.release.xcconfig"; sourceTree = "<group>"; };
+		8D867BE34917611EF9A3B94C /* Pods-WhatToWearCommonModels-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModels-Mac.release.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModels-Mac/Pods-WhatToWearCommonModels-Mac.release.xcconfig"; sourceTree = "<group>"; };
+		AB5EDA73AAB5C5959A0CCD1F /* Pods-WhatToWearCommonModels-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModels-Mac.debug.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModels-Mac/Pods-WhatToWearCommonModels-Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		B694084EA335DC8C7261DA0E /* Pods_WhatToWearCommonModelsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonModelsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96EBD5DF280AA11C1EA2B68 /* Pods-WhatToWearCommonModels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModels.release.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModels/Pods-WhatToWearCommonModels.release.xcconfig"; sourceTree = "<group>"; };
+		F41E9DD4C2D1BEF75F505901 /* Pods_WhatToWearCommonModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,7 +373,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD22E5900934DAAA550F95A2 /* Pods_WhatToWearCommonModels.framework in Frameworks */,
+				D557288E12B312B12BB6E71F /* Pods_WhatToWearCommonModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +381,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CD481FF92AD9CB3DD6A2860 /* Pods_WhatToWearCommonModels_Mac.framework in Frameworks */,
+				316D766D99BA469CC6BE7D68 /* Pods_WhatToWearCommonModels_Mac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75C07BA720AE87B5008DE137 /* WhatToWearCommonModels.framework in Frameworks */,
-				4AFFE369155E2EF92C546EFB /* Pods_WhatToWearCommonModelsTests.framework in Frameworks */,
+				38A5AD1BFDF3420BE225F849 /* Pods_WhatToWearCommonModelsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,7 +534,7 @@
 			isa = PBXGroup;
 			children = (
 				75E56753238E0D8100615F04 /* Celsius.swift */,
-				75E56754238E0D8100615F04 /* Centimeters.swift */,
+				75E56754238E0D8100615F04 /* Millimeters.swift */,
 				75E56758238E0D8100615F04 /* Degrees.swift */,
 				75E56757238E0D8100615F04 /* Hectopascals.swift */,
 				75E56756238E0D8100615F04 /* Kilometers.swift */,
@@ -539,6 +542,7 @@
 				75E56755238E0D8100615F04 /* Percentage.swift */,
 				75E56751238E0D8000615F04 /* Radians.swift */,
 				75E56759238E0D8100615F04 /* Seconds.swift */,
+				759EA43123B1F36D005BD8EB /* Centimeters.swift */,
 			);
 			path = Units;
 			sourceTree = "<group>";
@@ -808,9 +812,9 @@
 			isa = PBXGroup;
 			children = (
 				759392D22162215E00307AC2 /* Foundation.framework */,
-				2B9185B5FA6436FDE357578C /* Pods_WhatToWearCommonModels.framework */,
-				651459EAA04E2CCB8C362BD6 /* Pods_WhatToWearCommonModelsTests.framework */,
-				72F12F828B19648F3FC3FE20 /* Pods_WhatToWearCommonModels_Mac.framework */,
+				F41E9DD4C2D1BEF75F505901 /* Pods_WhatToWearCommonModels.framework */,
+				4F36F2E2F61DCB5FB579AC7A /* Pods_WhatToWearCommonModels_Mac.framework */,
+				B694084EA335DC8C7261DA0E /* Pods_WhatToWearCommonModelsTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -818,12 +822,12 @@
 		F2D4263C74F7A2FB2F3DB671 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				57A26898F8D6B14B62D670D2 /* Pods-WhatToWearCommonModels.debug.xcconfig */,
-				F4FCC98010D782887125FDED /* Pods-WhatToWearCommonModels.release.xcconfig */,
-				4A17ADCEFC4AA43F2AFB9E64 /* Pods-WhatToWearCommonModelsTests.debug.xcconfig */,
-				7641DA2F0EE177F646B3DE6A /* Pods-WhatToWearCommonModelsTests.release.xcconfig */,
-				EE8FFB0AF4B18C6E383E6FEB /* Pods-WhatToWearCommonModels-Mac.debug.xcconfig */,
-				73F6A1972B7EDB6A022F618D /* Pods-WhatToWearCommonModels-Mac.release.xcconfig */,
+				5D090FAE83CD319B3FD9759A /* Pods-WhatToWearCommonModels.debug.xcconfig */,
+				C96EBD5DF280AA11C1EA2B68 /* Pods-WhatToWearCommonModels.release.xcconfig */,
+				AB5EDA73AAB5C5959A0CCD1F /* Pods-WhatToWearCommonModels-Mac.debug.xcconfig */,
+				8D867BE34917611EF9A3B94C /* Pods-WhatToWearCommonModels-Mac.release.xcconfig */,
+				29302CEE2A8B2380D41A345D /* Pods-WhatToWearCommonModelsTests.debug.xcconfig */,
+				02564FE980C8FCBAE38A129D /* Pods-WhatToWearCommonModelsTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -854,7 +858,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7523B06E207DDA98003304FC /* Build configuration list for PBXNativeTarget "WhatToWearCommonModels" */;
 			buildPhases = (
-				A4E4776BCD92FDAEAB48CDFA /* [CP] Check Pods Manifest.lock */,
+				9DB1BB4397990087ECDADD5D /* [CP] Check Pods Manifest.lock */,
 				7523B061207DDA98003304FC /* Sources */,
 				7523B062207DDA98003304FC /* Frameworks */,
 				7523B063207DDA98003304FC /* Headers */,
@@ -876,7 +880,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 754DB6772390B2B900D9F848 /* Build configuration list for PBXNativeTarget "WhatToWearCommonModels-Mac" */;
 			buildPhases = (
-				D12B35B51EA6081628FF5D25 /* [CP] Check Pods Manifest.lock */,
+				DD067E2D3904C61B720DBCAF /* [CP] Check Pods Manifest.lock */,
 				754DB65D2390B2B900D9F848 /* Headers */,
 				754DB65E2390B2B900D9F848 /* Sources */,
 				754DB65F2390B2B900D9F848 /* Frameworks */,
@@ -898,12 +902,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75C07BAC20AE87B5008DE137 /* Build configuration list for PBXNativeTarget "WhatToWearCommonModelsTests" */;
 			buildPhases = (
-				2066151B85D23C72C694E751 /* [CP] Check Pods Manifest.lock */,
+				71E9706D52B1948E83029076 /* [CP] Check Pods Manifest.lock */,
 				75E56781238E125200615F04 /* R.swift */,
 				75C07B9E20AE87B5008DE137 /* Sources */,
 				75C07B9F20AE87B5008DE137 /* Frameworks */,
 				75C07BA020AE87B5008DE137 /* Resources */,
-				D4C630E0D76D71F7829C3F02 /* [CP] Embed Pods Frameworks */,
+				080F99348C7AF8177E2CDE44 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -997,7 +1001,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2066151B85D23C72C694E751 /* [CP] Check Pods Manifest.lock */ = {
+		080F99348C7AF8177E2CDE44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71E9706D52B1948E83029076 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1135,7 +1156,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\nset -o pipefail\n\n\"${PODS_ROOT}/SwiftLint/swiftlint\" --quiet --strict | sed 's/warning:/error:/g'\n";
 		};
-		A4E4776BCD92FDAEAB48CDFA /* [CP] Check Pods Manifest.lock */ = {
+		9DB1BB4397990087ECDADD5D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1157,7 +1178,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D12B35B51EA6081628FF5D25 /* [CP] Check Pods Manifest.lock */ = {
+		DD067E2D3904C61B720DBCAF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1179,23 +1200,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D4C630E0D76D71F7829C3F02 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1203,7 +1207,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7532284A23D5077E002C51CB /* Millimeters.swift in Sources */,
 				75E56750238E0D7600615F04 /* DailyForecast.swift in Sources */,
+				759EA43223B1F36D005BD8EB /* Centimeters.swift in Sources */,
 				75E5674B238E0D7600615F04 /* PrecipitationType.swift in Sources */,
 				75B73E79239EEA0F00004F5B /* DisplayedValue.swift in Sources */,
 				75B73E01239EE71F00004F5B /* DoubleCondition.swift in Sources */,
@@ -1243,7 +1249,6 @@
 				75B73E2C239EE78700004F5B /* DoubleMeasurement.swift in Sources */,
 				75E5675A238E0D8100615F04 /* Radians.swift in Sources */,
 				75B73E53239EE88200004F5B /* SelectableMeasurementSymbol.swift in Sources */,
-				75E5675D238E0D8100615F04 /* Centimeters.swift in Sources */,
 				75B73E76239EE93A00004F5B /* SingleSymbolProtocol.swift in Sources */,
 				75E56762238E0D8100615F04 /* Seconds.swift in Sources */,
 				75B73E6C239EE93A00004F5B /* MeasurementProtocol.swift in Sources */,
@@ -1292,7 +1297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				754DB6842390B3B400D9F848 /* Celsius.swift in Sources */,
-				754DB6852390B3B400D9F848 /* Centimeters.swift in Sources */,
+				754DB6852390B3B400D9F848 /* Millimeters.swift in Sources */,
 				75B73E7A239EEA0F00004F5B /* DisplayedValue.swift in Sources */,
 				75B73E02239EE71F00004F5B /* DoubleCondition.swift in Sources */,
 				75CD69E1239DEF6C008BE20A /* AppBackgroundOptions.swift in Sources */,
@@ -1306,6 +1311,7 @@
 				75B73DF8239EE53D00004F5B /* RuleGroup.swift in Sources */,
 				75B73E06239EE71F00004F5B /* Condition.swift in Sources */,
 				75B73E45239EE78700004F5B /* RawDoubleMeasurement.swift in Sources */,
+				7532284923D506EE002C51CB /* Centimeters.swift in Sources */,
 				75B73E58239EE88200004F5B /* TimeSymbol.swift in Sources */,
 				754DB6882390B3B400D9F848 /* Kilometers.swift in Sources */,
 				75BAF085239701FC008B48BD /* ForecastParams.swift in Sources */,
@@ -1448,7 +1454,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 41;
+				CURRENT_PROJECT_VERSION = 30;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1513,7 +1519,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 41;
+				CURRENT_PROJECT_VERSION = 30;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1540,7 +1546,7 @@
 		};
 		7523B06F207DDA98003304FC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57A26898F8D6B14B62D670D2 /* Pods-WhatToWearCommonModels.debug.xcconfig */;
+			baseConfigurationReference = 5D090FAE83CD319B3FD9759A /* Pods-WhatToWearCommonModels.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1548,7 +1554,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3JE2245GFQ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 41;
+				DYLIB_CURRENT_VERSION = 30;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "WhatToWearCommonModels/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1568,7 +1574,7 @@
 		};
 		7523B070207DDA98003304FC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4FCC98010D782887125FDED /* Pods-WhatToWearCommonModels.release.xcconfig */;
+			baseConfigurationReference = C96EBD5DF280AA11C1EA2B68 /* Pods-WhatToWearCommonModels.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1576,7 +1582,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3JE2245GFQ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 41;
+				DYLIB_CURRENT_VERSION = 30;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "WhatToWearCommonModels/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1594,15 +1600,15 @@
 		};
 		754DB6732390B2B900D9F848 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE8FFB0AF4B18C6E383E6FEB /* Pods-WhatToWearCommonModels-Mac.debug.xcconfig */;
+			baseConfigurationReference = AB5EDA73AAB5C5959A0CCD1F /* Pods-WhatToWearCommonModels-Mac.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 41;
+				CURRENT_PROJECT_VERSION = 30;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3JE2245GFQ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 41;
+				DYLIB_CURRENT_VERSION = 30;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "WhatToWearCommonModels-Mac/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1624,15 +1630,15 @@
 		};
 		754DB6742390B2B900D9F848 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73F6A1972B7EDB6A022F618D /* Pods-WhatToWearCommonModels-Mac.release.xcconfig */;
+			baseConfigurationReference = 8D867BE34917611EF9A3B94C /* Pods-WhatToWearCommonModels-Mac.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 41;
+				CURRENT_PROJECT_VERSION = 30;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3JE2245GFQ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 41;
+				DYLIB_CURRENT_VERSION = 30;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "WhatToWearCommonModels-Mac/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1653,7 +1659,7 @@
 		};
 		75C07BAA20AE87B5008DE137 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A17ADCEFC4AA43F2AFB9E64 /* Pods-WhatToWearCommonModelsTests.debug.xcconfig */;
+			baseConfigurationReference = 29302CEE2A8B2380D41A345D /* Pods-WhatToWearCommonModelsTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1673,7 +1679,7 @@
 		};
 		75C07BAB20AE87B5008DE137 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7641DA2F0EE177F646B3DE6A /* Pods-WhatToWearCommonModelsTests.release.xcconfig */;
+			baseConfigurationReference = 02564FE980C8FCBAE38A129D /* Pods-WhatToWearCommonModelsTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

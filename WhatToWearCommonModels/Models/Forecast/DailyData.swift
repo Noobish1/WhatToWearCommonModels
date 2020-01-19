@@ -3,6 +3,7 @@ import Foundation
 // MARK: DailyData
 public struct DailyData {
     // Times
+    internal let rawTime: Seconds<Double>
     internal let rawApparentTemperatureHighTime: Seconds<Double>?
     internal let rawApparentTemperatureLowTime: Seconds<Double>?
     internal let rawApparentTemperatureMaxTime: Seconds<Double>?
@@ -49,11 +50,16 @@ extension DailyData: Codable {
         case rawTemperatureLow = "temperatureLow"
         case rawTemperatureMax = "temperatureMax"
         case rawTemperatureMin = "temperatureMin"
+        case rawTime = "time"
     }
 }
 
 // MARK: Extensions
 extension DailyData {
+    public var dayOfWeek: DayOfWeek {
+        return DayOfWeek(date: rawTime.date)
+    }
+    
     public var apparentTemperatureHighTime: Date? { return rawApparentTemperatureHighTime?.date }
 
     public var apparentTemperatureLowTime: Date? { return rawApparentTemperatureLowTime?.date }

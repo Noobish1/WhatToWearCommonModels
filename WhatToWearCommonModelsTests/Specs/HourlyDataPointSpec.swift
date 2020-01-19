@@ -18,16 +18,6 @@ internal final class HourlyDataPointSpec: QuickSpec {
                 }
             }
 
-            describe("its dayOfWeek") {
-                beforeEach {
-                    dataPoint = try! HourlyDataPoint.fixtures.valid.object()
-                }
-
-                it("should be a DayOfWeek created from the date value") {
-                    expect(dataPoint.dayOfWeek) == DayOfWeek(date: dataPoint.time)
-                }
-            }
-
             describe("its windDirection") {
                 beforeEach {
                     dataPoint = try! HourlyDataPoint.fixtures.valid.object()
@@ -124,6 +114,24 @@ internal final class HourlyDataPointSpec: QuickSpec {
                 describe("its unit") {
                     it("should be centimeters") {
                         expect(dataPoint.precipAccumulation?.unit) == .centimeters
+                    }
+                }
+            }
+            
+            describe("its precipIntensity") {
+                beforeEach {
+                    dataPoint = try! HourlyDataPoint.fixtures.valid.object()
+                }
+
+                describe("its value") {
+                    it("should be equal to its rawPrecipIntensity") {
+                        expect(dataPoint.precipIntensity?.value) == dataPoint.rawPrecipIntensity?.rawValue
+                    }
+                }
+
+                describe("its unit") {
+                    it("should be millimeters") {
+                        expect(dataPoint.precipIntensity?.unit) == .millimeters
                     }
                 }
             }

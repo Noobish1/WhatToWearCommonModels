@@ -18,13 +18,10 @@ DEPENDENCIES:
   - SwiftLint (= 0.37.0)
   - Tagged (= 0.4.0)
   - TaggedTime (= 0.4.0)
-  - WhatToWearCommonCore (= 2.4.0)
-  - WhatToWearCommonTesting (= 2.1.0)
+  - WhatToWearCommonCore (from `https://github.com/Noobish1/WhatToWearCommonCore.git`, branch `feature/using-backend`)
+  - WhatToWearCommonTesting (from `https://github.com/Noobish1/WhatToWearCommonTesting.git`, branch `feature/using-backend`)
 
 SPEC REPOS:
-  "git@github.com:Noobish1/whattowearspecs.git":
-    - WhatToWearCommonCore
-    - WhatToWearCommonTesting
   https://github.com/cocoapods/specs.git:
     - Nimble
     - Quick
@@ -34,6 +31,22 @@ SPEC REPOS:
     - Tagged
     - TaggedTime
 
+EXTERNAL SOURCES:
+  WhatToWearCommonCore:
+    :branch: feature/using-backend
+    :git: https://github.com/Noobish1/WhatToWearCommonCore.git
+  WhatToWearCommonTesting:
+    :branch: feature/using-backend
+    :git: https://github.com/Noobish1/WhatToWearCommonTesting.git
+
+CHECKOUT OPTIONS:
+  WhatToWearCommonCore:
+    :commit: 46d0740f372b6053fdf1379a5c29d429fe355a61
+    :git: https://github.com/Noobish1/WhatToWearCommonCore.git
+  WhatToWearCommonTesting:
+    :commit: 809c4e3740169bd1e6a4bc62559ff3e49545480b
+    :git: https://github.com/Noobish1/WhatToWearCommonTesting.git
+
 SPEC CHECKSUMS:
   Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
@@ -42,9 +55,9 @@ SPEC CHECKSUMS:
   SwiftLint: c078a14d7d7ade75e5507795d185e3da41d844d2
   Tagged: a6babffe08b180c499a7a422661621bd4f330840
   TaggedTime: 7ca04e5a182d30c7077d37a543f458ad0a12ef01
-  WhatToWearCommonCore: 3e1d74509027a780436256ecad48311df8abf689
-  WhatToWearCommonTesting: 0ebc53dd1f94cb961b10998ce77e61c7908a8a60
+  WhatToWearCommonCore: 1f36bed6d69b51a376cefaf366fa2f4f0fb5e932
+  WhatToWearCommonTesting: 8a5c0a441ac23049bd92db701ba13155892838b8
 
-PODFILE CHECKSUM: e632022ea90231d9210d2b716ac56ec973755141
+PODFILE CHECKSUM: b9548af427cf8b4173dc4352c9717407744b011d
 
 COCOAPODS: 1.7.5
