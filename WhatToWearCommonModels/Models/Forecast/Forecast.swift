@@ -5,16 +5,11 @@ import WhatToWearCommonCore
 // MARK: Forecast
 public struct Forecast {
     // MARK: properties
-    internal let latitude: Double
-    internal let longitude: Double
+    public let latitude: Double
+    public let longitude: Double
     public let timeZone: TimeZone
     public let hourly: HourlyForecast
     public let daily: DailyForecast
-
-    // MARK: computed properties
-    public var coordinate: CLLocationCoordinate2D {
-        return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-    }
 }
 
 // MARK: Equatable

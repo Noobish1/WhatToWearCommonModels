@@ -1,4 +1,3 @@
-import CoreLocation
 import Foundation
 
 // Parts of https://github.com/braindrizzlestudio/BDAstroCalc
@@ -60,9 +59,9 @@ public enum SunCalculator {
         return siderealTime(daysSinceJan12000: daysSinceJan12000, longitude: longitude) - rightAscension
     }
 
-    public static func sunAltitude(date: Date, location: CLLocationCoordinate2D) -> CGFloat {
-        let longitude = rad * -location.longitude
-        let latitude = rad * location.latitude
+    public static func sunAltitude(date: Date, latitude: Double, longitude: Double) -> CGFloat {
+        let longitude = rad * -longitude
+        let latitude = rad * latitude
         let days = daysSinceJan12000(date: date)
         let eLongitude = eclipticLongitude(daysSinceJan12000: days)
         let rightAscensionValue = rightAscension(latitude: 0, longitude: eLongitude)

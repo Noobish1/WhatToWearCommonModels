@@ -11,7 +11,8 @@ extension CalculatedPercentageMeasurement {
             calculation: { dataPoint, forecast in
                 let altitude = SunCalculator.sunAltitude(
                     date: dataPoint.time,
-                    location: forecast.coordinate
+                    latitude: forecast.latitude,
+                    longitude: forecast.longitude
                 )
 
                 return Double(Normalizer.normalize(
