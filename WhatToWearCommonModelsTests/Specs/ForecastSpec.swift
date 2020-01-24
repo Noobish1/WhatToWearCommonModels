@@ -14,22 +14,6 @@ internal final class ForecastSpec: QuickSpec {
                 decoder = JSONDecoder()
             }
 
-            describe("its coordinate") {
-                var forecast: Forecast!
-
-                beforeEach {
-                    forecast = try! Forecast.fixtures.valid.object()
-                }
-
-                it("should have the latitude of the forecast") {
-                    expect(forecast.coordinate.latitude) == forecast.latitude
-                }
-
-                it("should have the longitude of the forecast") {
-                    expect(forecast.coordinate.longitude) == forecast.longitude
-                }
-            }
-
             describe("its init from decoder") {
                 var data: Data!
 
