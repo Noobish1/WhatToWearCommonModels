@@ -48,8 +48,6 @@
 		75B73DE9239EE1F300004F5B /* ValidLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DE6239EE1F300004F5B /* ValidLocation.swift */; };
 		75B73DEA239EE1F300004F5B /* StoredLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DE7239EE1F300004F5B /* StoredLocations.swift */; };
 		75B73DEB239EE1F300004F5B /* StoredLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DE7239EE1F300004F5B /* StoredLocations.swift */; };
-		75B73DEE239EE2E500004F5B /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DED239EE2E500004F5B /* CLLocationCoordinate2D.swift */; };
-		75B73DEF239EE2E500004F5B /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DED239EE2E500004F5B /* CLLocationCoordinate2D.swift */; };
 		75B73DF5239EE53D00004F5B /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DF2239EE53D00004F5B /* Rule.swift */; };
 		75B73DF6239EE53D00004F5B /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DF2239EE53D00004F5B /* Rule.swift */; };
 		75B73DF7239EE53D00004F5B /* RuleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B73DF3239EE53D00004F5B /* RuleGroup.swift */; };
@@ -258,7 +256,6 @@
 		759EA43123B1F36D005BD8EB /* Centimeters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Centimeters.swift; sourceTree = "<group>"; };
 		75B73DE6239EE1F300004F5B /* ValidLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidLocation.swift; sourceTree = "<group>"; };
 		75B73DE7239EE1F300004F5B /* StoredLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoredLocations.swift; sourceTree = "<group>"; };
-		75B73DED239EE2E500004F5B /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
 		75B73DF2239EE53D00004F5B /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
 		75B73DF3239EE53D00004F5B /* RuleGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleGroup.swift; sourceTree = "<group>"; };
 		75B73DF4239EE53D00004F5B /* StoredRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoredRules.swift; sourceTree = "<group>"; };
@@ -571,7 +568,6 @@
 		75B73DEC239EE23B00004F5B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				75B73DED239EE2E500004F5B /* CLLocationCoordinate2D.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1254,7 +1250,6 @@
 				75B73E3C239EE78700004F5B /* SelectableMeasurement.swift in Sources */,
 				7532284C23D51305002C51CB /* ChangePasswordParams.swift in Sources */,
 				75B73E55239EE88200004F5B /* DoubleSymbol.swift in Sources */,
-				75B73DEE239EE2E500004F5B /* CLLocationCoordinate2D.swift in Sources */,
 				75B73E2C239EE78700004F5B /* DoubleMeasurement.swift in Sources */,
 				75E5675A238E0D8100615F04 /* Radians.swift in Sources */,
 				75B73E53239EE88200004F5B /* SelectableMeasurementSymbol.swift in Sources */,
@@ -1344,7 +1339,6 @@
 				75B73E3D239EE78700004F5B /* SelectableMeasurement.swift in Sources */,
 				75B73E56239EE88200004F5B /* DoubleSymbol.swift in Sources */,
 				7532284D23D51305002C51CB /* ChangePasswordParams.swift in Sources */,
-				75B73DEF239EE2E500004F5B /* CLLocationCoordinate2D.swift in Sources */,
 				75B73E2D239EE78700004F5B /* DoubleMeasurement.swift in Sources */,
 				754DB68C2390B3B400D9F848 /* Seconds.swift in Sources */,
 				75B73E54239EE88200004F5B /* SelectableMeasurementSymbol.swift in Sources */,

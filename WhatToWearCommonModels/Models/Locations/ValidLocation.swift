@@ -1,12 +1,25 @@
+#if !os(Linux)
 import CoreLocation
-import Foundation
 import MapKit
+#endif
+
+import Foundation
 
 // MARK: ValidLocation
 public struct ValidLocation: Codable {
     // MARK: properties
     public let address: String?
-    public let coordinate: CLLocationCoordinate2D
+    public let latitude: Double
+    public let longitude: Double
+}
+
+// MARK: extensions
+#if !os(Linux)
+extension ValidLocation {
+    // MARK: computed properties
+    public var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
 
     // MARK: init from MKMapItem
     public init?(mapItem: MKMapItem) {
@@ -15,7 +28,8 @@ public struct ValidLocation: Codable {
         }
 
         self.address = formattedAddressLines.joined(separator: ", ")
-        self.coordinate = mapItem.placemark.coordinate
+        self.latitude = mapItem.placemark.coordinate.latitude
+        self.longitude = mapItem.placemark.coordinate.longitude
     }
 
     // MARK: init from CLPLacemark
@@ -29,22 +43,25 @@ public struct ValidLocation: Codable {
         }
 
         self.address = formattedAddressLines.joined(separator: ", ")
-        self.coordinate = location.coordinate
+        self.latitude = location.coordinate.latitude
+        self.longitude = location.coordinate.longitude
     }
 
     // MARK: init from coordinate
     public init(location: CLLocation) {
         self.address = nil
-        self.coordinate = location.coordinate
+        self.latitude = location.coordinate.latitude
+        self.longitude = location.coordinate.longitude
     }
 }
+#endif
 
 // MARK: Equatable
 extension ValidLocation: Equatable {
     public static func == (lhs: Self, rhs: Self) -> Bool {
         // We're looking for exact matches
         return  lhs.address == rhs.address &&
-                abs(lhs.coordinate.latitude - rhs.coordinate.latitude) < Double.ulpOfOne &&
-                abs(lhs.coordinate.longitude - rhs.coordinate.longitude) < Double.ulpOfOne
+                abs(lhs.latitude - rhs.latitude) < Double.ulpOfOne &&
+                abs(lhs.longitude - rhs.longitude) < Double.ulpOfOne
     }
 }
