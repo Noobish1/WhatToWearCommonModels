@@ -11,6 +11,13 @@ public struct ValidLocation: Codable {
     public let address: String?
     public let latitude: Double
     public let longitude: Double
+    
+    // MARK: init
+    public init(address: String?, latitude: Double, longitude: Double) {
+        self.address = address
+        self.latitude = latitude
+        self.longitude = longitude
+    }
 }
 
 // MARK: extensions
