@@ -183,6 +183,8 @@
 		75CD69E7239DF12C008BE20A /* WeatherChartComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD69E5239DF12B008BE20A /* WeatherChartComponent.swift */; };
 		75D67A0F23E112280084A0C8 /* ResetAndChangePasswordParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D67A0E23E112280084A0C8 /* ResetAndChangePasswordParams.swift */; };
 		75D67A1023E112280084A0C8 /* ResetAndChangePasswordParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D67A0E23E112280084A0C8 /* ResetAndChangePasswordParams.swift */; };
+		75D67A1223E14FD10084A0C8 /* ResetPasswordParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D67A1123E14FD10084A0C8 /* ResetPasswordParams.swift */; };
+		75D67A1323E14FD10084A0C8 /* ResetPasswordParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D67A1123E14FD10084A0C8 /* ResetPasswordParams.swift */; };
 		75E56749238E0D7600615F04 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56741238E0D7500615F04 /* Forecast.swift */; };
 		75E5674A238E0D7600615F04 /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56742238E0D7500615F04 /* DayOfWeek.swift */; };
 		75E5674B238E0D7600615F04 /* PrecipitationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56743238E0D7500615F04 /* PrecipitationType.swift */; };
@@ -333,6 +335,7 @@
 		75CD69D5239DEF6C008BE20A /* AppBackgroundOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBackgroundOptions.swift; sourceTree = "<group>"; };
 		75CD69E5239DF12B008BE20A /* WeatherChartComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherChartComponent.swift; sourceTree = "<group>"; };
 		75D67A0E23E112280084A0C8 /* ResetAndChangePasswordParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetAndChangePasswordParams.swift; sourceTree = "<group>"; };
+		75D67A1123E14FD10084A0C8 /* ResetPasswordParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordParams.swift; sourceTree = "<group>"; };
 		75E56741238E0D7500615F04 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		75E56742238E0D7500615F04 /* DayOfWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
 		75E56743238E0D7500615F04 /* PrecipitationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecipitationType.swift; sourceTree = "<group>"; };
@@ -765,6 +768,7 @@
 				7532284B23D51305002C51CB /* ChangePasswordParams.swift */,
 				7576CB0223D5770D0067C49C /* ChangeEmailParams.swift */,
 				75D67A0E23E112280084A0C8 /* ResetAndChangePasswordParams.swift */,
+				75D67A1123E14FD10084A0C8 /* ResetPasswordParams.swift */,
 			);
 			path = Parameters;
 			sourceTree = "<group>";
@@ -1267,6 +1271,7 @@
 				75B73E03239EE71F00004F5B /* SelectableCondition.swift in Sources */,
 				75BAF082239701FC008B48BD /* VerifyParams.swift in Sources */,
 				75B73E22239EE78700004F5B /* CalculatedPercentageMeasurement.swift in Sources */,
+				75D67A1223E14FD10084A0C8 /* ResetPasswordParams.swift in Sources */,
 				75B73E07239EE71F00004F5B /* TimeCondition.swift in Sources */,
 				75B73E36239EE78700004F5B /* EnumMeasurement.swift in Sources */,
 				75B73E8A239EEBD500004F5B /* PressureMeasurements.swift in Sources */,
@@ -1358,6 +1363,7 @@
 				75B73E04239EE71F00004F5B /* SelectableCondition.swift in Sources */,
 				75BAF083239701FC008B48BD /* VerifyParams.swift in Sources */,
 				75B73E23239EE78700004F5B /* CalculatedPercentageMeasurement.swift in Sources */,
+				75D67A1323E14FD10084A0C8 /* ResetPasswordParams.swift in Sources */,
 				75B73E08239EE71F00004F5B /* TimeCondition.swift in Sources */,
 				75B73E37239EE78700004F5B /* EnumMeasurement.swift in Sources */,
 				75B73E8B239EEBD500004F5B /* PressureMeasurements.swift in Sources */,
