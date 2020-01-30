@@ -2,11 +2,13 @@ import Foundation
 
 public struct ResetAndChangePasswordParams: Codable {
     // MARK: properties
+    public let email: String
     public let newPassword: String
     public let verificationCode: String
     
     // MARK: init
-    public init(newPassword: String, verificationCode: String) {
+    public init(email: String, newPassword: String, verificationCode: String) {
+        self.email = email
         self.newPassword = newPassword
         self.verificationCode = verificationCode
     }
