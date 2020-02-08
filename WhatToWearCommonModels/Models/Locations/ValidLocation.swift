@@ -63,6 +63,15 @@ extension ValidLocation {
 }
 #endif
 
+// MARK: Hashable
+extension ValidLocation: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(address)
+        hasher.combine(latitude)
+        hasher.combine(longitude)
+    }
+}
+
 // MARK: Equatable
 extension ValidLocation: Equatable {
     public static func == (lhs: Self, rhs: Self) -> Bool {
