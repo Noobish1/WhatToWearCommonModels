@@ -14,7 +14,7 @@ extension TimeMeasurement {
         return Self(
             id: id,
             value: .daily({ $0.apparentTemperatureHighTime }),
-            name: NSLocalizedString("'Feels-like' Temperature High Time", comment: ""),
+            name: NSLocalizedString("'Feels-like' Temp High Time", comment: ""),
             explanation: NSLocalizedString("The time when the daytime high 'feels-like' temperature occurs.", comment: "")
         )
     }
@@ -23,7 +23,7 @@ extension TimeMeasurement {
         return Self(
             id: id,
             value: .daily({ $0.apparentTemperatureLowTime }),
-            name: NSLocalizedString("'Feels-like' Temperature Low Time", comment: ""),
+            name: NSLocalizedString("'Feels-like' Temp Low Time", comment: ""),
             explanation: NSLocalizedString("The time when the overnight low 'feels-like' temperature occurs.", comment: "")
         )
     }
@@ -32,7 +32,7 @@ extension TimeMeasurement {
         return Self(
             id: id,
             value: .daily({ $0.apparentTemperatureMaxTime }),
-            name: NSLocalizedString("'Feels-like' Temperature Max Time", comment: ""),
+            name: NSLocalizedString("'Feels-like' Temp Max Time", comment: ""),
             explanation: NSLocalizedString("The time when the maximum 'feels-like' temperature occurs.", comment: "")
         )
     }
@@ -41,7 +41,7 @@ extension TimeMeasurement {
         return Self(
             id: id,
             value: .daily({ $0.apparentTemperatureMinTime }),
-            name: NSLocalizedString("'Feels-like' Temperature Min Time", comment: ""),
+            name: NSLocalizedString("'Feels-like' Temp Min Time", comment: ""),
             explanation: NSLocalizedString("The time when the minimum 'feels-like' temperature occurs.", comment: "")
         )
     }
@@ -50,7 +50,7 @@ extension TimeMeasurement {
         return Self(
             id: id,
             value: .daily({ $0.temperatureHighTime }),
-            name: NSLocalizedString("Air Temperature High Time", comment: ""),
+            name: NSLocalizedString("Air Temp High Time", comment: ""),
             explanation: NSLocalizedString("The time when the daytime high air temperature occurs.", comment: "")
         )
     }
@@ -59,7 +59,7 @@ extension TimeMeasurement {
         return Self(
             id: id,
             value: .daily({ $0.temperatureLowTime }),
-            name: NSLocalizedString("Air Temperature Low Time", comment: ""),
+            name: NSLocalizedString("Air Temp Low Time", comment: ""),
             explanation: NSLocalizedString("The time when the overnight low air temperature occurs.", comment: "")
         )
     }
@@ -68,7 +68,7 @@ extension TimeMeasurement {
         return Self(
             id: id,
             value: .daily({ $0.temperatureMaxTime }),
-            name: NSLocalizedString("Air Temperature Max Time", comment: ""),
+            name: NSLocalizedString("Air Temp Max Time", comment: ""),
             explanation: NSLocalizedString("The time when the maximum air temperature occurs.", comment: "")
         )
     }
@@ -77,7 +77,7 @@ extension TimeMeasurement {
         return Self(
             id: id,
             value: .daily({ $0.temperatureMinTime }),
-            name: NSLocalizedString("Air Temperature Min Time", comment: ""),
+            name: NSLocalizedString("Air Temp Min Time", comment: ""),
             explanation: NSLocalizedString("The time when the minimum air temperature occurs.", comment: "")
         )
     }
