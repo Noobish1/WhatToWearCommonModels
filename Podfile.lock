@@ -41,7 +41,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   WhatToWearCommonCore:
-    :commit: 46d0740f372b6053fdf1379a5c29d429fe355a61
+    :commit: 57e27ebcd55a8959f4cb7d64e84ad5b4ac94d28d
     :git: https://github.com/Noobish1/WhatToWearCommonCore.git
   WhatToWearCommonTesting:
     :commit: 809c4e3740169bd1e6a4bc62559ff3e49545480b

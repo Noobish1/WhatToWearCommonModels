@@ -7,6 +7,9 @@ public struct GlobalSettings: Codable, Equatable, Withable {
     public var measurementSystem: MeasurementSystem
     public var shownComponents: [WeatherChartComponent: Bool]
     public var appBackgroundOptions: AppBackgroundOptions
+    public var lastSeenUpdate: LatestAppUpdate?
+    public var lastUpdateAvailable: LatestAppUpdate?
+    public var lastWhatsNewVersionSeen: OperatingSystemVersion
     public var temperatureType: TemperatureType
     public var windType: WindType
     public var whatsNewOnLaunch: Bool
@@ -16,7 +19,11 @@ public struct GlobalSettings: Codable, Equatable, Withable {
         return Self(
             measurementSystem: .metric,
             shownComponents: WeatherChartComponent.defaultMapping,
-            appBackgroundOptions: .original,
+            appBackgroundOptions: .darkBlue,
+            lastSeenUpdate: nil,
+            lastUpdateAvailable: nil,
+            // We default to 1.4.0 because thats the version we added this
+            lastWhatsNewVersionSeen: OperatingSystemVersion(1, 4, 0),
             temperatureType: .apparent,
             windType: .gust,
             whatsNewOnLaunch: true
@@ -33,6 +40,9 @@ public struct GlobalSettings: Codable, Equatable, Withable {
         measurementSystem: MeasurementSystem,
         shownComponents: [WeatherChartComponent: Bool],
         appBackgroundOptions: AppBackgroundOptions,
+        lastSeenUpdate: LatestAppUpdate?,
+        lastUpdateAvailable: LatestAppUpdate?,
+        lastWhatsNewVersionSeen: OperatingSystemVersion,
         temperatureType: TemperatureType,
         windType: WindType,
         whatsNewOnLaunch: Bool
@@ -40,6 +50,9 @@ public struct GlobalSettings: Codable, Equatable, Withable {
         self.measurementSystem = measurementSystem
         self.shownComponents = shownComponents
         self.appBackgroundOptions = appBackgroundOptions
+        self.lastSeenUpdate = lastSeenUpdate
+        self.lastUpdateAvailable = lastUpdateAvailable
+        self.lastWhatsNewVersionSeen = lastWhatsNewVersionSeen
         self.temperatureType = temperatureType
         self.windType = windType
         self.whatsNewOnLaunch = whatsNewOnLaunch

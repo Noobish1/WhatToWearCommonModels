@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		316D766D99BA469CC6BE7D68 /* Pods_WhatToWearCommonModels_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F36F2E2F61DCB5FB579AC7A /* Pods_WhatToWearCommonModels_Mac.framework */; };
 		38A5AD1BFDF3420BE225F849 /* Pods_WhatToWearCommonModelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B694084EA335DC8C7261DA0E /* Pods_WhatToWearCommonModelsTests.framework */; };
+		750184AE23EE7853004C6BA4 /* LatestAppUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750184AD23EE7853004C6BA4 /* LatestAppUpdate.swift */; };
+		750184AF23EE7853004C6BA4 /* LatestAppUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750184AD23EE7853004C6BA4 /* LatestAppUpdate.swift */; };
+		750184B423EE7971004C6BA4 /* ISO8601UTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750184B123EE7971004C6BA4 /* ISO8601UTC.swift */; };
+		750184B523EE7971004C6BA4 /* ISO8601UTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750184B123EE7971004C6BA4 /* ISO8601UTC.swift */; };
+		750184B623EE7971004C6BA4 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750184B223EE7971004C6BA4 /* Version.swift */; };
+		750184B723EE7971004C6BA4 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750184B223EE7971004C6BA4 /* Version.swift */; };
+		750184B823EE7971004C6BA4 /* AbsoluteURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750184B323EE7971004C6BA4 /* AbsoluteURL.swift */; };
+		750184B923EE7971004C6BA4 /* AbsoluteURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750184B323EE7971004C6BA4 /* AbsoluteURL.swift */; };
+		750184BB23EE7ADA004C6BA4 /* AppleReleaseDateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750184BA23EE7ADA004C6BA4 /* AppleReleaseDateFormatters.swift */; };
+		750184BC23EE7ADA004C6BA4 /* AppleReleaseDateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750184BA23EE7ADA004C6BA4 /* AppleReleaseDateFormatters.swift */; };
 		7523B06B207DDA98003304FC /* WhatToWearCommonModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 7523B069207DDA98003304FC /* WhatToWearCommonModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7532284923D506EE002C51CB /* Centimeters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759EA43123B1F36D005BD8EB /* Centimeters.swift */; };
 		7532284A23D5077E002C51CB /* Millimeters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56754238E0D8100615F04 /* Millimeters.swift */; };
@@ -185,6 +195,7 @@
 		75D67A1023E112280084A0C8 /* ResetAndChangePasswordParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D67A0E23E112280084A0C8 /* ResetAndChangePasswordParams.swift */; };
 		75D67A1223E14FD10084A0C8 /* ResetPasswordParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D67A1123E14FD10084A0C8 /* ResetPasswordParams.swift */; };
 		75D67A1323E14FD10084A0C8 /* ResetPasswordParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D67A1123E14FD10084A0C8 /* ResetPasswordParams.swift */; };
+		75DC31F123EF3D7400DE270D /* LatestAppUpdateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DC31F023EF3D7400DE270D /* LatestAppUpdateSpec.swift */; };
 		75E56749238E0D7600615F04 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56741238E0D7500615F04 /* Forecast.swift */; };
 		75E5674A238E0D7600615F04 /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56742238E0D7500615F04 /* DayOfWeek.swift */; };
 		75E5674B238E0D7600615F04 /* PrecipitationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56743238E0D7500615F04 /* PrecipitationType.swift */; };
@@ -235,6 +246,11 @@
 		29302CEE2A8B2380D41A345D /* Pods-WhatToWearCommonModelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModelsTests.debug.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModelsTests/Pods-WhatToWearCommonModelsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F36F2E2F61DCB5FB579AC7A /* Pods_WhatToWearCommonModels_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonModels_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D090FAE83CD319B3FD9759A /* Pods-WhatToWearCommonModels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonModels.debug.xcconfig"; path = "Target Support Files/Pods-WhatToWearCommonModels/Pods-WhatToWearCommonModels.debug.xcconfig"; sourceTree = "<group>"; };
+		750184AD23EE7853004C6BA4 /* LatestAppUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestAppUpdate.swift; sourceTree = "<group>"; };
+		750184B123EE7971004C6BA4 /* ISO8601UTC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO8601UTC.swift; sourceTree = "<group>"; };
+		750184B223EE7971004C6BA4 /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		750184B323EE7971004C6BA4 /* AbsoluteURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbsoluteURL.swift; sourceTree = "<group>"; };
+		750184BA23EE7ADA004C6BA4 /* AppleReleaseDateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleReleaseDateFormatters.swift; sourceTree = "<group>"; };
 		7523B066207DDA98003304FC /* WhatToWearCommonModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatToWearCommonModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7523B069207DDA98003304FC /* WhatToWearCommonModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhatToWearCommonModels.h; sourceTree = "<group>"; };
 		7523B06A207DDA98003304FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -336,6 +352,7 @@
 		75CD69E5239DF12B008BE20A /* WeatherChartComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherChartComponent.swift; sourceTree = "<group>"; };
 		75D67A0E23E112280084A0C8 /* ResetAndChangePasswordParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetAndChangePasswordParams.swift; sourceTree = "<group>"; };
 		75D67A1123E14FD10084A0C8 /* ResetPasswordParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordParams.swift; sourceTree = "<group>"; };
+		75DC31F023EF3D7400DE270D /* LatestAppUpdateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestAppUpdateSpec.swift; sourceTree = "<group>"; };
 		75E56741238E0D7500615F04 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		75E56742238E0D7500615F04 /* DayOfWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
 		75E56743238E0D7500615F04 /* PrecipitationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecipitationType.swift; sourceTree = "<group>"; };
@@ -406,6 +423,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		750184B023EE7944004C6BA4 /* iTunes Search */ = {
+			isa = PBXGroup;
+			children = (
+				750184B323EE7971004C6BA4 /* AbsoluteURL.swift */,
+				750184B123EE7971004C6BA4 /* ISO8601UTC.swift */,
+				750184B223EE7971004C6BA4 /* Version.swift */,
+				750184AD23EE7853004C6BA4 /* LatestAppUpdate.swift */,
+			);
+			path = "iTunes Search";
+			sourceTree = "<group>";
+		};
 		7523B05C207DDA98003304FC = {
 			isa = PBXGroup;
 			children = (
@@ -458,6 +486,7 @@
 		7523B078207DDB4E003304FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				750184B023EE7944004C6BA4 /* iTunes Search */,
 				75B73EC7239EFD5300004F5B /* TimeSettings */,
 				75B73DFB239EE54300004F5B /* Rules */,
 				75B73DF1239EE4CF00004F5B /* Locations */,
@@ -688,6 +717,7 @@
 			isa = PBXGroup;
 			children = (
 				75B73E9D239EEC3D00004F5B /* SunCalculator.swift */,
+				750184BA23EE7ADA004C6BA4 /* AppleReleaseDateFormatters.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -796,6 +826,7 @@
 		75C07BB420AEC0B4008DE137 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				75DC31F023EF3D7400DE270D /* LatestAppUpdateSpec.swift */,
 				75B73ECC239EFDD800004F5B /* SelectableConditionSpec.swift */,
 				75B73ECB239EFDD800004F5B /* TimeConditionSpec.swift */,
 				75E56764238E0DBF00615F04 /* DailyDataSpec.swift */,
@@ -1248,6 +1279,7 @@
 				75B73DEA239EE1F300004F5B /* StoredLocations.swift in Sources */,
 				75CD69D6239DEF6C008BE20A /* GlobalSettings.swift in Sources */,
 				75D67A0F23E112280084A0C8 /* ResetAndChangePasswordParams.swift in Sources */,
+				750184BB23EE7ADA004C6BA4 /* AppleReleaseDateFormatters.swift in Sources */,
 				75B73E72239EE93A00004F5B /* SelectableConditionValueProtocol.swift in Sources */,
 				75CD69E6239DF12C008BE20A /* WeatherChartComponent.swift in Sources */,
 				75E5675F238E0D8100615F04 /* Kilometers.swift in Sources */,
@@ -1273,6 +1305,8 @@
 				75B73E22239EE78700004F5B /* CalculatedPercentageMeasurement.swift in Sources */,
 				75D67A1223E14FD10084A0C8 /* ResetPasswordParams.swift in Sources */,
 				75B73E07239EE71F00004F5B /* TimeCondition.swift in Sources */,
+				750184B823EE7971004C6BA4 /* AbsoluteURL.swift in Sources */,
+				750184B623EE7971004C6BA4 /* Version.swift in Sources */,
 				75B73E36239EE78700004F5B /* EnumMeasurement.swift in Sources */,
 				75B73E8A239EEBD500004F5B /* PressureMeasurements.swift in Sources */,
 				75B73E51239EE88200004F5B /* TimeRange.swift in Sources */,
@@ -1292,7 +1326,9 @@
 				75B73E68239EE93A00004F5B /* DoubleMeasurementProtocol.swift in Sources */,
 				75B73DE8239EE1F300004F5B /* ValidLocation.swift in Sources */,
 				75BAF07C239701FC008B48BD /* UserResponse.swift in Sources */,
+				750184AE23EE7853004C6BA4 /* LatestAppUpdate.swift in Sources */,
 				75BAF07E239701FC008B48BD /* LoginResponse.swift in Sources */,
+				750184B423EE7971004C6BA4 /* ISO8601UTC.swift in Sources */,
 				75CD69DE239DEF6C008BE20A /* AppBackground.swift in Sources */,
 				75B73E90239EEBD500004F5B /* PercentageMeasurements.swift in Sources */,
 				75E5674F238E0D7600615F04 /* WindDirection.swift in Sources */,
@@ -1340,6 +1376,7 @@
 				75CD69D7239DEF6C008BE20A /* GlobalSettings.swift in Sources */,
 				75B73E73239EE93A00004F5B /* SelectableConditionValueProtocol.swift in Sources */,
 				75D67A1023E112280084A0C8 /* ResetAndChangePasswordParams.swift in Sources */,
+				750184BC23EE7ADA004C6BA4 /* AppleReleaseDateFormatters.swift in Sources */,
 				75CD69E7239DF12C008BE20A /* WeatherChartComponent.swift in Sources */,
 				754DB68A2390B3B400D9F848 /* Percentage.swift in Sources */,
 				75B73E93239EEBD500004F5B /* SpeedMeasurements.swift in Sources */,
@@ -1365,6 +1402,8 @@
 				75B73E23239EE78700004F5B /* CalculatedPercentageMeasurement.swift in Sources */,
 				75D67A1323E14FD10084A0C8 /* ResetPasswordParams.swift in Sources */,
 				75B73E08239EE71F00004F5B /* TimeCondition.swift in Sources */,
+				750184B923EE7971004C6BA4 /* AbsoluteURL.swift in Sources */,
+				750184B723EE7971004C6BA4 /* Version.swift in Sources */,
 				75B73E37239EE78700004F5B /* EnumMeasurement.swift in Sources */,
 				75B73E8B239EEBD500004F5B /* PressureMeasurements.swift in Sources */,
 				75B73E52239EE88200004F5B /* TimeRange.swift in Sources */,
@@ -1384,7 +1423,9 @@
 				75B73E69239EE93A00004F5B /* DoubleMeasurementProtocol.swift in Sources */,
 				75B73DE9239EE1F300004F5B /* ValidLocation.swift in Sources */,
 				75BAF07D239701FC008B48BD /* UserResponse.swift in Sources */,
+				750184AF23EE7853004C6BA4 /* LatestAppUpdate.swift in Sources */,
 				75BAF07F239701FC008B48BD /* LoginResponse.swift in Sources */,
+				750184B523EE7971004C6BA4 /* ISO8601UTC.swift in Sources */,
 				75CD69DF239DEF6C008BE20A /* AppBackground.swift in Sources */,
 				75B73E91239EEBD500004F5B /* PercentageMeasurements.swift in Sources */,
 				754DB6802390B3AA00D9F848 /* HourlyDataPoint.swift in Sources */,
@@ -1413,6 +1454,7 @@
 				75B73ECE239EFDD800004F5B /* SelectableConditionSpec.swift in Sources */,
 				75E56773238E0DC000615F04 /* WindDirectionSpec.swift in Sources */,
 				75E5676F238E0DC000615F04 /* HourlyDataPointSpec.swift in Sources */,
+				75DC31F123EF3D7400DE270D /* LatestAppUpdateSpec.swift in Sources */,
 				75B73ED3239EFE4B00004F5B /* DoubleCondition.swift in Sources */,
 				75E56774238E0DC000615F04 /* DegreesSpec.swift in Sources */,
 				75E5677E238E11B900615F04 /* HourlyForecast.swift in Sources */,
