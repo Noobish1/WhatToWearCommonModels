@@ -22,6 +22,22 @@ extension MeasurementSystem {
             case .imperial: return .fahrenheit
         }
     }
+    
+    // swiftlint:disable identifier_name
+    public var displayedUnitForRainAccumulationMeasurement: UnitLength {
+        switch self {
+            case .metric: return .millimeters
+            case .imperial: return .inches
+        }
+    }
+    
+    public var displayedUnitForSnowAccumulationMeasurement: UnitLength {
+        switch self {
+            case .metric: return .centimeters
+            case .imperial: return .inches
+        }
+    }
+    // swiftlint:enable identifier_name
 }
 
 // MARK: WTWRandomized
