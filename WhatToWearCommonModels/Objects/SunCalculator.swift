@@ -2,6 +2,9 @@ import Foundation
 
 // Parts of https://github.com/braindrizzlestudio/BDAstroCalc
 public enum SunCalculator {
+    /// Sun Altitude range
+    public static let sunAltitudeRange: ClosedRange<CGFloat> =  0...90
+    
     /// The obliquity of Earth
     private static let obliquityOfEarth = rad * 23.4397
 
@@ -71,6 +74,6 @@ public enum SunCalculator {
         let sunAltitude = altitude(hourAngle: hourAngleValue, latitude: latitude, declination: declinationValue)
 
         // Convert to degrees and clamp because for some reason we can get values outside it
-        return (CGFloat(sunAltitude * 180) / CGFloat.pi).clamped(to: 0...90)
+        return (CGFloat(sunAltitude * 180) / CGFloat.pi).clamped(to: sunAltitudeRange)
     }
 }
