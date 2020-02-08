@@ -39,6 +39,7 @@ public enum MeasurementID: Int, Codable, Hashable, NonEmptyCaseIterable {
     case temperatureMin = 33
     case dayOfWeek = 34
     case windSpeed = 35
+    case precipIntensity = 36
 }
 
 // MARK: Measurement
@@ -136,6 +137,8 @@ public enum WeatherMeasurement: Equatable {
                 self = .double(.temperature(.temperatureMin(for: id)))
             case .dayOfWeek:
                 self = .enumeration(.dayOfWeek(.dayOfWeek(for: id)))
+            case .precipIntensity:
+                self = .double(.length(.precipIntensity(for: id)))
         }
     }
     // swiftlint:enable cyclomatic_complexity

@@ -6,10 +6,23 @@ extension UnitMeasurement where DimensionType == UnitLength {
             id: id,
             value: .hourly({ $0.precipAccumulation }),
             name: NSLocalizedString("Precipitation Accumulation", comment: ""),
-            explanation: NSLocalizedString("The amount of snowfall accumulation expected to occur.", comment: ""),
+            explanation: NSLocalizedString("The amount of snowfall accumulation.", comment: ""),
             rawRange: 0...Double.infinity,
             rawUnit: .centimeters,
             displayedMetricUnit: .centimeters,
+            displayedImperialUnit: .inches
+        )
+    }
+
+    internal static func precipIntensity(for id: MeasurementID) -> Self {
+        return Self(
+            id: id,
+            value: .hourly({ $0.precipIntensity }),
+            name: NSLocalizedString("Precipitation Intensity", comment: ""),
+            explanation: NSLocalizedString("The intensity of liquid water precipitation.", comment: ""),
+            rawRange: 0...Double.infinity,
+            rawUnit: .millimeters,
+            displayedMetricUnit: .millimeters,
             displayedImperialUnit: .inches
         )
     }
