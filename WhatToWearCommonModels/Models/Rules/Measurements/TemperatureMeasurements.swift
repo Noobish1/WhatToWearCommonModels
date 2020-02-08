@@ -44,7 +44,7 @@ extension UnitMeasurement where DimensionType == UnitTemperature {
         return Self(
             id: id,
             value: .daily({ $0.apparentTemperatureHigh }),
-            name: NSLocalizedString("'Feels-like' Temperature High", comment: ""),
+            name: NSLocalizedString("'Feels-like' Temp High", comment: ""),
             explanation: NSLocalizedString("The daytime high 'feels-like' temperature.", comment: ""),
             rawRange: -Double.infinity...Double.infinity,
             rawUnit: .celsius,
@@ -57,7 +57,7 @@ extension UnitMeasurement where DimensionType == UnitTemperature {
         return Self(
             id: id,
             value: .daily({ $0.apparentTemperatureLow }),
-            name: NSLocalizedString("'Feels-like' Temperature Low", comment: ""),
+            name: NSLocalizedString("'Feels-like' Temp Low", comment: ""),
             explanation: NSLocalizedString("The overnight low 'feels-like' temperature.", comment: ""),
             rawRange: -Double.infinity...Double.infinity,
             rawUnit: .celsius,
@@ -70,7 +70,7 @@ extension UnitMeasurement where DimensionType == UnitTemperature {
         return Self(
             id: id,
             value: .daily({ $0.apparentTemperatureMax }),
-            name: NSLocalizedString("'Feels-like' Temperature Max", comment: ""),
+            name: NSLocalizedString("'Feels-like' Temp Max", comment: ""),
             explanation: NSLocalizedString("The maximum 'feels-like' temperature.", comment: ""),
             rawRange: -Double.infinity...Double.infinity,
             rawUnit: .celsius,
@@ -83,7 +83,7 @@ extension UnitMeasurement where DimensionType == UnitTemperature {
         return Self(
             id: id,
             value: .daily({ $0.apparentTemperatureMin }),
-            name: NSLocalizedString("'Feels-like' Temperature Min", comment: ""),
+            name: NSLocalizedString("'Feels-like' Temp Min", comment: ""),
             explanation: NSLocalizedString("The minimum 'feels-like' temperature.", comment: ""),
             rawRange: -Double.infinity...Double.infinity,
             rawUnit: .celsius,
@@ -96,7 +96,7 @@ extension UnitMeasurement where DimensionType == UnitTemperature {
         return Self(
             id: id,
             value: .daily({ $0.temperatureHigh }),
-            name: NSLocalizedString("Air Temperature High", comment: ""),
+            name: NSLocalizedString("Air Temp High", comment: ""),
             explanation: NSLocalizedString("The daytime high air temperature.", comment: ""),
             rawRange: -Double.infinity...Double.infinity,
             rawUnit: .celsius,
@@ -109,7 +109,7 @@ extension UnitMeasurement where DimensionType == UnitTemperature {
         return Self(
             id: id,
             value: .daily({ $0.temperatureLow }),
-            name: NSLocalizedString("Air Temperature Low", comment: ""),
+            name: NSLocalizedString("Air Temp Low", comment: ""),
             explanation: NSLocalizedString("The overnight low air temperature.", comment: ""),
             rawRange: -Double.infinity...Double.infinity,
             rawUnit: .celsius,
@@ -122,7 +122,7 @@ extension UnitMeasurement where DimensionType == UnitTemperature {
         return Self(
             id: id,
             value: .daily({ $0.temperatureMax }),
-            name: NSLocalizedString("Air Temperature Max", comment: ""),
+            name: NSLocalizedString("Air Temp Max", comment: ""),
             explanation: NSLocalizedString("The maximum air temperature.", comment: ""),
             rawRange: -Double.infinity...Double.infinity,
             rawUnit: .celsius,
@@ -135,7 +135,7 @@ extension UnitMeasurement where DimensionType == UnitTemperature {
         return Self(
             id: id,
             value: .daily({ $0.temperatureMin }),
-            name: NSLocalizedString("Air Temperature Min", comment: ""),
+            name: NSLocalizedString("Air Temp Min", comment: ""),
             explanation: NSLocalizedString("The minimum air temperature.", comment: ""),
             rawRange: -Double.infinity...Double.infinity,
             rawUnit: .celsius,
