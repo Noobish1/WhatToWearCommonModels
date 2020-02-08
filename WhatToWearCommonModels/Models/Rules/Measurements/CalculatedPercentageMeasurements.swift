@@ -17,7 +17,7 @@ extension CalculatedPercentageMeasurement {
 
                 return Double(Normalizer.normalize(
                     value: altitude,
-                    fromRange: 0...90,
+                    fromRange: SunCalculator.sunAltitudeRange,
                     toRange: 0...1
                 ))
             }
