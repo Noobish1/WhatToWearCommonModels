@@ -2,7 +2,7 @@ import Foundation
 import WhatToWearCommonCore
 
 // MARK: WeatherChartComponent
-public enum WeatherChartComponent: String, Hashable, FiniteSetValueProtocol {
+public enum WeatherChartComponent: String, Hashable, Codable, NonEmptyCaseIterable {
     // 1.2.0
     case temperature = "temperature"
     case cloudCover = "cloudCover"
@@ -15,6 +15,9 @@ public enum WeatherChartComponent: String, Hashable, FiniteSetValueProtocol {
     // 1.3.0
     case windDirection = "windDirection"
     case sunAltitude = "sunPosition"
+    
+    // 2.1.0
+    case precipAccumulation = "precipAccumulation"
 
     // MARK: computed properties
     public static var defaultMapping: [Self: Bool] {
@@ -32,6 +35,7 @@ public enum WeatherChartComponent: String, Hashable, FiniteSetValueProtocol {
             case .currentTime: return true
             case .humidity: return true
             case .sunAltitude: return false
+            case .precipAccumulation: return false
         }
     }
 }
