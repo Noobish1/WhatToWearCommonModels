@@ -12,12 +12,33 @@ public struct UnitMeasurement<DimensionType: Dimension>: DoubleMeasurementProtoc
     public let rawUnit: DimensionType
     public let displayedMetricUnit: DimensionType
     public let displayedImperialUnit: DimensionType
-
+    
     // MARK: computed properties
     public var basicValue: BasicMeasurementValue {
         return value.basicValue
     }
 
+    // MARK: init
+    public init(
+        id: MeasurementID,
+        value: MeasurementValue<Measurement<DimensionType>?>,
+        name: String,
+        explanation: String,
+        rawRange: ClosedRange<Double>,
+        rawUnit: DimensionType,
+        displayedMetricUnit: DimensionType,
+        displayedImperialUnit: DimensionType
+    ) {
+        self.id = id
+        self.value = value
+        self.name = name
+        self.explanation = explanation
+        self.rawRange = rawRange
+        self.rawUnit = rawUnit
+        self.displayedMetricUnit = displayedMetricUnit
+        self.displayedImperialUnit = displayedImperialUnit
+    }
+    
     // MARK: converting displayedValue's to rawValues
     // The system passed in needs to be the same as the one that was used to make the displayedValue
     public func rawValue(forDisplayedValue displayedValue: DisplayedValue) -> Double {

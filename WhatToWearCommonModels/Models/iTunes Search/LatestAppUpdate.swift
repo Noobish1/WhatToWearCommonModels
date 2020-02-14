@@ -11,12 +11,28 @@ public struct LatestAppUpdate: Codable, Equatable {
         case currentVersionReleaseDate = "currentVersionReleaseDate"
     }
 
+    // MARK: properties
     internal let minimumOSVersionString: Version<String>
     internal let urlString: AbsoluteURL<String>
     internal let versionString: Version<String>
     internal let currentVersionReleaseDate: ISO8601UTC<String>
 
     public let releaseNotes: String
+    
+    // MARK: init
+    public init(
+        minimumOSVersionString: Version<String>,
+        urlString: AbsoluteURL<String>,
+        versionString: Version<String>,
+        currentVersionReleaseDate: ISO8601UTC<String>,
+        releaseNotes: String
+    ) {
+        self.minimumOSVersionString = minimumOSVersionString
+        self.urlString = urlString
+        self.versionString = versionString
+        self.currentVersionReleaseDate = currentVersionReleaseDate
+        self.releaseNotes = releaseNotes
+    }
 }
 
 // MARK: computed properties
