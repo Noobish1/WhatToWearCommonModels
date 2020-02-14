@@ -51,6 +51,7 @@
 		754DB68C2390B3B400D9F848 /* Seconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E56759238E0D8100615F04 /* Seconds.swift */; };
 		755CAAA922152A7E00817717 /* dailyforecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 755CAAA822152A7E00817717 /* dailyforecast.json */; };
 		755CAAAB2215427500817717 /* dailyforecast-empty-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 755CAAAA2215427500817717 /* dailyforecast-empty-data.json */; };
+		7571BFFD23F61D7000573078 /* AppleReleaseDateFormattersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7571BFFC23F61D7000573078 /* AppleReleaseDateFormattersSpec.swift */; };
 		7576CB0323D5770D0067C49C /* ChangeEmailParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576CB0223D5770D0067C49C /* ChangeEmailParams.swift */; };
 		7576CB0423D5770D0067C49C /* ChangeEmailParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576CB0223D5770D0067C49C /* ChangeEmailParams.swift */; };
 		759EA43223B1F36D005BD8EB /* Centimeters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759EA43123B1F36D005BD8EB /* Centimeters.swift */; };
@@ -273,6 +274,7 @@
 		754DB6652390B2B900D9F848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		755CAAA822152A7E00817717 /* dailyforecast.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dailyforecast.json; sourceTree = "<group>"; };
 		755CAAAA2215427500817717 /* dailyforecast-empty-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "dailyforecast-empty-data.json"; sourceTree = "<group>"; };
+		7571BFFC23F61D7000573078 /* AppleReleaseDateFormattersSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleReleaseDateFormattersSpec.swift; sourceTree = "<group>"; };
 		7576CB0223D5770D0067C49C /* ChangeEmailParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmailParams.swift; sourceTree = "<group>"; };
 		759392D22162215E00307AC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		759EA43123B1F36D005BD8EB /* Centimeters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Centimeters.swift; sourceTree = "<group>"; };
@@ -843,6 +845,7 @@
 				75E5676B238E0DC000615F04 /* PercentageSpec.swift */,
 				75E56763238E0DBF00615F04 /* RadiansSpec.swift */,
 				75E56769238E0DC000615F04 /* WindDirectionSpec.swift */,
+				7571BFFC23F61D7000573078 /* AppleReleaseDateFormattersSpec.swift */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -1469,6 +1472,7 @@
 				75E56775238E0DC000615F04 /* PercentageSpec.swift in Sources */,
 				75E56784238E12D800615F04 /* R.generated.swift in Sources */,
 				75E5676D238E0DC000615F04 /* RadiansSpec.swift in Sources */,
+				7571BFFD23F61D7000573078 /* AppleReleaseDateFormattersSpec.swift in Sources */,
 				75E5677C238E11B900615F04 /* HourlyDataPoint.swift in Sources */,
 				75E5677D238E11B900615F04 /* DailyData.swift in Sources */,
 				75E56780238E11B900615F04 /* DailyForecast.swift in Sources */,
