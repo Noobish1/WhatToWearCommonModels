@@ -41,7 +41,7 @@ public struct NonEmptyArray<Element> {
     }
 
     // MARK: init
-    public init(elements: Element...) {
+    public init(_ elements: Element...) {
         self.elements = elements
     }
 
@@ -73,6 +73,16 @@ public struct NonEmptyArray<Element> {
     public func byAppending(_ newElement: Element) -> Self {
         var copy = self
         copy.append(newElement)
+        return copy
+    }
+    
+    public mutating func append<S: Sequence>(contentsOf collection: S) where S.Element == Element {
+        elements.append(contentsOf: collection)
+    }
+    
+    public func byAppending<S: Sequence>(contentsOf collection: S) -> Self where S.Element == Element {
+        var copy = self
+        copy.append(contentsOf: collection)
         return copy
     }
 
@@ -212,6 +222,7 @@ extension NonEmptyArray: MutableCollection {
 
 // MARK: Equtable elements
 extension NonEmptyArray where Element: Equatable {
+    // MARK: replacing
     public mutating func replace(_ element: Element, with otherElement: Element) {
         elements.replace(element, with: otherElement)
     }
@@ -221,6 +232,11 @@ extension NonEmptyArray where Element: Equatable {
         mutableSelf.replace(element, with: otherElement)
 
         return mutableSelf
+    }
+    
+    // MARK: finding
+    public func element(after element: Element) -> Element? {
+        return elements.element(after: element)
     }
 }
 
