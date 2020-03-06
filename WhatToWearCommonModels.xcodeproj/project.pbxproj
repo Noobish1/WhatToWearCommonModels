@@ -169,8 +169,8 @@
 		75BAF07D239701FC008B48BD /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BAF073239701FC008B48BD /* UserResponse.swift */; };
 		75BAF07E239701FC008B48BD /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BAF074239701FC008B48BD /* LoginResponse.swift */; };
 		75BAF07F239701FC008B48BD /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BAF074239701FC008B48BD /* LoginResponse.swift */; };
-		75BAF080239701FC008B48BD /* AddForecastsParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BAF076239701FC008B48BD /* AddForecastsParams.swift */; };
-		75BAF081239701FC008B48BD /* AddForecastsParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BAF076239701FC008B48BD /* AddForecastsParams.swift */; };
+		75BAF080239701FC008B48BD /* ApplyIAPParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BAF076239701FC008B48BD /* ApplyIAPParams.swift */; };
+		75BAF081239701FC008B48BD /* ApplyIAPParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BAF076239701FC008B48BD /* ApplyIAPParams.swift */; };
 		75BAF082239701FC008B48BD /* VerifyParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BAF077239701FC008B48BD /* VerifyParams.swift */; };
 		75BAF083239701FC008B48BD /* VerifyParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BAF077239701FC008B48BD /* VerifyParams.swift */; };
 		75BAF084239701FC008B48BD /* ForecastParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BAF078239701FC008B48BD /* ForecastParams.swift */; };
@@ -340,7 +340,7 @@
 		75BAF072239701FC008B48BD /* ForecastResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastResponse.swift; sourceTree = "<group>"; };
 		75BAF073239701FC008B48BD /* UserResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		75BAF074239701FC008B48BD /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
-		75BAF076239701FC008B48BD /* AddForecastsParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddForecastsParams.swift; sourceTree = "<group>"; };
+		75BAF076239701FC008B48BD /* ApplyIAPParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyIAPParams.swift; sourceTree = "<group>"; };
 		75BAF077239701FC008B48BD /* VerifyParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyParams.swift; sourceTree = "<group>"; };
 		75BAF078239701FC008B48BD /* ForecastParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastParams.swift; sourceTree = "<group>"; };
 		75BAF079239701FC008B48BD /* SignupParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupParams.swift; sourceTree = "<group>"; };
@@ -797,7 +797,7 @@
 		75BAF075239701FC008B48BD /* Parameters */ = {
 			isa = PBXGroup;
 			children = (
-				75BAF076239701FC008B48BD /* AddForecastsParams.swift */,
+				75BAF076239701FC008B48BD /* ApplyIAPParams.swift */,
 				75BAF077239701FC008B48BD /* VerifyParams.swift */,
 				75BAF078239701FC008B48BD /* ForecastParams.swift */,
 				75BAF079239701FC008B48BD /* SignupParams.swift */,
@@ -1283,7 +1283,7 @@
 				75E5675C238E0D8100615F04 /* Celsius.swift in Sources */,
 				75B73E4F239EE88200004F5B /* MilitaryTime.swift in Sources */,
 				75B73E3A239EE78700004F5B /* TimeMeasurement.swift in Sources */,
-				75BAF080239701FC008B48BD /* AddForecastsParams.swift in Sources */,
+				75BAF080239701FC008B48BD /* ApplyIAPParams.swift in Sources */,
 				75B73DEA239EE1F300004F5B /* StoredLocations.swift in Sources */,
 				75CD69D6239DEF6C008BE20A /* GlobalSettings.swift in Sources */,
 				75D67A0F23E112280084A0C8 /* ResetAndChangePasswordParams.swift in Sources */,
@@ -1380,7 +1380,7 @@
 				754DB6892390B3B400D9F848 /* MetersPerSecond.swift in Sources */,
 				75B73E50239EE88200004F5B /* MilitaryTime.swift in Sources */,
 				75B73E3B239EE78700004F5B /* TimeMeasurement.swift in Sources */,
-				75BAF081239701FC008B48BD /* AddForecastsParams.swift in Sources */,
+				75BAF081239701FC008B48BD /* ApplyIAPParams.swift in Sources */,
 				75B73DEB239EE1F300004F5B /* StoredLocations.swift in Sources */,
 				75CD69D7239DEF6C008BE20A /* GlobalSettings.swift in Sources */,
 				75B73E73239EE93A00004F5B /* SelectableConditionValueProtocol.swift in Sources */,
