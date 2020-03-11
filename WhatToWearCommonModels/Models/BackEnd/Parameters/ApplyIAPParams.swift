@@ -2,10 +2,10 @@ import Foundation
 
 public struct ApplyIAPParams: Codable {
     // MARK: properties
-    public let productID: String
+    public let productIDs: [String]
     
     // MARK: init
-    public init(productID: String) {
-        self.productID = productID
+    public init(productIDs: [String]) {
+        self.productIDs = productIDs
     }
 }
