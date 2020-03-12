@@ -8,6 +8,7 @@ public struct UserResponse: Codable, Equatable {
     public let lastName: String
     public let email: String
     public let identifierForVendor: String?
+    public let freeCalls: Int
     public let callsMade: Int
     public let callLimit: Int
     public let verified: Bool
@@ -23,6 +24,7 @@ public struct UserResponse: Codable, Equatable {
         lastName: String,
         email: String,
         identifierForVendor: String?,
+        freeCalls: Int,
         callsMade: Int,
         callLimit: Int,
         verified: Bool,
@@ -36,6 +38,7 @@ public struct UserResponse: Codable, Equatable {
         self.lastName = lastName
         self.email = email
         self.identifierForVendor = identifierForVendor
+        self.freeCalls = freeCalls
         self.callsMade = callsMade
         self.callLimit = callLimit
         self.verified = verified
