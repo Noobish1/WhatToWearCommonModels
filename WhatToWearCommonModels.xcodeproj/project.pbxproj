@@ -52,6 +52,8 @@
 		755CAAA922152A7E00817717 /* dailyforecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 755CAAA822152A7E00817717 /* dailyforecast.json */; };
 		755CAAAB2215427500817717 /* dailyforecast-empty-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 755CAAAA2215427500817717 /* dailyforecast-empty-data.json */; };
 		7571BFFD23F61D7000573078 /* AppleReleaseDateFormattersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7571BFFC23F61D7000573078 /* AppleReleaseDateFormattersSpec.swift */; };
+		7575C2992428269400590947 /* InnerForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7575C2982428269400590947 /* InnerForecastResponse.swift */; };
+		7575C29A2428269400590947 /* InnerForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7575C2982428269400590947 /* InnerForecastResponse.swift */; };
 		7576CB0323D5770D0067C49C /* ChangeEmailParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576CB0223D5770D0067C49C /* ChangeEmailParams.swift */; };
 		7576CB0423D5770D0067C49C /* ChangeEmailParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7576CB0223D5770D0067C49C /* ChangeEmailParams.swift */; };
 		759EA43223B1F36D005BD8EB /* Centimeters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759EA43123B1F36D005BD8EB /* Centimeters.swift */; };
@@ -275,6 +277,7 @@
 		755CAAA822152A7E00817717 /* dailyforecast.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dailyforecast.json; sourceTree = "<group>"; };
 		755CAAAA2215427500817717 /* dailyforecast-empty-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "dailyforecast-empty-data.json"; sourceTree = "<group>"; };
 		7571BFFC23F61D7000573078 /* AppleReleaseDateFormattersSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleReleaseDateFormattersSpec.swift; sourceTree = "<group>"; };
+		7575C2982428269400590947 /* InnerForecastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerForecastResponse.swift; sourceTree = "<group>"; };
 		7576CB0223D5770D0067C49C /* ChangeEmailParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmailParams.swift; sourceTree = "<group>"; };
 		759392D22162215E00307AC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		759EA43123B1F36D005BD8EB /* Centimeters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Centimeters.swift; sourceTree = "<group>"; };
@@ -790,6 +793,7 @@
 				75BAF072239701FC008B48BD /* ForecastResponse.swift */,
 				75BAF073239701FC008B48BD /* UserResponse.swift */,
 				75BAF074239701FC008B48BD /* LoginResponse.swift */,
+				7575C2982428269400590947 /* InnerForecastResponse.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -1281,6 +1285,7 @@
 				75B73E74239EE93A00004F5B /* BasicConditionProtocol.swift in Sources */,
 				75B73E9E239EEC3D00004F5B /* SunCalculator.swift in Sources */,
 				75E5675C238E0D8100615F04 /* Celsius.swift in Sources */,
+				7575C2992428269400590947 /* InnerForecastResponse.swift in Sources */,
 				75B73E4F239EE88200004F5B /* MilitaryTime.swift in Sources */,
 				75B73E3A239EE78700004F5B /* TimeMeasurement.swift in Sources */,
 				75BAF080239701FC008B48BD /* ApplyIAPParams.swift in Sources */,
@@ -1379,6 +1384,7 @@
 				75B73E9F239EEC3D00004F5B /* SunCalculator.swift in Sources */,
 				754DB6892390B3B400D9F848 /* MetersPerSecond.swift in Sources */,
 				75B73E50239EE88200004F5B /* MilitaryTime.swift in Sources */,
+				7575C29A2428269400590947 /* InnerForecastResponse.swift in Sources */,
 				75B73E3B239EE78700004F5B /* TimeMeasurement.swift in Sources */,
 				75BAF081239701FC008B48BD /* ApplyIAPParams.swift in Sources */,
 				75B73DEB239EE1F300004F5B /* StoredLocations.swift in Sources */,

@@ -1,14 +1,59 @@
 import Foundation
 
 // MARK: ForecastResponse
-public struct ForecastResponse: Codable, Equatable {
-    // MARK: properties
-    public let forecast: Forecast
-    public let user: UserResponse
+public enum ForecastResponse {
+    // MARK: BaseForecastResponse
+    internal enum BaseForecastResponse: String, Codable {
+        case outOfForecasts = "outOfForecasts"
+        case forecast = "forecast"
+    }
     
-    // MARK: init
-    public init(forecast: Forecast, user: UserResponse) {
-        self.forecast = forecast
-        self.user = user
+    case outOfForecasts(UserResponse)
+    case forecast(InnerForecastResponse)
+    
+    // MARK: computed properties
+    internal var baseTestResponse: BaseForecastResponse {
+        switch self {
+            case .outOfForecasts: return .outOfForecasts
+            case .forecast: return .forecast
+        }
+    }
+}
+
+// MARK: Codable
+extension ForecastResponse: Codable {
+    // MARK: CodingKeys
+    public enum CodingKeys: String, CodingKey {
+        case base = "base"
+        case outOfForecasts = "outOfForecasts"
+        case forecast = "forecast"
+    }
+    
+    // MARK: Decodable
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let base = try container.decode(BaseForecastResponse.self, forKey: .base)
+        
+        switch base {
+            case .forecast:
+                self = .forecast(try container.decode(InnerForecastResponse.self, forKey: .forecast))
+            case .outOfForecasts:
+                self = .outOfForecasts(try container.decode(UserResponse.self, forKey: .outOfForecasts))
+        }
+    }
+    
+    // MARK: Encodable
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+
+        try container.encode(baseTestResponse, forKey: .base)
+        
+        switch self {
+            case .outOfForecasts(let userResponse):
+                try container.encode(userResponse, forKey: .outOfForecasts)
+            case .forecast(let forecastResponse):
+                try container.encode(forecastResponse, forKey: .forecast)
+        }
     }
 }
