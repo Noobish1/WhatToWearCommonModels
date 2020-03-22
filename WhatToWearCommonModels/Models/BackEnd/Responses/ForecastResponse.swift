@@ -1,7 +1,7 @@
 import Foundation
 
 // MARK: ForecastResponse
-public enum ForecastResponse {
+public enum ForecastResponse: Equatable {
     // MARK: BaseForecastResponse
     internal enum BaseForecastResponse: String, Codable {
         case outOfForecasts = "outOfForecasts"
