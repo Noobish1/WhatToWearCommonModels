@@ -18,6 +18,13 @@ public enum ForecastResponse: Equatable {
             case .forecast: return .forecast
         }
     }
+    
+    public var userResponse: UserResponse {
+        switch self {
+            case .outOfForecasts(let uResponse): return uResponse
+            case .forecast(let innerResponse): return innerResponse.user
+        }
+    }
 }
 
 // MARK: Codable
