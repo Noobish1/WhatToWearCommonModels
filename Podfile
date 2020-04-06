@@ -5,7 +5,7 @@ use_frameworks!
 platform :ios, '10.0'
 
 target 'WhatToWearCommonModels' do
-    pod 'WhatToWearCommonCore', '2.0.0'
+    pod 'WhatToWearCommonCore', '2.0.1'
     pod 'Tagged', '0.4.0'
     
     # Debug pods
@@ -16,7 +16,7 @@ target 'WhatToWearCommonModels' do
         pod 'Quick', '2.2.0'
         pod 'Nimble', '8.0.4'
         pod 'WhatToWearCommonTesting', '2.0.0'
-        pod 'WhatToWearCommonCore', '2.0.0'
+        pod 'WhatToWearCommonCore', '2.0.1'
         pod 'R.swift', '5.0.3'
         
         # Have to do this so the tests run, I don't know why

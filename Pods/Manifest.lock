@@ -8,7 +8,7 @@ PODS:
   - Tagged (0.4.0)
   - TaggedTime (0.4.0):
     - Tagged (~> 0.4.0)
-  - WhatToWearCommonCore (2.0.0)
+  - WhatToWearCommonCore (2.0.1)
   - WhatToWearCommonTesting (2.0.0)
 
 DEPENDENCIES:
@@ -18,12 +18,11 @@ DEPENDENCIES:
   - SwiftLint (= 0.37.0)
   - Tagged (= 0.4.0)
   - TaggedTime (= 0.4.0)
-  - WhatToWearCommonCore (= 2.0.0)
+  - WhatToWearCommonCore (= 2.0.1)
   - WhatToWearCommonTesting (= 2.0.0)
 
 SPEC REPOS:
   "git@github.com:Noobish1/whattowearspecs.git":
-    - WhatToWearCommonCore
     - WhatToWearCommonTesting
   https://github.com/cocoapods/specs.git:
     - Nimble
@@ -33,6 +32,8 @@ SPEC REPOS:
     - SwiftLint
     - Tagged
     - TaggedTime
+  https://github.com/Noobish1/WhatToWearSpecs.git:
+    - WhatToWearCommonCore
 
 SPEC CHECKSUMS:
   Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
@@ -42,9 +43,9 @@ SPEC CHECKSUMS:
   SwiftLint: c078a14d7d7ade75e5507795d185e3da41d844d2
   Tagged: a6babffe08b180c499a7a422661621bd4f330840
   TaggedTime: 7ca04e5a182d30c7077d37a543f458ad0a12ef01
-  WhatToWearCommonCore: 9c8d8f99f5c29c0529e97fb60c592659d93e7d89
+  WhatToWearCommonCore: 678b07b9a4404cffe673175f04d585e200b905ca
   WhatToWearCommonTesting: 28be0a274e514b54e81993bd33bf82c6ac1f64ec
 
-PODFILE CHECKSUM: 141ce5c629508c9127560f712c31f4e8c5d5a387
+PODFILE CHECKSUM: 9f19f642a42f171ca66d10ecba3026a593ac4d33
 
 COCOAPODS: 1.7.5
